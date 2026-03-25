@@ -15,4 +15,5 @@ class Enemy():
       pygame.draw.rect( screen, (255,0,0), (self.hitbox ))
 
     def attack(self):
+      
       pass
