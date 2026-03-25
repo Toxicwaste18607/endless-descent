@@ -1,7 +1,7 @@
 import pygame
 
 
-class Enemy():
+class Enemy_base():
     all_enemies =[]
     width= 25
     height= 50
