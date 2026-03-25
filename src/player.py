@@ -1,8 +1,5 @@
 import pygame
 
-'''class HitBox():
-   def __init__(self,x,y,): 
-        self.hitbox=pygame.Rect(x, y, self.width, self.height)'''
 
 
 
