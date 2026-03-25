@@ -1,5 +1,14 @@
 import pygame
 
+'''class HitBox():
+   def __init__(self,x,y,): 
+        self.hitbox=pygame.Rect(x, y, self.width, self.height)'''
+
+
+
+
+
+
 
 class Player():
     width= 25
@@ -8,6 +17,7 @@ class Player():
         self.x = x
         self.y = y
         self.hitbox=pygame.Rect(x, y, self.width, self.height)
+        
   
   
     def draw_charicater(self,screen):
@@ -15,3 +25,5 @@ class Player():
 
     def player_agro(self):
       pass
+
+    
