@@ -10,6 +10,11 @@ from player import Player
 
 # draw key (x cord, y cord, width, hight)
 
+#git add .
+#git commit -m "progress update"
+#git push
+
+
 #=====================
 
 #For logic pathing
@@ -25,6 +30,23 @@ def get_asset_path(filename: str) -> str:
 #Classes in use
 
 player1=Player(200, 200)
+
+#===============
+#keys
+def movement():
+  keys=pygame.key.get_pressed()
+
+  if keys[pygame.K_w]:
+    player1.y-=1 
+  
+  if keys[pygame.K_s]:
+    player1.y+=1
+
+  if keys[pygame.K_a]:
+    player1.x-=1
+
+  if keys[pygame.K_d]:
+    player1.x+=1
 
 
 
@@ -45,21 +67,7 @@ while running:
   #game code goes here
 
 
-  #keys
-  keys=pygame.key.get_pressed()
-
-  if keys[pygame.K_w]:
-    player1.y-=1 
-  
-  if keys[pygame.K_s]:
-    player1.y+=1
-
-  if keys[pygame.K_a]:
-    player1.x-=1
-
-  if keys[pygame.K_d]:
-    player1.x+=1
-
+  movement()
 
 
   for event in pygame.event.get():
