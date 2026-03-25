@@ -62,7 +62,7 @@ def collision():
     if keys[pygame.K_w]:
       move_up= player.y + 1
       move_up_rect= pygame.Rect(player.x,move_up, player.width, player.height)
-      if not move_up_rect.collidedict(wall_1.wall_area()):
+      if not move_up_rect.colliderect(wall_1.wall_area()):
         player.y=move_up
     
 
@@ -70,14 +70,22 @@ def collision():
     if keys[pygame.K_s]:
       move_down= player.y -1
       move_down_rect= pygame.Rect(player.x, move_down,player.width, player.height)
-      if not move_down_rect.collidedict(wall_1.wall_area()):
+      if not move_down_rect.colliderect(wall_1.wall_area()):
         player.y = move_down
 
 
-    if keys[pygame.K_a]:...
+    if keys[pygame.K_a]:
+      move_left=player.x - 1
+      move_left_rect=pygame.Rect(move_left,player.y,player.width,player.height)
+      if not move_left_rect.colliderect(wall_1.wall_area()):
+        player.x=move_left
 
 
-    if keys[pygame.K_d]:...
+    if keys[pygame.K_d]:
+      move_right= player.x +1
+      move_right_rect=pygame.Rect(move_right,player.y,player.width,player.height)
+      if not move_right_rect.colliderect(wall_1.wall_area()):
+        player.x=move_right
 
 
     
@@ -93,15 +101,19 @@ def movement():
   keys=pygame.key.get_pressed()
 
   if keys[pygame.K_w]:
+    collision()
     player.y-=1 
   
   if keys[pygame.K_s]:
+    collision()
     player.y+=1
 
   if keys[pygame.K_a]:
+    collision()
     player.x-=1
 
   if keys[pygame.K_d]:
+    collision()
     player.x+=1
 
   if player.x < 0: #to stop the player from going off screen 
@@ -139,9 +151,7 @@ while running:
 
   screen.fill((0,0,0))
 
-  movement()
-  collision()
-  
+  movement()  
 
   for event in pygame.event.get():
     if event.type == pygame.QUIT:
