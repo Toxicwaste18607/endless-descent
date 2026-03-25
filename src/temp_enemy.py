@@ -15,10 +15,15 @@ class Enemy():
     def draw_charicater(self,screen):
       pygame.draw.rect( screen, (255,0,0), (self.hitbox ))
 
+
+    def move(self):
+       
+       
+       
+       
+       pass
+
     def attack(self,other):
-      
-
-
 
 
       pass
