@@ -55,7 +55,36 @@ class Walls():
 wall_1= Walls(200,200,50,50)
 
 def collision():
+  keys=pygame.key.get_pressed()
+
   if player.player_area().colliderect(wall_1.wall_area()):
+    
+    if keys[pygame.K_w]:
+      move_up= player.y + 1
+      move_up_rect= pygame.Rect(player.x,move_up, player.width, player.height)
+      if not move_up_rect.collidedict(wall_1.wall_area()):
+        player.y=move_up
+    
+
+
+    if keys[pygame.K_s]:
+      move_down= player.y -1
+      move_down_rect= pygame.Rect(player.x, move_down,player.width, player.height)
+      if not move_down_rect.collidedict(wall_1.wall_area()):
+        player.y = move_down
+
+
+    if keys[pygame.K_a]:...
+
+
+    if keys[pygame.K_d]:...
+
+
+    
+      
+      
+
+   
     
     
 
@@ -88,6 +117,8 @@ def movement():
   over_shoot_down=(screen_height- player.height)
   if player.y> over_shoot_down:
     player.y = over_shoot_down
+
+
 
   
 
