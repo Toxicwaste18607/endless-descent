@@ -1,7 +1,7 @@
 import pygame
 
 
-class Player():
+class Enemy():
     width= 25
     height= 50
     def __init__ (self ,x,y):
@@ -11,7 +11,7 @@ class Player():
   
   
     def draw_charicater(self,screen):
-      pygame.draw.rect( screen, (0,0,255), (self.hitbox ))
+      pygame.draw.rect( screen, (255,0,0), (self.hitbox ))
 
-    def player_agro(self):
+    def attack(self):
       pass

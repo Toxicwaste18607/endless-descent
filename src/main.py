@@ -4,6 +4,9 @@ import os
 import pygame
 from player import Player
 from setting import *
+from key_move import *
+from temp_enemy import *
+
 #====================
 
 #keys for my self remove later 
@@ -27,108 +30,53 @@ def get_asset_path(filename: str) -> str:
 #============================
 
 #Classes in use
-player=Player(100, 200)
+player=Player(25,25)
 
+enemy_1=Enemy(60,90)
 
 #===================
 # Colors
 
-#===============
-#Defs and classes 
 
-class Walls():
-  def __init__(self,x,y,width,height):
-    self.x=x
-    self.y=y
-    self.height= height
-    self.width= width
-  
-  def draw_wall(self,screen):
-    pygame.draw.rect(screen,(255,255,255), (self.x,self.y,self.width,self.height))
 
-  def wall_area(self):
-    wall_rect=pygame.Rect(self.x, self.y,self.width,self.height)
-    return wall_rect
+#walls 
 
 
 
-wall_1= Walls(200,200,50,50)
 
-def collision():
-  keys=pygame.key.get_pressed()
+top= Walls(0, 0, 1000, 20)        
+bottom= Walls(0, 780, 1000, 20) 
+left= Walls(0, 0, 20, 800),         
+right=Walls(980, 0, 20, 800), 
+a= Walls(100, 100, 300, 20),
+b= Walls(100, 100, 20, 200),
 
-  if player.player_area().colliderect(wall_1.wall_area()):
+c= Walls(200, 200, 300, 20),
+d=Walls(480, 200, 20, 200),
+
+q=Walls(200, 380, 300, 20),
+w=Walls(200, 380, 20, 150),
+
+g=Walls(300, 530, 250, 20),
+o=Walls(530, 450, 20, 100),
+
+p=Walls(600, 100, 20, 250),
+m=Walls(600, 330, 200, 20),
+
+n=Walls(700, 150, 20, 250),
+v=Walls(750, 450, 180, 20),
+
+aa=Walls(850, 200, 20, 270),
+x=Walls(600, 600, 250, 20),
+
+z=Walls(100, 650, 400, 20),
+y=Walls(400, 500, 20, 170),
+
+#==========================
     
-    if keys[pygame.K_w]:
-      move_up= player.y + 1
-      move_up_rect= pygame.Rect(player.x,move_up, player.width, player.height)
-      if not move_up_rect.colliderect(wall_1.wall_area()):
-        player.y=move_up
-    
-
-
-    if keys[pygame.K_s]:
-      move_down= player.y -1
-      move_down_rect= pygame.Rect(player.x, move_down,player.width, player.height)
-      if not move_down_rect.colliderect(wall_1.wall_area()):
-        player.y = move_down
-
-
-    if keys[pygame.K_a]:
-      move_left=player.x - 1
-      move_left_rect=pygame.Rect(move_left,player.y,player.width,player.height)
-      if not move_left_rect.colliderect(wall_1.wall_area()):
-        player.x=move_left
-
-
-    if keys[pygame.K_d]:
-      move_right= player.x +1
-      move_right_rect=pygame.Rect(move_right,player.y,player.width,player.height)
-      if not move_right_rect.colliderect(wall_1.wall_area()):
-        player.x=move_right
-
-
-    
-      
-      
-
    
     
     
-
-  
-def movement():
-  keys=pygame.key.get_pressed()
-
-  if keys[pygame.K_w]:
-    collision()
-    player.y-=1 
-  
-  if keys[pygame.K_s]:
-    collision()
-    player.y+=1
-
-  if keys[pygame.K_a]:
-    collision()
-    player.x-=1
-
-  if keys[pygame.K_d]:
-    collision()
-    player.x+=1
-
-  if player.x < 0: #to stop the player from going off screen 
-    player.x= 0 
-  
-  if player.y<0:
-    player.y=0
-
-  over_shoot_left= (screen_width - player.width)
-  if player.x > over_shoot_left:
-    player.x = over_shoot_left
-
-  over_shoot_down=(screen_height- player.height)
-  if player.y> over_shoot_down:
-    player.y = over_shoot_down
 
 
 
@@ -151,7 +99,7 @@ while running:
 
   screen.fill((0,0,0))
 
-  movement()  
+  
 
   for event in pygame.event.get():
     if event.type == pygame.QUIT:
@@ -159,10 +107,19 @@ while running:
   
   
   player.draw_charicater(screen)
-  wall_1.draw_wall(screen)
+  enemy_1.draw_charicater(screen)
+
+
+  for wall in Walls.all_walls:
+    wall.draw_wall(screen)
+
+  movement(player)  
 
   pygame.display.flip()
   clock.tick(60)
 
 pygame.quit()  # teardown
+
+
+#test
 
