@@ -65,9 +65,14 @@ def movement():
     player.y = over_shoot_down
 
 def walls():
-  pygame.draw.rect(screen,(255,255,255), (200,200,200,200))
-
-#=================
+  wall_x= 20
+  wall_y= 20
+  wall_height= 20
+  wall_width= 20 
+  pygame.draw.rect(screen,(255,255,255), (wall_x,wall_y,wall_width,wall_height))
+  if player.x > wall_x:
+    player.x=wall_x
+#=================``
 
 #Game Code
 
