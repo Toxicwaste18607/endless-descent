@@ -34,7 +34,19 @@ player=Player(100, 200)
 # Colors
 
 #===============
-#Defs
+#Defs and classes 
+
+class Walls():
+  def __inti__(self,x,y,height,width):
+    self.x=x
+    self.y=y
+    self.height= height
+    self.width= width
+  
+  def draw_wall(self):
+    pygame.draw.rect(screen,(255,255,255), (self.x,self.y,self.height,self.width))
+
+  
 def movement():
   keys=pygame.key.get_pressed()
 
@@ -64,15 +76,12 @@ def movement():
   if player.y> over_shoot_down:
     player.y = over_shoot_down
 
-def walls():
-  wall_x= 20
-  wall_y= 20
-  wall_height= 20
-  wall_width= 20 
-  pygame.draw.rect(screen,(255,255,255), (wall_x,wall_y,wall_width,wall_height))
-  if player.x > wall_x:
-    player.x=wall_x
-#=================``
+wall_1= Walls(200,200,50,50)
+
+def collision(): pass
+  #if player 
+
+#=================
 
 #Game Code
 

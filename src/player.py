@@ -9,6 +9,6 @@ class Player():
     self.y = y
   
   def draw_charicater(self,screen):
-      pygame.draw.rect( screen, (0,0,255), (self.x,self.y,self.width, self.height) )
+      pygame.draw.rect( screen, (0,0,255), (self.x,self.y,self.width,self.height) )
 
     
