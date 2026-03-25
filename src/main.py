@@ -37,14 +37,27 @@ player=Player(100, 200)
 #Defs and classes 
 
 class Walls():
-  def __inti__(self,x,y,height,width):
+  def __init__(self,x,y,width,height):
     self.x=x
     self.y=y
     self.height= height
     self.width= width
   
-  def draw_wall(self):
-    pygame.draw.rect(screen,(255,255,255), (self.x,self.y,self.height,self.width))
+  def draw_wall(self,screen):
+    pygame.draw.rect(screen,(255,255,255), (self.x,self.y,self.width,self.height))
+
+  def wall_area(self):
+    wall_rect=pygame.Rect(self.x, self.y,self.width,self.height)
+    return wall_rect
+
+
+
+wall_1= Walls(200,200,50,50)
+
+def collision():
+  if player.player_area().colliderect(wall_1.wall_area()):
+    
+    
 
   
 def movement():
@@ -76,10 +89,7 @@ def movement():
   if player.y> over_shoot_down:
     player.y = over_shoot_down
 
-wall_1= Walls(200,200,50,50)
-
-def collision(): pass
-  #if player 
+  
 
 #=================
 
@@ -99,7 +109,8 @@ while running:
   screen.fill((0,0,0))
 
   movement()
-  walls()
+  collision()
+  
 
   for event in pygame.event.get():
     if event.type == pygame.QUIT:
@@ -107,7 +118,7 @@ while running:
   
   
   player.draw_charicater(screen)
-
+  wall_1.draw_wall(screen)
 
   pygame.display.flip()
   clock.tick(60)
