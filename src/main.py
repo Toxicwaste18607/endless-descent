@@ -8,7 +8,8 @@ from setting import *
 
 #keys for my self remove later 
 
-# draw key (x cord, y cord, width, hight)
+# pygame.draw.rect( screen, (Color), (x ,y ,width, height) )
+
 
 #git add .
 #git commit -m "progress update"
@@ -26,9 +27,11 @@ def get_asset_path(filename: str) -> str:
 #============================
 
 #Classes in use
-player=Player(200, 200)
+player=Player(100, 200)
 
 
+#===================
+# Colors
 
 #===============
 #Defs
@@ -61,6 +64,9 @@ def movement():
   if player.y> over_shoot_down:
     player.y = over_shoot_down
 
+def walls():
+  pygame.draw.rect(screen,(255,255,255), (200,200,200,200))
+
 #=================
 
 #Game Code
@@ -76,15 +82,15 @@ clock = pygame.time.Clock()
 while running:
   #game code goes here
 
+  screen.fill((0,0,0))
 
   movement()
-
+  walls()
 
   for event in pygame.event.get():
     if event.type == pygame.QUIT:
       running = False
   
-  screen.fill((0,0,0))
   
   player.draw_charicater(screen)
 
