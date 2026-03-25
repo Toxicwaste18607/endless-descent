@@ -2,7 +2,7 @@
 
 import os
 import pygame
-from player import player, Player
+from player import Player
 from setting import *
 #====================
 
@@ -14,11 +14,6 @@ from setting import *
 #git commit -m "progress update"
 #git push
 #===================
-#setting
-#screen_width= 1000
-#screen_height= 800
-
-#=====================
 
 #For logic pathing
 
@@ -31,7 +26,8 @@ def get_asset_path(filename: str) -> str:
 #============================
 
 #Classes in use
-#player
+player=Player(200, 200)
+
 
 
 #===============
