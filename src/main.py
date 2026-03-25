@@ -13,7 +13,10 @@ from player import Player
 #git add .
 #git commit -m "progress update"
 #git push
-
+#===================
+#setting
+screen_width= 1000
+screen_hight= 800
 
 #=====================
 
@@ -29,34 +32,45 @@ def get_asset_path(filename: str) -> str:
 
 #Classes in use
 
-player1=Player(200, 200)
+player=Player(200, 200)
 
 #===============
-#keys
+#Defs
 def movement():
   keys=pygame.key.get_pressed()
 
   if keys[pygame.K_w]:
-    player1.y-=1 
+    player.y-=1 
   
   if keys[pygame.K_s]:
-    player1.y+=1
+    player.y+=1
 
   if keys[pygame.K_a]:
-    player1.x-=1
+    player.x-=1
 
   if keys[pygame.K_d]:
-    player1.x+=1
+    player.x+=1
 
+  if player.x < 0: #to stop the player from going off screen 
+    player.x= 0 
+  
+  if player.y<0:
+    player.y=0
 
+  over_shoot_left= (screen_width - player.width)
+  if player.x > over_shoot_left:
+    player.x = over_shoot_left
 
+  over_shoot_down=(screen_hight- player.height)
+  if player.y> over_shoot_down:
+    player.y = over_shoot_down
 
 #=================
 
 #Game Code
 
 pygame.init()                                  # initialize pygame
-screen = pygame.display.set_mode( (1000, 800) ) # create a window
+screen = pygame.display.set_mode( (screen_width, screen_hight) ) # create a window
 pygame.display.set_caption("Endless Desent")      # set window title
 
 running = True   # event loop
@@ -76,7 +90,7 @@ while running:
   
   screen.fill((0,0,0))
   
-  pygame.draw.rect( screen, (0,0,255), (player1.x,player1.y,player1.width, player1.height) )
+  pygame.draw.rect( screen, (0,0,255), (player.x,player.y,player.width, player.height) )
 
 
 
