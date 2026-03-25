@@ -2,8 +2,8 @@
 
 import os
 import pygame
-from player import Player
-
+from player import player, Player
+from setting import *
 #====================
 
 #keys for my self remove later 
@@ -15,8 +15,8 @@ from player import Player
 #git push
 #===================
 #setting
-screen_width= 1000
-screen_height= 800
+#screen_width= 1000
+#screen_height= 800
 
 #=====================
 
@@ -31,8 +31,8 @@ def get_asset_path(filename: str) -> str:
 #============================
 
 #Classes in use
+#player
 
-player=Player(200, 200)
 
 #===============
 #Defs
@@ -90,8 +90,7 @@ while running:
   
   screen.fill((0,0,0))
   
-  pygame.draw.rect( screen, (0,0,255), (player.x,player.y,player.width, player.height) )
-
+  player.draw_charicater(screen)
 
 
   pygame.display.flip()

@@ -1,3 +1,6 @@
+import pygame
+
+
 class Player():
   width= 50
   height= 80
@@ -5,7 +8,8 @@ class Player():
     self.x = x
     self.y = y
   
-  def move(self):
-    pass
-  
-  
+  def draw_charicater(self,screen):
+      pygame.draw.rect( screen, (0,0,255), (player.x,player.y,player.width, player.height) )
+
+    
+player=Player(200, 200)
