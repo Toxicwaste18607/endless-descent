@@ -121,10 +121,4 @@ while running:
 pygame.quit()  # teardown
 
 
-#test
-
-#test
-
-#test
-
 
