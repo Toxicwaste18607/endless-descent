@@ -16,7 +16,7 @@ from player import Player
 #===================
 #setting
 screen_width= 1000
-screen_hight= 800
+screen_height= 800
 
 #=====================
 
@@ -61,7 +61,7 @@ def movement():
   if player.x > over_shoot_left:
     player.x = over_shoot_left
 
-  over_shoot_down=(screen_hight- player.height)
+  over_shoot_down=(screen_height- player.height)
   if player.y> over_shoot_down:
     player.y = over_shoot_down
 
@@ -70,7 +70,7 @@ def movement():
 #Game Code
 
 pygame.init()                                  # initialize pygame
-screen = pygame.display.set_mode( (screen_width, screen_hight) ) # create a window
+screen = pygame.display.set_mode( (screen_width, screen_height) ) # create a window
 pygame.display.set_caption("Endless Desent")      # set window title
 
 running = True   # event loop
