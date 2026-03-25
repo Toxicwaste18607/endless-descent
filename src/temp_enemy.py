@@ -2,6 +2,7 @@ import pygame
 
 
 class Enemy():
+    all_enemies =[]
     width= 25
     height= 50
     def __init__ (self ,x,y):
