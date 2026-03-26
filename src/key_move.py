@@ -1,7 +1,7 @@
 import pygame
 from setting import *
 from wall_class_code import *
-from 
+from temp_enemy import *
 
 
 
@@ -17,6 +17,7 @@ def collision(next_move):
 
 def movement(player):
   keys=pygame.key.get_pressed()
+  Enemy.move()
 
   walking=1
   sprinting=2
