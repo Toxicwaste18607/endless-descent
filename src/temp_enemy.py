@@ -1,4 +1,5 @@
 import pygame
+import time
 from key_move import *
 
 #this will be enemy base code used in all enemy classes
