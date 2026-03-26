@@ -30,9 +30,12 @@ class Enemy():
             return True
 
     def path_finding(self,blocked):
+       #key 1 means right, 2 means up, 3 means left, 4 means down
+
        if blocked == 1:
          next_move=self.hitbox.copy()
          
+
 
 
 
@@ -94,7 +97,6 @@ class Enemy():
             self.hitbox.y-=self.speed
          else:
             blocked=4
-         #key 1 means right, 2 means up, 3 means left, 4 means down
 
 
 
