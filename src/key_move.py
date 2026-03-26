@@ -17,7 +17,6 @@ def collision(next_move):
 
 def movement(player):
   keys=pygame.key.get_pressed()
-  Enemy.move()
 
   walking=1
   sprinting=2
