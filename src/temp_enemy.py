@@ -22,8 +22,8 @@ class Enemy():
 
     
     def check_dist(self,other):
-       self.distance_x= (self.hitbox.x - other.hitbox.x)
-       self.distance_y= (self.hitbox.y - other.hitbox.y)
+       self.distance_x= (other.hitbox.x - self.hitbox.x)
+       self.distance_y= (other.hitbox.y - self.hitbox.y)
 
     def agro(self):
        if 
