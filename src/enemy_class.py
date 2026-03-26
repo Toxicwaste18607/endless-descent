@@ -39,29 +39,29 @@ class Enemy():
     def search (self,other):
        self.check_dist(other)
        if abs(self.distance_x)<self.agro_range and abs(self.distance_y)<self.agro_range: 
-         self.agro()
+         self.agro(other)
        else:
           self.wander()
 
 
-    def agro(self):
+    def agro(self,other):
       if self.distance_x > 0:
          next_move=self.hitbox.copy()
          next_move.x+=self.speed
-         if not self.collision(next_move):
+         if not self.collision(next_move,other):
             self.hitbox.x+=self.speed
       
       
       if self.distance_y >0:
          next_move=self.hitbox.copy()
          next_move.y+=self.speed
-         if not self.collision(next_move):
+         if not self.collision(next_move,other):
             self.hitbox.y+=self.speed
 
       if self.distance_x <0:
          next_move=self.hitbox.copy()
          next_move.x-= self.speed
-         if not self.collision(next_move):
+         if not self.collision(next_move,other):
             self.hitbox.x -= self.speed
       
 
@@ -69,7 +69,7 @@ class Enemy():
       if self.distance_y<0:
          next_move=self.hitbox.copy()
          next_move.y-=self.speed
-         if not self.collision(next_move):
+         if not self.collision(next_move,other):
             self.hitbox.y-=self.speed
        
 
