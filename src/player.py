@@ -15,6 +15,7 @@ class Player():
         self.hitbox=pygame.Rect(x, y, self.width, self.height)
         self.max_health=100
         self.current_health=100
+        self.health_regen=1
         
   
   
