@@ -52,11 +52,13 @@ class Enemy():
       
       
       if self.distance_y >0:
+         next_move=self.hitbox.copy()
          next_move=self.hitbox.y + self.speed
          if not self.collision(next_move):
             self.hitbox.y+=self.speed
 
       if self.distance_x <0:
+         next_move=self.hitbox.copy()
          next_move=self.hitbox.x + self.speed
          if not self.collision(next_move):
             self.hitbox.x -= self.speed
@@ -64,6 +66,7 @@ class Enemy():
 
 
       if self.distance_y<0:
+         next_move=self.hitbox.copy()
          next_move=self.hitbox.y +self.speed
          if not self.collision(next_move):
             self.hitbox.y-=self.speed
