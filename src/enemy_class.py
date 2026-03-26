@@ -43,6 +43,7 @@ class Enemy():
        if blocked == 2:
          next_move=self.hitbox.copy()
          next_move.y=self.hitbox.copy()
+         
 
 
 
