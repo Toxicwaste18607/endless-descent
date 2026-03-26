@@ -22,6 +22,7 @@ class Enemy():
        found_player= False
        while found_player is False:
           self.hitbox.x -= 1
+          time.sleep(1)
 
        
        
