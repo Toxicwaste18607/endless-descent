@@ -18,9 +18,9 @@ class Enemy():
 
 
     def move(self):
-       '''player_movement=pygame.key.get_pressed()'''
-
-       self.hitbox
+       found_player= False
+       while found_player is False:
+          self.hitbox 
 
        
        
