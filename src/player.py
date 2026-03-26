@@ -26,7 +26,7 @@ class Player():
        self.draw_character(screen)
 
     def draw_health(self,screen):
-       health_bar_width= (self.health / self.max_health)
+       health_bar_width= (self.health / self.max_health) * 200
        health_bar_width=abs(health_bar_width)
        health_bar=(20,10,health_bar_width,20)
        healthbar_cover=()
