@@ -37,9 +37,9 @@ def get_asset_path(filename: str) -> str:
 #============================
 
 #Classes in use
-player=Player(25,25)
+player=Player(50,50)
 
-enemy_1=Enemy(60,90)
+enemy_1=Enemy(70,90)
 
 #===================
 # Colors
