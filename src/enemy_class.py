@@ -35,23 +35,29 @@ class Enemy():
 
        if blocked == 1:
          next_move=self.hitbox.copy()
-         next_move.x-self.speed
+         next_move.x-=self.speed
          if not self.collision(next_move,other):
-            self.hitbox-=self.speed
+            self.hitbox.x-=self.speed
          
 
        if blocked == 2:
          next_move=self.hitbox.copy()
-         next_move.y=self.hitbox.copy()
-         
-
+         next_move.y-=self.speed
+         if not self.collision(next_move,other):
+            self.hitbox.y-=self.speed
 
 
        if blocked == 3:
          next_move=self.hitbox.copy()
+         next_move.x+=self.speed
+         if not self.collision(next_move,other):
+            self.hitbox.x+=self.speed
 
        if blocked == 4:
          next_move=self.hitbox.copy()
+         next_move.y+=self.speed
+         if not self.collision(next_move,other):
+            self.hitbox.y+=self.speed
 
 
 
@@ -76,6 +82,7 @@ class Enemy():
             self.hitbox.x+=self.speed
          else:
             blocked=1
+            self.path_finding()
       
       
       if self.distance_y >0:#up
@@ -85,6 +92,7 @@ class Enemy():
             self.hitbox.y+=self.speed
          else:
             blocked=2
+            self.path_finding()
 
       if self.distance_x <0:#left
          next_move=self.hitbox.copy()
@@ -92,6 +100,7 @@ class Enemy():
          if not self.collision(next_move,other):
             self.hitbox.x -= self.speed
          blocked=3
+         self.path_finding()
       
 
 
@@ -102,6 +111,7 @@ class Enemy():
             self.hitbox.y-=self.speed
          else:
             blocked=4
+            self.path_finding()
 
 
 
