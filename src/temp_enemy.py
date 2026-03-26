@@ -47,8 +47,8 @@ class Enemy():
        
 
 
-    def move(self):
-       self.hitbox.x= random.choice(+1,-1)
+    def wander(self):
+       pass
 
        
     
