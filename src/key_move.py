@@ -1,7 +1,7 @@
 import pygame
 from setting import *
 from wall_class_code import *
-from temp_enemy import *
+from enemy_class import *
 
 
 

@@ -5,7 +5,7 @@ import pygame
 from player import Player
 from setting import *
 from key_move import *
-from temp_enemy import *
+from enemy_class import *
 
 #====================
 
