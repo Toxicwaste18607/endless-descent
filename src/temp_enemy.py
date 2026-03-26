@@ -17,10 +17,10 @@ class Enemy():
         self.all_enemies.append(self)
         
   
-    '''def draw_character(self,screen):
+    def draw_character(self,screen):
       pygame.draw.rect( screen, (255,0,0), (self.hitbox ))
 
-    def  collision(self,other):
+    '''def  collision(self,other):
          for wall in Walls.all_walls or :'''
 
 
