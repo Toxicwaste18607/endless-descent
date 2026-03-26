@@ -121,7 +121,7 @@ while running:
   player.all_draws(screen)
   enemy_1.draw_character(screen)
   enemy_1.search(player)
-
+  player.health -=1
 
   movement(player)  
 
