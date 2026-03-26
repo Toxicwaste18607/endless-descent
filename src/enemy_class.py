@@ -45,6 +45,7 @@ class Enemy():
 
     def agro(self):
       if self.distance_x > 0:
+         next_move=self.hitbox.copy()
          next_move=self.hitbox.x + self.speed
          if not self.collision(next_move):
             self.hitbox.x+=self.speed
