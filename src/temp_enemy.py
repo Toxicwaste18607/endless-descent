@@ -2,6 +2,7 @@ import pygame
 import time
 import random
 from key_move import *
+from player import *
 
 
 #this will be enemy base code used in all enemy classes
@@ -20,8 +21,13 @@ class Enemy():
       pygame.draw.rect( screen, (255,0,0), (self.hitbox ))
 
     
-    '''def agro(self,other):
-       if player.hitbox '''
+    def check_dist(self,other):
+       self.distance= self.hitbox - Player.hitbox
+
+    def agro(self,other):
+       
+       if self.distance > 5:
+          self.hitbox.x -=1
 
 
     def move(self):
