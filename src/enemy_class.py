@@ -65,7 +65,7 @@ class Enemy():
       if self.distance_y<0:
          next_move=self.hitbox.y +self.speed
          if not self.collision(next_move):
-            self.hitbox.y-=1
+            self.hitbox.y-=self.speed
        
 
 
