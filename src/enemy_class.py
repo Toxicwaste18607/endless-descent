@@ -107,8 +107,9 @@ class Enemy():
          next_move.x-= self.speed
          if not self.collision(next_move,other):
             self.hitbox.x -= self.speed
-         blocked=3
-         self.path_finding(blocked,other)
+         else:
+            blocked=3
+            self.path_finding(blocked,other)
       
 
 
@@ -119,7 +120,7 @@ class Enemy():
             self.hitbox.y-=self.speed
          else:
             blocked=4
-            
+            self.path_finding(blocked,other)
 
 
 
