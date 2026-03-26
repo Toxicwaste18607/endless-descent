@@ -20,7 +20,7 @@ class Enemy():
     def move(self):
        found_player= False
        while found_player is False:
-          self.hitbox 
+          self.hitbox.x -= 1
 
        
        
