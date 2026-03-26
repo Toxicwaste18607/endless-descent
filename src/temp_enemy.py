@@ -26,8 +26,8 @@ class Enemy():
        self.distance_y= (other.hitbox.y - self.hitbox.y)
 
     
-    def search (self):
-       self.check_dist(self,other)
+    def search (self,other):
+       self.check_dist(other)
        #add agro distance here 
        self.agro()
 
