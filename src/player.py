@@ -18,7 +18,7 @@ class Player():
         self.y = y
         self.hitbox=pygame.Rect(x, y, self.width, self.height)
         self.max_health=100
-        self.current_health=100
+        self.health=100
         self.health_regen=1
         
     def all_draws(self, screen):
@@ -26,9 +26,10 @@ class Player():
        self.draw_character(screen)
 
     def draw_health(self,screen):
-       health_bar_=(20,10,200,20)
+       health_bar=(20,10,health_bar_width,20)
+       health_bar_width= (self.health / self.max_health) * 200
        healthbar_cover=()
-       pygame.draw.rect(screen,(red),(healthbar) )
+       pygame.draw.rect(screen,(red),(health_bar) )
   
     def draw_character(self,screen):
       pygame.draw.rect( screen, (blue), (self.hitbox ))
