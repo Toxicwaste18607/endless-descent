@@ -28,7 +28,7 @@ class Enemy():
     
     def search (self,other):
        self.check_dist(other)
-       if self.distance_x<5 or self.distance_y<5:
+       if self.distance_x<5 or self.distance_y<5: #agro distance 
          self.agro()
        else:
           self.wander()
