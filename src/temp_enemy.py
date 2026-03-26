@@ -17,10 +17,14 @@ class Enemy():
         self.all_enemies.append(self)
         
   
-    def draw_charicater(self,screen):
+    '''def draw_character(self,screen):
       pygame.draw.rect( screen, (255,0,0), (self.hitbox ))
 
-    
+    def  collision(self,other):
+         for wall in Walls.all_walls or :'''
+
+
+
     def check_dist(self,other):
        self.distance_x= (other.hitbox.x - self.hitbox.x)
        self.distance_y= (other.hitbox.y - self.hitbox.y)

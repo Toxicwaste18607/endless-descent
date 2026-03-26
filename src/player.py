@@ -16,7 +16,7 @@ class Player():
         
   
   
-    def draw_charicater(self,screen):
+    def draw_character(self,screen):
       pygame.draw.rect( screen, (0,0,255), (self.hitbox ))
 
     def player_agro(self,other):
