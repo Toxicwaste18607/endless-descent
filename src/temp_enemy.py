@@ -1,4 +1,5 @@
 import pygame
+from key_move import *
 
 #this will be enemy base code used in all enemy classes
 class Enemy():
@@ -18,11 +19,13 @@ class Enemy():
 
     def move(self):
        player_movement=pygame.key.get_pressed()
+
+       if player_movement[pygame.K_w,pygame.K_a, pygame.K_s, pygame.K_d]:
+          movement()
        
        
        
        
-       pass
 
     def attack(self,other):
 
