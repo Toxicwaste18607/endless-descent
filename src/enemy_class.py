@@ -1,6 +1,4 @@
 import pygame
-import time
-import random
 from key_move import *
 from player import *
 

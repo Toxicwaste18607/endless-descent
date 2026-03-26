@@ -17,6 +17,11 @@ from enemy_class import *
 #git add .
 #git commit -m "progress update"
 #git push
+
+
+# to do list 
+# make a better path finding 
+
 #===================
 
 #For logic pathing
