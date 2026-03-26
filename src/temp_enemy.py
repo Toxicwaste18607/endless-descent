@@ -15,7 +15,7 @@ class Enemy():
         self.y = y
         self.hitbox=pygame.Rect(x, y, self.width, self.height)
         self.all_enemies.append(self)
-  
+        
   
     def draw_charicater(self,screen):
       pygame.draw.rect( screen, (255,0,0), (self.hitbox ))
@@ -24,7 +24,7 @@ class Enemy():
     def check_dist(self,other):
        self.distance= self.hitbox - Player.hitbox
 
-    def agro(self,other):
+    def agro(self):
        
        if self.distance > 5:
           self.hitbox.x -=1
