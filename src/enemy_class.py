@@ -29,7 +29,8 @@ class Enemy():
          if next_move.colliderect(other.hitbox):
             return True
 
-
+    def path_finding(self):
+       next_move
 
     def check_dist(self,other):
        self.distance_x= (other.hitbox.x - self.hitbox.x)
@@ -72,6 +73,7 @@ class Enemy():
          if not self.collision(next_move,other):
             self.hitbox.y-=self.speed
        
+
 
 
     def wander(self):
