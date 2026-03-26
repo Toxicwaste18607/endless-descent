@@ -27,7 +27,9 @@ class Enemy():
 
     
     def search (self):
-       check_dist()
+       self.check_dist()
+       #add agro distance here 
+       self.agro()
 
 
     def agro(self):
