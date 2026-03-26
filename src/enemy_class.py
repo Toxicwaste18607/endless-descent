@@ -29,20 +29,22 @@ class Enemy():
          if next_move.colliderect(other.hitbox):
             return True
 
-    def path_finding(self,blocked):
+    def path_finding(self,blocked,other):
        #key 1 means right, 2 means up, 3 means left, 4 means down 
        #x+ =right x-=left y+=up y-=down
 
        if blocked == 1:
          next_move=self.hitbox.copy()
          next_move.x-self.speed
+         if not self.collision(next_move,other):
+            self.hitbox-=self.speed
          
-
-
-
 
        if blocked == 2:
          next_move=self.hitbox.copy()
+         next_move.y=self.hitbox.copy()
+
+
 
        if blocked == 3:
          next_move=self.hitbox.copy()
