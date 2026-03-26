@@ -11,7 +11,7 @@ class Enemy():
     width= 25
     height= 50
     speed=1
-    agro_range=100
+    agro_range=300
     def __init__ (self ,x,y):
         self.x = x
         self.y = y
