@@ -108,7 +108,7 @@ while running:
   
   player.draw_charicater(screen)
   enemy_1.draw_charicater(screen)
-  enemy_1.agro()
+  enemy_1.search()
 
 
   for wall in Walls.all_walls:
