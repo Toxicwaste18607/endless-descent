@@ -6,7 +6,6 @@ import pygame
 
 
 
-
 class Player():
     width= 25
     height= 50
@@ -20,7 +19,8 @@ class Player():
     def draw_charicater(self,screen):
       pygame.draw.rect( screen, (0,0,255), (self.hitbox ))
 
-    def player_agro(self):
+    def player_agro(self,other):
+      
       pass
 
     

@@ -1,6 +1,8 @@
 import pygame
 import time
+import random
 from key_move import *
+
 
 #this will be enemy base code used in all enemy classes
 class Enemy():
@@ -17,19 +19,17 @@ class Enemy():
     def draw_charicater(self,screen):
       pygame.draw.rect( screen, (255,0,0), (self.hitbox ))
 
+    
+    '''def agro(self,other):
+       if player.hitbox '''
+
 
     def move(self):
-       found_player= False
-       while found_player is False:
-          self.hitbox.x -= 1
-          time.sleep(1)
+       move_area= (+1,-1)
+       self.hitbox.x=
 
        
-       
-       
-       
-       
-
+    
     def attack(self,other):
 
 
