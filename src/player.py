@@ -19,7 +19,9 @@ class Player():
         
     def all_draws(self, screen):
        self.draw_character()
-       
+
+    def draw_health(self,screen):
+       pygame.draw.rect(screen,())
   
     def draw_character(self,screen):
       pygame.draw.rect( screen, (0,0,255), (self.hitbox ))
