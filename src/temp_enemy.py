@@ -20,7 +20,7 @@ class Enemy():
     def move(self):
        '''player_movement=pygame.key.get_pressed()'''
 
-       
+       self.hitbox
 
        
        
