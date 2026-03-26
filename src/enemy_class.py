@@ -38,6 +38,8 @@ class Enemy():
          next_move.x-=self.speed
          if not self.collision(next_move,other):
             self.hitbox.x-=self.speed
+         else:
+            blocked= 3
          
 
        if blocked == 2:
@@ -45,6 +47,8 @@ class Enemy():
          next_move.y-=self.speed
          if not self.collision(next_move,other):
             self.hitbox.y-=self.speed
+         else:
+            blocked=4
 
 
        if blocked == 3:
@@ -52,6 +56,8 @@ class Enemy():
          next_move.x+=self.speed
          if not self.collision(next_move,other):
             self.hitbox.x+=self.speed
+         else:
+            
 
        if blocked == 4:
          next_move=self.hitbox.copy()
