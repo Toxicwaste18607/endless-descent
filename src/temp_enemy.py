@@ -25,7 +25,6 @@ class Enemy():
        self.distance= self.hitbox - Player.hitbox
 
     def agro(self):
-       
        if self.distance > 5:
           self.hitbox.x -=1
 
