@@ -1,6 +1,10 @@
 import pygame
 from key_move import *
 
+green =(0, 255, 0)
+blue=(0, 0, 255) 
+white=(255, 255, 255) 
+black=(0, 0, 0) 
 
 
 #this will be enemy base code used in all enemy classes

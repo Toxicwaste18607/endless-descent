@@ -107,7 +107,7 @@ clock = pygame.time.Clock()
 while running:
   #game code goes here
 
-  screen.fill((0,0,0))
+  screen.fill((black))
 
   
 
