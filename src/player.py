@@ -25,9 +25,9 @@ class Player():
        self.draw_character()
 
     def draw_health(self,screen):
-       healthbar=()
+       healthbar=(20,20,200,20)
        healthbar_cover=()
-       pygame.draw.rect(screen,(red), )
+       pygame.draw.rect(screen,(red),(healthbar) )
   
     def draw_character(self,screen):
       pygame.draw.rect( screen, (blue), (self.hitbox ))
