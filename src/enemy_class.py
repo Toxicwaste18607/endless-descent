@@ -5,7 +5,7 @@ green =(0, 255, 0)
 blue=(0, 0, 255) 
 white=(255, 255, 255) 
 black=(0, 0, 0) 
-
+red=(255,0,0)
 
 #this will be enemy base code used in all enemy classes
 class Enemy():
@@ -22,7 +22,7 @@ class Enemy():
         
   
     def draw_character(self,screen):
-      pygame.draw.rect( screen, (255,0,0), (self.hitbox ))
+      pygame.draw.rect( screen, (red), (self.hitbox ))
 
     def  collision(self,next_move,other):
          for wall in Walls.all_walls:
