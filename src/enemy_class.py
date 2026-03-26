@@ -11,6 +11,7 @@ class Enemy():
     width= 25
     height= 50
     speed=1
+    agro_range=5
     def __init__ (self ,x,y):
         self.x = x
         self.y = y
@@ -21,12 +22,12 @@ class Enemy():
     def draw_character(self,screen):
       pygame.draw.rect( screen, (255,0,0), (self.hitbox ))
 
-    def  collision(self,next_move):
-         for wall in Walls.all_walls or Player.hitbox:
+    def  collision(self,next_move,other):
+         for wall in Walls.all_walls:
             if next_move.colliderect(wall.wall_hitbox):
                return True
-            if next_move.colliderect(Player.hitbox):
-               return True
+         if next_move.colliderect(other.hitbox):
+            return True
 
 
 
@@ -37,7 +38,7 @@ class Enemy():
     
     def search (self,other):
        self.check_dist(other)
-       if self.distance_x<5 or self.distance_y<5: #agro distance 
+       if abs(self.distance_x)<self.agro_range and abs(self.distance_y)<self.agro_range: 
          self.agro()
        else:
           self.wander()
@@ -46,20 +47,20 @@ class Enemy():
     def agro(self):
       if self.distance_x > 0:
          next_move=self.hitbox.copy()
-         next_move+=self.speed
+         next_move.x+=self.speed
          if not self.collision(next_move):
             self.hitbox.x+=self.speed
       
       
       if self.distance_y >0:
          next_move=self.hitbox.copy()
-         next_move+=self.speed
+         next_move.y+=self.speed
          if not self.collision(next_move):
             self.hitbox.y+=self.speed
 
       if self.distance_x <0:
          next_move=self.hitbox.copy()
-         next_move-= self.speed
+         next_move.x-= self.speed
          if not self.collision(next_move):
             self.hitbox.x -= self.speed
       
@@ -67,7 +68,7 @@ class Enemy():
 
       if self.distance_y<0:
          next_move=self.hitbox.copy()
-         next_move-=self.speed
+         next_move.y-=self.speed
          if not self.collision(next_move):
             self.hitbox.y-=self.speed
        
