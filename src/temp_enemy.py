@@ -28,6 +28,9 @@ class Enemy():
     def agro(self):
        if self.distance_x > 0:
           self.hitbox.x-=1
+      
+       if self.distance_y >0:
+          self.hitbox.y-=1
 
 
     def move(self):
