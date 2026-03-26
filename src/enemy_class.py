@@ -16,7 +16,7 @@ class Enemy():
         self.x = x
         self.y = y
         self.hitbox=pygame.Rect(x, y, self.width, self.height)
-        self.all_enemies.append(self)
+        Enemy.all_enemies.append(self)
         
   
     def draw_character(self,screen):
