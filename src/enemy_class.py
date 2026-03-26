@@ -29,7 +29,7 @@ class Enemy():
 
     def path_finding(self,blocked,other):
        #key 1 means right, 2 means up, 3 means left, 4 means down 
-       #x+ =right x-=left y+=up y-=down
+       ## x+ = right, x- = left, y+ = down, y- = up
 
        if blocked == 1:
          next_move=self.hitbox.copy()
