@@ -108,6 +108,8 @@ while running:
   #game code goes here
 
   screen.fill((black))
+  for wall in Walls.all_walls:
+    wall.draw_wall(screen)
 
   
 
@@ -120,9 +122,6 @@ while running:
   enemy_1.draw_character(screen)
   enemy_1.search(player)
 
-
-  for wall in Walls.all_walls:
-    wall.draw_wall(screen)
 
   movement(player)  
 
