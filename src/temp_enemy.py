@@ -26,7 +26,7 @@ class Enemy():
        self.distance_y= (other.hitbox.y - self.hitbox.y)
 
     def agro(self):
-       if 
+       pass
 
 
     def move(self):
@@ -39,5 +39,4 @@ class Enemy():
 
       pass
     
-    #test
-    
+   
