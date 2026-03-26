@@ -23,7 +23,9 @@ class Enemy():
 
     def  collision(self,next_move):
          for wall in Walls.all_walls or Player.hitbox:
-            if next_move.colliderect(wall.wall_hitbox, Player.hitbox):
+            if next_move.colliderect(wall.wall_hitbox):
+               return True
+            if next_move.colliderect(Player.hitbox):
                return True
 
 
