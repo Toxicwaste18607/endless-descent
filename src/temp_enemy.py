@@ -18,10 +18,11 @@ class Enemy():
 
 
     def move(self):
-       player_movement=pygame.key.get_pressed()
+       '''player_movement=pygame.key.get_pressed()'''
 
-       if player_movement[pygame.K_w,pygame.K_a, pygame.K_s, pygame.K_d]:
-          movement()
+       
+
+       
        
        
        
