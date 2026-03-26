@@ -40,10 +40,10 @@ class Enemy():
          self.hitbox.y+=1
 
       if self.distance_x <0:
-         self.hitbox.x += 1
+         self.hitbox.x -= 1
       
       if self.distance_y<0:
-         self.hitbox.y+=1
+         self.hitbox.y-=1
        
 
 
