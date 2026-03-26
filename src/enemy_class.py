@@ -119,7 +119,7 @@ class Enemy():
             self.hitbox.y-=self.speed
          else:
             blocked=4
-            self.path_finding(blocked,other)
+            
 
 
 
