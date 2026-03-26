@@ -22,7 +22,7 @@ class Player():
         self.health_regen=1
         
     def all_draws(self, screen):
-       self.draw_health
+       self.draw_health(screen)
        self.draw_character(screen)
 
     def draw_health(self,screen):
