@@ -30,7 +30,7 @@ class Enemy():
             return True
 
     def path_finding(self):
-       next_move 
+       next_move
 
     def check_dist(self,other):
        self.distance_x= (other.hitbox.x - self.hitbox.x)
