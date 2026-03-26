@@ -29,9 +29,23 @@ class Enemy():
          if next_move.colliderect(other.hitbox):
             return True
 
-    def path_finding(self,other):
-       if self.hitbox.x is self.collision(next_move,other):
+    def path_finding(self,blocked):
+       if blocked == 1:
          next_move=self.hitbox.copy()
+         
+
+
+
+       if blocked == 2:
+         next_move=self.hitbox.copy()
+
+       if blocked == 3:
+         next_move=self.hitbox.copy()
+
+       if blocked == 4:
+         next_move=self.hitbox.copy()
+
+
 
     def check_dist(self,other):
        self.distance_x= (other.hitbox.x - self.hitbox.x)
@@ -46,34 +60,41 @@ class Enemy():
           self.wander()
 
 
-    def agro(self,other):
+    def agro(self,other): #right
       if self.distance_x > 0:
          next_move=self.hitbox.copy()
          next_move.x+=self.speed
          if not self.collision(next_move,other):
             self.hitbox.x+=self.speed
+         else:
+            blocked=1
       
       
-      if self.distance_y >0:
+      if self.distance_y >0:#up
          next_move=self.hitbox.copy()
          next_move.y+=self.speed
          if not self.collision(next_move,other):
             self.hitbox.y+=self.speed
+         else:
+            blocked=2
 
-      if self.distance_x <0:
+      if self.distance_x <0:#left
          next_move=self.hitbox.copy()
          next_move.x-= self.speed
          if not self.collision(next_move,other):
             self.hitbox.x -= self.speed
+         blocked=3
       
 
 
-      if self.distance_y<0:
+      if self.distance_y<0:#down
          next_move=self.hitbox.copy()
          next_move.y-=self.speed
          if not self.collision(next_move,other):
             self.hitbox.y-=self.speed
-       
+         else:
+            blocked=4
+         #key 1 means right, 2 means up, 3 means left, 4 means down
 
 
 

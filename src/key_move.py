@@ -24,15 +24,15 @@ def movement(player):
   speed= sprinting if keys[pygame.K_LSHIFT] else walking
 
 
-  if keys[pygame.K_w]:
+  if keys[pygame.K_w]: #up
     next_move=player.hitbox.copy()
     next_move.y-=speed
-    if not collision(next_move):
+    if not collision(next_move): 
         player.hitbox.y -= speed
     
    
   
-  if keys[pygame.K_s]:
+  if keys[pygame.K_s]:#down
     next_move=player.hitbox.copy()
     next_move.y+=speed
     if not collision(next_move):
@@ -41,14 +41,14 @@ def movement(player):
     
     
 
-  if keys[pygame.K_a]:
+  if keys[pygame.K_a]:#left
     next_move=player.hitbox.copy()
     next_move.x-=speed
     if not collision(next_move):
       player.hitbox.x-=speed
 
 
-  if keys[pygame.K_d]:
+  if keys[pygame.K_d]:#right
     next_move=player.hitbox.copy()
     next_move.x+=speed
     if not collision(next_move):
