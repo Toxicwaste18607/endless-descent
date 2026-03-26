@@ -116,7 +116,7 @@ while running:
       running = False
   
   
-  player.draw_character(screen)
+  player.all_draws(screen)
   enemy_1.draw_character(screen)
   enemy_1.search(player)
 
