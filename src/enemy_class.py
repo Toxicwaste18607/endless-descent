@@ -1,6 +1,6 @@
 import pygame
 from key_move import *
-from player import *
+
 
 
 #this will be enemy base code used in all enemy classes
