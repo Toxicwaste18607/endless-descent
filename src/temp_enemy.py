@@ -25,8 +25,7 @@ class Enemy():
 
 
     def move(self):
-       move_area= (+1,-1)
-       self.hitbox.x=
+       self.hitbox.x= random.choice(+1,-1)
 
        
     
