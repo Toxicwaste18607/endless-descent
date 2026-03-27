@@ -35,9 +35,16 @@ class Player():
     def draw_character(self,screen):
       pygame.draw.rect( screen, (blue), (self.hitbox ))
 
-    def player_agro(self,other):
-      
+
+    def take_damage(self,other):
+       
+
+       
       pass
+       
+    
+
+  
 
 
 
