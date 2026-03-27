@@ -39,7 +39,12 @@ class Player():
     def take_damage(self,other):
        
 
+
+      pass
+
+    def attack():
        
+
       pass
        
     
