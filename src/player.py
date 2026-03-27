@@ -30,7 +30,6 @@ class Player():
        health_bar_width=abs(health_bar_width)
        health_bar=(20,10,health_bar_width,20)
        healthbar_cover=()
-       print (health_bar_width)
        pygame.draw.rect(screen,(red),(health_bar) )
   
     def draw_character(self,screen):
