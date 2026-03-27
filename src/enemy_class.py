@@ -1,6 +1,15 @@
 import pygame
 from key_move import *
 
+
+#to do list 
+#make enemy only move in one direction at a time
+# make a better path finding 
+
+
+
+
+
 green =(0, 255, 0)
 blue=(0, 0, 255) 
 white=(255, 255, 255) 

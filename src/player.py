@@ -7,6 +7,13 @@ black=(0, 0, 0)
 red=(255,0,0)
 
 
+#to do list
+#add in stamina
+#add in attack
+#add in colliosn with enemy
+
+
+
 
 
 

@@ -20,9 +20,8 @@ from enemy_class import *
 
 
 # to do list 
-# make a better path finding 
-#make enemy only move in one direction at a time
-#add in the 
+#add in menus
+
 
 
 #===================
