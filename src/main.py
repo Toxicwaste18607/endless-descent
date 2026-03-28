@@ -52,6 +52,28 @@ def get_asset_path(filename: str) -> str:
 
 #============================
 
+
+#==========================
+    
+   
+    
+    
+
+
+
+  
+
+#=================
+
+#Game Code
+
+pygame.init()                                  # initialize pygame
+screen = pygame.display.set_mode( (screen_width, screen_height) ) # create a window
+pygame.display.set_caption("Endless Desent")      # set window title
+floor_type_one()
+running = True   # event loop
+
+
 #Classes in use
 player=Player(250,250)
 
@@ -97,29 +119,6 @@ x=Walls(600, 600, 250, 20)
 
 z=Walls(100, 650, 400, 20)
 y=Walls(400, 500, 20, 170)
-
-#==========================
-    
-   
-    
-    
-
-
-
-  
-
-#=================
-
-#Game Code
-
-pygame.init()                                  # initialize pygame
-screen = pygame.display.set_mode( (screen_width, screen_height) ) # create a window
-pygame.display.set_caption("Endless Desent")      # set window title
-floor_type_one()
-running = True   # event loop
-
-
-
 
 
 
