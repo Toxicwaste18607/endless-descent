@@ -52,7 +52,7 @@ class Player():
     def take_damage(self,other):
       hit=other.hitbox
       if hit.colliderect(other.hitbox):
-         self.health-=1
+         self.health-=0.1
        
 
 
