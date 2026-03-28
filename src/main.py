@@ -32,7 +32,7 @@ def floor_type_one():
   global floor_one
   floor_one=pygame.image.load("src/assets/floor_type_one.png").convert_alpha()
   floor_one=pygame.transform.scale(floor_one, (screen_width,screen_height))
-  screen.blit(floor_one, (0,0))
+  
   
 
 #===================
@@ -114,11 +114,11 @@ pygame.display.set_caption("Endless Desent")      # set window title
 running = True   # event loop
 
 clock = pygame.time.Clock()
-floor_type_one()
+
 
 while running:
   #game code goes here
-  
+  screen.blit(floor_one, (0,0))
   for wall in Walls.all_walls:
     wall.draw_wall(screen)
 
