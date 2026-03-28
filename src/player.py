@@ -73,7 +73,7 @@ class Player():
         attack_box=(self.hitbox.x+self.attack_range,self.hitbox.y+self.attack_range,self.hitbox.width, self.hitbox.height)
         attack_box=pygame.Rect(attack_box)
         if attack_box.colliderect(other.hitbox):
-           other.take_damage()
+           other.take_damage(other)
            
          
 
