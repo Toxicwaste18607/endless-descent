@@ -24,6 +24,7 @@ from enemy_class import *
 
 
 floor_one=pygame.image.load("assets/Floor_type_one.png").convert_alpha()
+floor_one=pygame.transform.scale()
 
 
 #===================
