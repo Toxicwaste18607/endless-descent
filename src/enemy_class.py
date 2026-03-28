@@ -164,6 +164,7 @@ class Enemy():
    def take_damage (self,other):
       if self.health > 0:
          self.health -= other.damage
+         print (f"was hit and dealt{other.damage} and have {self.health} left")
       else:
          pass
       
