@@ -23,7 +23,7 @@ class Player():
     max_health=100
     health=100
     health_regen=1
-    damage=1
+    damage=100
         
     def __init__ (self ,x,y):
       self.x = x
