@@ -16,6 +16,9 @@ class Walls():
 
 
   def draw_wall(self,screen):
+    
+
+
     pygame.draw.rect(screen,(255,255,255), (self.x,self.y,self.width,self.height))
 
 
