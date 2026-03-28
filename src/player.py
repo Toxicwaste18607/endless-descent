@@ -70,7 +70,7 @@ class Player():
       keys=pygame.key.get_pressed()
       
       if keys[pygame.K_SPACE]:
-        attack_box=(self.hitbox.x+self.attack_range,self.hitbox.y+self.attack_range,self.hitbox.width, self.hitbox.height)
+        attack_box=(self.hitbox.x+self.attack_range,self.hitbox.y+self.attack_range,self.hitbox.width +self.attack_range, self.hitbox.height+self.attack_range)
         attack_box=pygame.Rect(attack_box)
         if attack_box.colliderect(other.hitbox):
            other.take_damage(self)
