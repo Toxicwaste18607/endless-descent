@@ -9,7 +9,7 @@ red=(255,0,0)
 
 #to do list
 #add in stamina
-#add in attack
+#make attack zone a circle
 #add in colliosn with enemy
 
 
@@ -69,7 +69,7 @@ class Player():
       keys=pygame.key.get_pressed()
       
       if keys[pygame.K_SPACE]:
-        attack_box=(self.hitbox.x+self.attack_range,  self.hitbox.y +self.attack_range,
+        attack_box=(self.hitbox.x-self.attack_range,  self.hitbox.y -self.attack_range,
                     self.hitbox.width +(self.attack_range*self.range_multi),
                     self.hitbox.height+(self.attack_range*self.range_multi))
         attack_box=pygame.Rect(attack_box)
