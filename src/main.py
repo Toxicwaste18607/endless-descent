@@ -115,7 +115,7 @@ y=Walls(400, 500, 20, 170)
 pygame.init()                                  # initialize pygame
 screen = pygame.display.set_mode( (screen_width, screen_height) ) # create a window
 pygame.display.set_caption("Endless Desent")      # set window title
-
+floor_type_one()
 running = True   # event loop
 
 clock = pygame.time.Clock()
