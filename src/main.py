@@ -23,7 +23,7 @@ from enemy_class import *
 #add in menus
 
 
-floor_one=pygame.im
+floor_one=pygame.image
 
 
 #===================
