@@ -35,6 +35,12 @@ def floor_type_one():
   screen.blit(floor_one, (0,0))
   
 
+
+def load_map():
+  floor_type_one()
+  for wall in Walls.all_walls:
+    wall.draw_wall(screen)
+
 #===================
 
 #For logic pathing
@@ -117,10 +123,8 @@ clock = pygame.time.Clock()
 
 while running:
   #game code goes here
-  floor_type_one()
   
-  for wall in Walls.all_walls:
-    wall.draw_wall(screen)
+  
 
   
 
