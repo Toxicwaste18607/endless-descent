@@ -118,7 +118,7 @@ while running:
       running = False
   
   enemy_1.enemy_logic(screen , player)
-  player.all_draws(screen)
+  player.player_logic(screen,enemy_1)
 
 
   movement(player)  
