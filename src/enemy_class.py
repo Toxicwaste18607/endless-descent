@@ -38,6 +38,7 @@ class Enemy():
             if next_move.colliderect(wall.wall_hitbox):
                return True
          if next_move.colliderect(other.hitbox):
+            
             return True
 
     def path_finding(self,blocked,other):
