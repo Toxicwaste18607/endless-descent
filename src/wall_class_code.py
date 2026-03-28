@@ -18,7 +18,7 @@ class Walls():
 
   def draw_wall(self,screen):
     wall_vert=pygame.image.load("src/assets/wall_type_one.png").convert_alpha()
-    wall_vert=pygame.transform.scale(wall_vert,self.wall_hitbox)
+    wall_vert=pygame.transform.scale(wall_vert,self.x_and_y)
 
 
     screen.blit(wall_vert,self.x_and_y)
