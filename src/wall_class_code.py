@@ -20,7 +20,7 @@ class Walls():
     wall_vert=pygame.transform.scale(wall_vert,self.wall_hitbox)
 
 
-    pygame.draw.rect(screen,(255,255,255), (self.x,self.y,self.width,self.height))
+    pygame.()
 
 
   
