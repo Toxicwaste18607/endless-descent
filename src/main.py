@@ -7,6 +7,16 @@ from setting import *
 from key_move import *
 from enemy_class import *
 
+
+
+
+
+import os
+
+print("CURRENT DIR:", os.getcwd())
+print("FILES HERE:", os.listdir())
+print("ASSETS FOLDER:", os.listdir("assets"))
+
 #====================
 
 #keys for my self remove later 
