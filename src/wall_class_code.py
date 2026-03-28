@@ -13,8 +13,7 @@ class Walls():
     self.x_and_y=(self.x ,self.y)
     self.all_walls.append(self)
     self.wall_hitbox=pygame.Rect(self.x, self.y,self.width,self.height)
-    self.wall_vert=pygame.image.load("src/assets/wall_type_one.png").convert_alpha()
-    self.wall_vert=pygame.transform.scale(self.wall_vert,(self.width,self.height))
+    
 
 
 
@@ -22,9 +21,9 @@ class Walls():
 
   def draw_wall(self,screen):
   
-  
-
-    screen.blit(self.wall_vert,self.x_and_y)
+    wall_vert=pygame.image.load("src/assets/wall_type_one.png").convert_alpha()
+    wall_vert=pygame.transform.scale(self.wall_vert,(self.width,self.height))
+    screen.blit(wall_vert,self.x_and_y)
 
 
   
