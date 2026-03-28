@@ -118,7 +118,7 @@ while running:
       running = False
 
     if event == pygame.KEYDOWN:
-      if event.key== pygame.K_SPACE:
+      if event.key == pygame.K_SPACE:
         player.attack(screen, enemy_1)
   
   enemy_1.enemy_logic(screen , player)
