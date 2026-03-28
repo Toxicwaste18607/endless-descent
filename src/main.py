@@ -28,9 +28,9 @@ from enemy_class import *
 # to do list 
 #add in menus
 
-
-floor_one=pygame.image.load("src/assets/floor_type_one.png").convert_alpha()
-floor_one=pygame.transform.scale(floor_one, screen_width,screen_height)
+def floor_one():
+  floor_one=pygame.image.load("src/assets/floor_type_one.png").convert_alpha()
+  floor_one=pygame.transform.scale(floor_one, screen_width,screen_height)
 
 
 #===================
@@ -115,7 +115,7 @@ clock = pygame.time.Clock()
 
 while running:
   #game code goes here
-
+  
   screen.blit(floor_one)
   for wall in Walls.all_walls:
     wall.draw_wall(screen)
