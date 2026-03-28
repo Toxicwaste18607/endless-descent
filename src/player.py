@@ -23,13 +23,13 @@ class Player():
     max_health=100
     health=100
     health_regen=1
-    damage=100
     attack_range = 3
         
     def __init__ (self ,x,y):
       self.x = x
       self.y = y
       self.hitbox=pygame.Rect(x, y, self.width, self.height)
+      self.damage=100
   
     def player_logic(self,screen,other):
        self.all_draws(screen)
