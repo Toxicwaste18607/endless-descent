@@ -34,7 +34,6 @@ def floor_type_one():
   floor_one=pygame.transform.scale(floor_one, (screen_width,screen_height))
   
 
-
 def load_map(screen):
     screen.blit(floor_one, (0, 0))
 
