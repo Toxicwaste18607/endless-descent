@@ -116,6 +116,10 @@ while running:
   for event in pygame.event.get():
     if event.type == pygame.QUIT:
       running = False
+
+    if event in pygame.KEYDOWN:
+      if event.key== pygame.K_SPACE:
+        pl
   
   enemy_1.enemy_logic(screen , player)
   player.player_logic(screen,enemy_1)
