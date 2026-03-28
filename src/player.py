@@ -25,6 +25,7 @@ class Player():
     health_regen=1
     attack_range = 5
     damage=20
+    range_multi=2
 
     def __init__ (self ,x,y):
       self.x = x
@@ -70,7 +71,9 @@ class Player():
       keys=pygame.key.get_pressed()
       
       if keys[pygame.K_SPACE]:
-        attack_box=(self.hitbox.x+self.attack_range,self.hitbox.y+self.attack_range,self.hitbox.width +self.attack_range, self.hitbox.height+self.attack_range)
+        attack_box=(self.hitbox.x+self.attack_range,self.hitbox.y+self.attack_range,
+                    self.hitbox.width +(self.attack_range*self.range_multi),
+                      self.hitbox.height+(self.attack_range*self.range_multi))
         attack_box=pygame.Rect(attack_box)
         if attack_box.colliderect(other.hitbox):
            other.take_damage(self)
