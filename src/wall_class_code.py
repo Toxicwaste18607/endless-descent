@@ -10,6 +10,7 @@ class Walls():
     self.y=y
     self.height= height
     self.width= width
+    self.x_and_y=(self.x ,self.y)
     self.all_walls.append(self)
     self.wall_hitbox=pygame.Rect(self.x, self.y,self.width,self.height)
 
@@ -20,7 +21,7 @@ class Walls():
     wall_vert=pygame.transform.scale(wall_vert,self.wall_hitbox)
 
 
-    screen.blit(wall_vert,self.wall_hitbox)
+    screen.blit(wall_vert,self.x_and_y)
 
 
   
