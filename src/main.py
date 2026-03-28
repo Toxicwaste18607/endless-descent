@@ -119,6 +119,7 @@ while running:
 
     if event == pygame.KEYDOWN:
       if event.key == pygame.K_SPACE:
+        print("Space key hit")
         player.attack(screen, enemy_1)
   
   enemy_1.enemy_logic(screen , player)
