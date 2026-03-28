@@ -16,7 +16,7 @@ class Walls():
 
 
   def draw_wall(self,screen):
-    
+    wall_vert=pygame.image.load("src/assets/wall_type_one.png")
 
 
     pygame.draw.rect(screen,(255,255,255), (self.x,self.y,self.width,self.height))
