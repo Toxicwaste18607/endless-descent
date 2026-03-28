@@ -11,11 +11,7 @@ from enemy_class import *
 
 
 
-import os
 
-print("CURRENT DIR:", os.getcwd())
-print("FILES HERE:", os.listdir())
-print("ASSETS FOLDER:", os.listdir("assets"))
 
 #====================
 
