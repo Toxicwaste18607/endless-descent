@@ -23,7 +23,7 @@ from enemy_class import *
 #add in menus
 
 
-floor_one=pygame.image
+floor_one=pygame.image.load("assets/Floor_type_one.png").convert_alpha()
 
 
 #===================
