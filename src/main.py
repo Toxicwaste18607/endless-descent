@@ -110,7 +110,7 @@ clock = pygame.time.Clock()
 while running:
   #game code goes here
 
-  screen.fill((black))
+  screen.blit
   for wall in Walls.all_walls:
     wall.draw_wall(screen)
 
