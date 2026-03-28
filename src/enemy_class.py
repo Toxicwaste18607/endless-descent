@@ -34,8 +34,8 @@ class Enemy():
 
    def enemy_logic(self,screen,other):
       if self.health>0:
-         self.draw_character(self,screen)
-         self.search (self,other)
+         self.draw_character(screen)
+         self.search (other)
 
       else:
          pass
