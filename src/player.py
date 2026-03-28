@@ -59,6 +59,8 @@ class Player():
       pass
 
     def attack():
+      keys=pygame.key.get_pressed()
+      
        
 
       pass
