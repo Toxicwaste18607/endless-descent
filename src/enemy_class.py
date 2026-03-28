@@ -163,7 +163,7 @@ class Enemy():
     
    def take_damage(self,other):
       if self.health > 0:
-         self.health -= other.take_damage
+         self.health -= other.damage
       else:
          pass
       
