@@ -19,9 +19,10 @@ class Walls():
 
 
 
+
   def draw_wall(self,screen):
-
-
+  
+  
 
     screen.blit(self.wall_vert,self.x_and_y)
 
