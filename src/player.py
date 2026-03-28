@@ -58,10 +58,13 @@ class Player():
 
       pass
 
-    def attack():
+    def attack(self,other):
       keys=pygame.key.get_pressed()
       
-       
+      if keys[pygame.K_SPACE]:
+         attack_box=(self.hitbox.x+1,self.hitbox.y+1)
+         
+         
 
       pass
        
