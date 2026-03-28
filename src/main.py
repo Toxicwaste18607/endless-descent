@@ -118,6 +118,12 @@ pygame.display.set_caption("Endless Desent")      # set window title
 floor_type_one()
 running = True   # event loop
 
+
+
+
+
+
+
 clock = pygame.time.Clock()
 
 while running:
