@@ -117,7 +117,7 @@ while running:
     if event.type == pygame.QUIT:
       running = False
   
-  enemy_1.enemy_logic(player)
+  enemy_1.enemy_logic(screen,player)
   player.all_draws(screen)
 
 
