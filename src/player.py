@@ -23,7 +23,7 @@ class Player():
     max_health=100
     health=100
     health_regen=1
-    attack_range = 3
+    attack_range = 5
     damage=20
 
     def __init__ (self ,x,y):
