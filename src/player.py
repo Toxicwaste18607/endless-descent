@@ -34,7 +34,6 @@ class Player():
   
     def player_logic(self,screen,other):
        self.all_draws(screen)
-       self.attack(screen,other)
 
 
     def all_draws(self, screen):
