@@ -26,9 +26,9 @@ class Player():
     damage=1
         
     def __init__ (self ,x,y):
-        self.x = x
-        self.y = y
-        self.hitbox=pygame.Rect(x, y, self.width, self.height)
+      self.x = x
+      self.y = y
+      self.hitbox=pygame.Rect(x, y, self.width, self.height)
   
         
     def all_draws(self, screen):
