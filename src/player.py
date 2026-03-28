@@ -65,16 +65,13 @@ class Player():
       pass
 
     def attack(self,screen,other):
-      keys=pygame.key.get_pressed()
-      
-      if keys[pygame.K_SPACE]:
-        attack_box=(self.hitbox.x-self.attack_range,  self.hitbox.y -self.attack_range,
-                    self.hitbox.width +(self.attack_range*self.range_multi),
-                    self.hitbox.height+(self.attack_range*self.range_multi))
-        attack_box=pygame.Rect(attack_box)
-        pygame.draw.rect(screen,green,attack_box)
-        if attack_box.colliderect(other.hitbox):
-           other.take_damage(self)
+      attack_box=(self.hitbox.x-self.attack_range,  self.hitbox.y -self.attack_range,
+                  self.hitbox.width +(self.attack_range*self.range_multi),
+                  self.hitbox.height+(self.attack_range*self.range_multi))
+      attack_box=pygame.Rect(attack_box)
+      pygame.draw.rect(screen,green,attack_box)
+      if attack_box.colliderect(other.hitbox):
+          other.take_damage(self)
            
          
 
