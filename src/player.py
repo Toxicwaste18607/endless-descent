@@ -30,7 +30,11 @@ class Player():
       self.y = y
       self.hitbox=pygame.Rect(x, y, self.width, self.height)
   
-        
+    def player_logic(self,screen,other):
+       self.all_draws(screen)
+       self.attack(other)
+
+
     def all_draws(self, screen):
        self.draw_health(screen)
        self.draw_character(screen)
