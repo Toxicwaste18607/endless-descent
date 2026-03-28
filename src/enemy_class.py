@@ -18,22 +18,37 @@ red=(255,0,0)
 
 #this will be enemy base code used in all enemy classes
 class Enemy():
-    all_enemies =[]
-    width= 25
-    height= 50
-    speed=1
-    agro_range=300
-    def __init__ (self ,x,y):
+   all_enemies =[]
+   width= 25
+   height= 50
+   speed=1
+   agro_range=300
+   health=100
+   def __init__ (self ,x,y):
         self.x = x
         self.y = y
         self.hitbox=pygame.Rect(x, y, self.width, self.height)
         Enemy.all_enemies.append(self)
         
   
-    def draw_character(self,screen):
+
+   def enemy_logic(self,screen,other):
+      if self.health>0:
+         self.draw_character(self,screen)
+         self.search (self,other)
+
+      else:
+         pass
+
+
+
+
+
+
+   def draw_character(self,screen):
       pygame.draw.rect( screen, (red), (self.hitbox ))
 
-    def  collision(self,next_move,other):
+   def  collision(self,next_move,other):
          for wall in Walls.all_walls:
             if next_move.colliderect(wall.wall_hitbox):
                return True
@@ -41,7 +56,7 @@ class Enemy():
             other.take_damage(other)
             return True
 
-    def path_finding(self,blocked,other):
+   def path_finding(self,blocked,other):
        #key 1 means right, 2 means up, 3 means left, 4 means down 
        ## x+ = right, x- = left, y+ = down, y- = up
 
@@ -81,12 +96,12 @@ class Enemy():
 
 
 
-    def check_dist(self,other):
+   def check_dist(self,other):
        self.distance_x= (other.hitbox.x - self.hitbox.x)
        self.distance_y= (other.hitbox.y - self.hitbox.y)
 
     
-    def search (self,other):
+   def search (self,other):
        self.check_dist(other)
        if abs(self.distance_x)<self.agro_range and abs(self.distance_y)<self.agro_range: 
          self.agro(other)
@@ -94,7 +109,7 @@ class Enemy():
           self.wander()
 
 
-    def agro(self,other): #right
+   def agro(self,other): #right
       if self.distance_x > 0:
          next_move=self.hitbox.copy()
          next_move.x+=self.speed
@@ -136,18 +151,21 @@ class Enemy():
 
 
 
-    def wander(self):
+   def wander(self):
        pass
 
        
     
-    def attack(self,other):
+   def attack(self,other):
 
 
       pass
     
-    def take_damage(self,other):
-      hit=other.hitbox
-      if hit.colliderect(other.hitbox):
-         self.health-=0.1
+   def take_damage(self,other):
+      if self.health > 0:
+         self.heath -= other.damage
+      else:
+         pass
+      
+      
    

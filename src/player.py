@@ -20,14 +20,16 @@ red=(255,0,0)
 class Player():
     width= 25
     height= 50
+    max_health=100
+    health=100
+    health_regen=1
+    damage=1
+        
     def __init__ (self ,x,y):
         self.x = x
         self.y = y
         self.hitbox=pygame.Rect(x, y, self.width, self.height)
-        self.max_health=100
-        self.health=100
-        self.health_regen=1
-        self.damage=1
+  
         
     def all_draws(self, screen):
        self.draw_health(screen)
