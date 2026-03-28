@@ -20,7 +20,7 @@ class Walls():
     wall_vert=pygame.transform.scale(wall_vert,self.wall_hitbox)
 
 
-    screen.Blit()
+    screen.blit(wall_vert,self.wall_hitbox)
 
 
   
