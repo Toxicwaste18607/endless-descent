@@ -27,6 +27,7 @@ class Player():
         self.max_health=100
         self.health=100
         self.health_regen=1
+        self.damage=1
         
     def all_draws(self, screen):
        self.draw_health(screen)
@@ -62,11 +63,12 @@ class Player():
       keys=pygame.key.get_pressed()
       
       if keys[pygame.K_SPACE]:
-         attack_box=(self.hitbox.x+1,self.hitbox.y+1)
-         
+        attack_box=(self.hitbox.x+1,self.hitbox.y+1)
+        if attack_box.colliderect(other.hitbox):
+           other.take_damage()
+           
          
 
-      pass
        
     
 
