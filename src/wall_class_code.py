@@ -18,7 +18,7 @@ class Walls():
 
 
   def render_images(self):
-    self.all_vert=pygame.image.load("src/assets/wall_type_one.png").convert_alpha()
+    self.wall_vert=pygame.image.load("src/assets/wall_type_one.png").convert_alpha()
     self.wall_vert=pygame.transform.scale(self.wall_vert,(self.width,self.height))
 
 
