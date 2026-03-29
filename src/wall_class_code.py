@@ -20,6 +20,8 @@ class Walls():
   def render_images(self):
     self.wall_vert=pygame.image.load("src/assets/wall_type_one.png").convert_alpha()
     self.wall_vert=pygame.transform.scale(self.wall_vert,(self.width,self.height))
+    self.wall_horl=pygame.image.load("src/assets/wall_type_two.png").convert_alpha()
+    self.wall_horl=pygame.transform.scale(self.wall_horl,(self.width,self.height))
 
 
   def draw_wall(self,screen):
