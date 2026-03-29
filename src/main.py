@@ -96,8 +96,8 @@ top= Walls(0, 0, 1000, 40)
 bottom= Walls(0, 780, 1000, 20) 
 left= Walls(0, 0, 20, 800)    
 right=Walls(980, 0, 20, 800)
-a= Walls(100, 100, 300, 20)
-b= Walls(100, 100, 20, 200)
+'''a= Walls(100, 100, 300, 20)
+b= Walls(100, 100, 20, 200)'''
 
 
 #Top left
