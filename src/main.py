@@ -92,8 +92,8 @@ black=(0, 0, 0)
 
 
 
-top= Walls(0, 0, 1000, 40)        
-bottom= Walls(0, 780, 1000, 20) 
+top= Walls(0, 0, 1000, 50)        
+bottom= Walls(0, 780, 1000, 40) 
 left= Walls(0, 0, 20, 800)    
 right=Walls(980, 0, 20, 800)
 
