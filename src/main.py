@@ -118,17 +118,17 @@ v4 = Walls(560, 490, 50, 120)
 #h5 
 
 # RIGHT MAIN STRUCTURE
-'''v5 = Walls(700, 100, 50, 300)
+v5 = Walls(700, 100, 50, 300)
 h6 = Walls(700, 400, 280, 50)
 v6 = Walls(930, 180, 50, 270)
-v7 = Walls(830, 220, 50, 180)'''
+v7 = Walls(830, 220, 50, 180)
 
 # RIGHT SIDE EXTRA PATHS
 h7 = Walls(860, 560, 150, 50)
 h8 = Walls(700, 760, 300, 50)
 
 # CENTER SMALL LINK
-v8 = Walls(470, 760, 50, 120)
+#v8 = Walls(470, 760, 50, 120)
 
 
 
