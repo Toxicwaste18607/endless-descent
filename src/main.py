@@ -27,6 +27,12 @@ from enemy_class import *
 
 # to do list 
 #add in menus
+#make enemy only move in one direction at a time
+# make a better path finding 
+#add in stamina
+#make attack zone a circle
+#add in colliosn with enemy
+
 
 def floor_type_one():
   global floor_one

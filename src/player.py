@@ -7,10 +7,7 @@ black=(0, 0, 0)
 red=(255,0,0)
 
 
-#to do list
-#add in stamina
-#make attack zone a circle
-#add in colliosn with enemy
+
 
 
 
