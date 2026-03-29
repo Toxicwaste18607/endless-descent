@@ -75,7 +75,7 @@ running = True   # event loop
 
 
 #Classes in use
-player=Player(250,250)
+player=Player(300,300)
 
 enemy_1=Enemy(70,90)
 
