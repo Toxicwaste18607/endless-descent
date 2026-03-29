@@ -105,14 +105,14 @@ h1 = Walls(100, 100, 320, 50)
 v1 = Walls(100, 100, 50, 220)
 
 # UPPER MIDDLE ROOM
-'''h2 = Walls(250, 220, 320, 50)
+h2 = Walls(250, 220, 320, 50)
 v2 = Walls(570, 220, 50, 220)
 h3 = Walls(250, 440, 320, 50)
-v3 = Walls(250, 440, 50, 170)'''
+v3 = Walls(250, 440, 50, 170)
 
 # CENTER LOWER CONNECTION
-h4 = Walls(350, 610, 260, 50)
-v4 = Walls(560, 490, 50, 120)
+'''h4 = Walls(350, 610, 260, 50)
+v4 = Walls(560, 490, 50, 120)'''
 
 # BOTTOM LEFT
 h5 = Walls(100, 760, 420, 50)
