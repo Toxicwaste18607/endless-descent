@@ -124,10 +124,10 @@ v7 = Walls(830, 220, 50, 180)
 
 # RIGHT SIDE EXTRA PATHS
 h7 = Walls(860, 560, 150, 50)
-h8 = Walls(700, 760, 300, 50)
+#h8 
 
 # CENTER SMALL LINK
-#v8 = Walls(470, 760, 50, 120)
+v8 = Walls(470, 760, 50, 120)
 
 
 
