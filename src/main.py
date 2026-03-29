@@ -30,7 +30,7 @@ from enemy_class import *
 
 def floor_type_one():
   global floor_one
-  floor_one=pygame.image.load("src/assets/floor_type_one.png").convert_alpha()
+  floor_one=pygame.image.load("src/assets/walls_and_floors/floor_type_one.png").convert_alpha()
   floor_one=pygame.transform.scale(floor_one, (screen_width,screen_height))
   
 
