@@ -43,7 +43,7 @@ from enemy_class import *
 #add in enemy classes(goblin, bats ect)
 #player and enemy graphics
 #add in player ghoast
-#clean uo all grapics
+#clean up all grapics
 #make rooms and ai gen them together
 #add in final boss 
 
