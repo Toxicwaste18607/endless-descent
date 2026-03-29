@@ -33,6 +33,7 @@ from enemy_class import *
 #make attack zone a circle
 #add in colliosn with enemy
 #make player classes(assasin, knight, maybe more)
+#add in 
 
 
 def floor_type_one():
