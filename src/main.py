@@ -27,13 +27,17 @@ from enemy_class import *
 
 # to do list 
 #add in menus
+#add in player death
+#add in 
 #make enemy only move in one direction at a time
 # make a better path finding 
 #add in stamina
 #make attack zone a circle
 #add in colliosn with enemy
 #make player classes(assasin, knight, maybe more)
-#add in 
+#add in enemy classes(goblin, bats ect)
+#player and enemy graphics
+#add in player ghoast
 
 
 def floor_type_one():
