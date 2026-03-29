@@ -39,7 +39,7 @@ from enemy_class import *
 #add in colliosn with enemy
 #make player classes(assasin, knight, maybe more)
 #add in invintory 
-#add in 
+#add in loot and gear
 #add in enemy classes(goblin, bats ect)
 #player and enemy graphics
 #add in player ghoast
