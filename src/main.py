@@ -27,6 +27,8 @@ from enemy_class import *
 
 # to do list 
 #add in menus
+#add ai attack
+#add block
 #add in player death
 #make proper borders
 #make enemy only move in one direction at a time
