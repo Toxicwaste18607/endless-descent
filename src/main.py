@@ -100,15 +100,15 @@ a= Walls(100, 100, 300, 20)
 b= Walls(100, 100, 20, 200)
 
 
-
+#Top left
 h1 = Walls(100, 100, 320, 50)
 v1 = Walls(100, 100, 50, 220)
 
 # UPPER MIDDLE ROOM
-h2 = Walls(250, 220, 320, 50)
+'''h2 = Walls(250, 220, 320, 50)
 v2 = Walls(570, 220, 50, 220)
 h3 = Walls(250, 440, 320, 50)
-v3 = Walls(250, 440, 50, 170)
+v3 = Walls(250, 440, 50, 170)'''
 
 # CENTER LOWER CONNECTION
 h4 = Walls(350, 610, 260, 50)
