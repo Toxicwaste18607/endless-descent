@@ -27,6 +27,7 @@ from enemy_class import *
 
 # to do list 
 #make screen bigger and fix all the issues with that
+#put movement into player class
 #add in menus
 #add ai attack
 #add block
