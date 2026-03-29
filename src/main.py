@@ -127,7 +127,7 @@ h7 = Walls(860, 560, 150, 50)
 #h8 
 
 # CENTER SMALL LINK
-v8 = Walls(470, 760, 50, 120)
+#v8 
 
 
 
