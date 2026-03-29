@@ -101,24 +101,34 @@ b= Walls(100, 100, 20, 200)
 
 
 
+h1 = Walls(100, 100, 320, 50)
+v1 = Walls(100, 100, 50, 220)
 
-h1= Walls(100, 100, 300, 50)
-h2 = Walls(200, 200, 280, 50)
-h3 = Walls(200, 380, 280, 50)
-h4 = Walls(300, 530, 230, 50)
-h5 = Walls(600, 330, 200, 50)
-h6 = Walls(750, 450, 100, 50)
-h7 = Walls(600, 600, 250, 50)
-h8 = Walls(100, 650, 400, 50)
+# UPPER MIDDLE ROOM
+h2 = Walls(250, 220, 320, 50)
+v2 = Walls(570, 220, 50, 220)
+h3 = Walls(250, 440, 320, 50)
+v3 = Walls(250, 440, 50, 170)
 
-v1 = Walls(100, 150, 50, 150)
-v2 = Walls(480, 250, 50, 130)
-v3 = Walls(200, 430, 50, 100)
-v4 = Walls(530, 430, 50, 100)
-v5 = Walls(600, 100, 50, 230)
-v6 = Walls(800, 150, 50, 180)
-v7 = Walls(850, 200, 50, 250)
-v8 = Walls(400, 580, 50, 70)
+# CENTER LOWER CONNECTION
+h4 = Walls(350, 610, 260, 50)
+v4 = Walls(560, 490, 50, 120)
+
+# BOTTOM LEFT
+h5 = Walls(100, 760, 420, 50)
+
+# RIGHT MAIN STRUCTURE
+v5 = Walls(700, 100, 50, 300)
+h6 = Walls(700, 400, 280, 50)
+v6 = Walls(930, 180, 50, 270)
+v7 = Walls(830, 220, 50, 180)
+
+# RIGHT SIDE EXTRA PATHS
+h7 = Walls(860, 560, 150, 50)
+h8 = Walls(700, 760, 300, 50)
+
+# CENTER SMALL LINK
+v8 = Walls(470, 760, 50, 120)
 
 
 
