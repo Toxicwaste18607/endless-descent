@@ -26,6 +26,7 @@ from enemy_class import *
 
 
 # to do list 
+#make screen bigger and fix all the issues with that
 #add in menus
 #add ai attack
 #add block
@@ -37,6 +38,8 @@ from enemy_class import *
 #make attack zone a circle
 #add in colliosn with enemy
 #make player classes(assasin, knight, maybe more)
+#add in invintory 
+#add in 
 #add in enemy classes(goblin, bats ect)
 #player and enemy graphics
 #add in player ghoast
