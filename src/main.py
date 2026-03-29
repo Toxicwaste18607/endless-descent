@@ -28,7 +28,7 @@ from enemy_class import *
 # to do list 
 #add in menus
 #add in player death
-#add in 
+#make proper borders
 #make enemy only move in one direction at a time
 # make a better path finding 
 #add in stamina
@@ -38,6 +38,10 @@ from enemy_class import *
 #add in enemy classes(goblin, bats ect)
 #player and enemy graphics
 #add in player ghoast
+#clean uo all grapics
+#make rooms and ai gen them together
+#add in final boss 
+
 
 
 def floor_type_one():
