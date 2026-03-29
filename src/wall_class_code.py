@@ -25,8 +25,11 @@ class Walls():
 
 
   def draw_wall(self,screen):
-  
-    screen.blit(self.wall_vert,self.x_and_y)
+    
+    if self.height<self.width:
+      screen.blit(self.wall_vert,self.x_and_y)
+    else:
+      screen.blit(self.wall_horl,self.x_and_y)
 
 
   
