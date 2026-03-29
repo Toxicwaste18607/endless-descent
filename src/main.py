@@ -32,7 +32,7 @@ from enemy_class import *
 #add in stamina
 #make attack zone a circle
 #add in colliosn with enemy
-#make player classes(assasin, knight, )
+#make player classes(assasin, knight, maybe more)
 
 
 def floor_type_one():
