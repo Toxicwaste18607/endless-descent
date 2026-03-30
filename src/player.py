@@ -39,13 +39,13 @@ class Player():
 
     def draw_health(self,screen):
       if self.health > 0:
-        health_bar_width= (self.health / self.max_health) * 200
-        health_bar_width=abs(health_bar_width)
+        health_bar_hight= (self.health / self.max_health) * 200
+        health_bar_hight=abs(health_bar_hight)
         
       else:
-         health_bar_width = 0
+         health_bar_hight = 0
         
-      health_bar=(20,10,health_bar_width,20)
+      health_bar=(20,10,10,health_bar_hight)
       healthbar_cover=()
       pygame.draw.rect(screen,(red),(health_bar) )
          
