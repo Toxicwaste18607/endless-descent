@@ -1,4 +1,5 @@
 import pygame
+import time
 
 green =(0, 255, 0)
 blue=(0, 0, 255) 
@@ -23,6 +24,8 @@ class Player():
     attack_range = 5
     damage=20
     range_multi=2
+    stamina = 100
+    stamina_regain = 2
 
     def __init__ (self ,x,y):
       self.x = x
@@ -59,7 +62,10 @@ class Player():
          self.health-=0.1
       
       
+    def  sprint(self):
        
+
+       pass
 
       
 
