@@ -66,7 +66,7 @@ def movement(player):
       player.hitbox.x+=speed
   
   if not keys[pygame.K_LSHIFT]:
-    player.stamina+=player.stamia_regain
+    player.stamina+=player.stamina_regain
 
   
 
