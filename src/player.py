@@ -43,12 +43,11 @@ class Player():
        self.draw_stamina(screen)
 
     def draw_health(self,screen):
-      if self.health > 0:
-        health_bar_hight= (self.health / self.max_health) * 200
-        health_bar_hight=abs(health_bar_hight)
+      
+      health_bar_hight= (self.health / self.max_health) * 200
+      health_bar_hight=abs(health_bar_hight)
         
-      else:
-         health_bar_hight = 0
+    
         
       health_bar=(20,550,20,health_bar_hight)
       healthbar_cover=()
