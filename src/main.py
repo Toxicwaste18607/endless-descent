@@ -35,7 +35,7 @@ from enemy_class import *
 #add in player death
 #make proper borders
 #make enemy only move in one direction at a time
-# make a better path finding 
+#make a better path finding 
 #add in stamina
 #make attack zone a circle
 #add in colliosn with enemy
