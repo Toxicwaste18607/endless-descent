@@ -57,9 +57,11 @@ class Player():
     def take_damage(self,other):
       if self.hitbox.colliderect(other.hitbox):
          self.health-=0.1
+      
+  
        
 
-      pass
+      
 
     def attack(self,screen,other):
       attack_box=(self.hitbox.x-self.attack_range,  self.hitbox.y -self.attack_range,
