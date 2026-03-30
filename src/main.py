@@ -52,7 +52,7 @@ from enemy_class import *
 
 
 def menu(): 
-   pygame.draw
+   pygame.draw.rect(600,800)
 
    pass
 
