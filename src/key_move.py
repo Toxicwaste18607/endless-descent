@@ -25,7 +25,7 @@ def movement(player):
   if keys[pygame.K_LSHIFT]:
     player.sprint()
     
-    if player.sprinting():
+    if player.sprint():
       speed = sprinting 
     else:
       speed = walking
