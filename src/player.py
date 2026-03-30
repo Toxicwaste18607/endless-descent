@@ -58,6 +58,8 @@ class Player():
       x= 1350
       y=550
       width= 20
+      if self.stamina>self.max_stamina:
+        self.stamina=self.max_stamina
       stamina_bar_hight=(self.stamina/self.max_stamina) *200
       stamina_bar_hight=abs(stamina_bar_hight)
       
