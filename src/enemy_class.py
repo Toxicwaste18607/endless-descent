@@ -46,12 +46,12 @@ class Enemy():
    def draw_character(self,screen):
       pygame.draw.rect( screen, (red), (self.hitbox ))
 
-   def  collision(self,next_move,other):
+   def  collision(self,screen,next_move,other):
          for wall in Walls.all_walls:
             if next_move.colliderect(wall.wall_hitbox):
                return True
-         if next_move.colliderect(other.hitbox):
-            other.take_damage(other)
+            if next_move.colliderect(other.hitbox):
+               other.take_damage(screen,other)
             return True
 
    def path_finding(self,blocked,other):
