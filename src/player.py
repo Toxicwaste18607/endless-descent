@@ -63,10 +63,12 @@ class Player():
       
       
     def  sprint(self):
-      if self.stamina > 0:
-       
-       
 
+      if self.stamina > 0:
+       self.stamina-=2
+       return True
+        
+      else:
        pass
 
       
