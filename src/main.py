@@ -31,7 +31,6 @@ red=(255,0,0)
 
 
 # to do list 
-#put movement into player class
 #add in menus
 #add ai attack
 #fix players health to fall from the top not the bottem
@@ -53,6 +52,8 @@ red=(255,0,0)
 #clean up all grapics
 #make rooms and ai gen them together
 #add in final boss 
+#put movement into player class
+
 
 
 def menu(): 
