@@ -58,7 +58,7 @@ class Player():
       if self.hitbox.colliderect(other.hitbox):
          self.health-=0.1
       
-  
+      
        
 
       
