@@ -45,7 +45,7 @@ class Player():
       else:
          health_bar_hight = 0
         
-      health_bar=(20,10,10,health_bar_hight)
+      health_bar=(20,550,20,health_bar_hight)
       healthbar_cover=()
       pygame.draw.rect(screen,(red),(health_bar) )
          
