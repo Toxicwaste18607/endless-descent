@@ -107,7 +107,7 @@ class Enemy():
           self.wander()
 
 
-   def agro(self,other): #right
+   def agro(self,screen,other): #right
       if self.distance_x > 0:
          next_move=self.hitbox.copy()
          next_move.x+=self.speed
@@ -115,7 +115,7 @@ class Enemy():
             self.hitbox.x+=self.speed
          else:
             blocked=1
-            self.path_finding(blocked,other)
+            self.path_finding(screen,blocked,other)
       
       
       if self.distance_y >0:#up
@@ -125,7 +125,7 @@ class Enemy():
             self.hitbox.y+=self.speed
          else:
             blocked=2
-            self.path_finding(blocked,other)
+            self.path_finding(screen,blocked,other)
 
       if self.distance_x <0:#left
          next_move=self.hitbox.copy()
@@ -134,7 +134,7 @@ class Enemy():
             self.hitbox.x -= self.speed
          else:
             blocked=3
-            self.path_finding(blocked,other)
+            self.path_finding(screen,blocked,other)
       
 
 
