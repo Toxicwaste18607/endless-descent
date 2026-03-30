@@ -21,7 +21,8 @@ def movement(player):
 
   walking=1
 
-  
+  if keys[pygame.K_LSHIFT]:
+    Player.sprint()
 
 
 
