@@ -63,7 +63,7 @@ class Player():
       
       
     def  sprint(self):
-
+      x= False
       if self.stamina > 0:
        self.stamina-=2
        x == True
