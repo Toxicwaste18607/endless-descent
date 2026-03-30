@@ -161,10 +161,14 @@ clock = pygame.time.Clock()
 while running:
   #game code goes here
   
+
+
+  load_map(screen)
+
+  enemy_1.enemy_logic(screen , player)
+  player.player_logic(screen,enemy_1)
   
 
-  
-  load_map(screen)
   for event in pygame.event.get():
     if event.type == pygame.QUIT:
       running = False
@@ -172,7 +176,6 @@ while running:
     if event.type == pygame.KEYDOWN:
       if event.key == pygame.K_SPACE:
         player.attack(screen, enemy_1)
-  
 
 
   
