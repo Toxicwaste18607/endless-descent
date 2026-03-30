@@ -25,6 +25,7 @@ class Player():
     damage=20
     range_multi=2
     stamina = 100
+    max_stamina=100
     stamina_regain = 2
 
     def __init__ (self ,x,y):
@@ -51,6 +52,13 @@ class Player():
       health_bar=(20,550,20,health_bar_hight)
       healthbar_cover=()
       pygame.draw.rect(screen,(red),(health_bar) )
+    
+    def draw_stamina(self,screen):
+      stamina_bar_hight=(self.stamina/self.max_stamina) *200
+      stamina_bar_hight=abs(stamina_bar_hight)
+      
+      pygame.draw.rect(screen,)
+
          
   
     def draw_character(self,screen):
