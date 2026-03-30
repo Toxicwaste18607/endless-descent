@@ -22,7 +22,7 @@ def movement(player):
   walking=1
   sprinting=2
 
-  speed= sprinting if keys[pygame.K_LSHIFT] else walking
+  speed = sprinting if keys[pygame.K_LSHIFT] else walking
 
 
   if keys[pygame.K_w]: #up
