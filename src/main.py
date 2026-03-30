@@ -14,6 +14,11 @@ from enemy_class import *
 
 
 #====================
+green =(0, 255, 0)
+blue=(0, 0, 255) 
+white=(255, 255, 255) 
+black=(0, 0, 0) 
+red=(255,0,0)
 
 #keys for my self remove later 
 
@@ -52,7 +57,7 @@ from enemy_class import *
 
 
 def menu(): 
-   pygame.draw.rect(600,800)
+   pygame.draw.rect(red,600,800)
 
    pass
 
