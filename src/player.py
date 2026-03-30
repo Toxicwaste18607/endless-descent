@@ -40,6 +40,7 @@ class Player():
     def all_draws(self, screen):
        self.draw_health(screen)
        self.draw_character(screen)
+       self.draw_stamina(screen)
 
     def draw_health(self,screen):
       if self.health > 0:
@@ -57,7 +58,7 @@ class Player():
       stamina_bar_hight=(self.stamina/self.max_stamina) *200
       stamina_bar_hight=abs(stamina_bar_hight)
       
-      stamina_bar=( )
+      stamina_bar=(1320,550,20,stamina_bar_hight )
       pygame.draw.rect(screen,blue, stamina_bar )
 
          
