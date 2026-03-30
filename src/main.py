@@ -40,7 +40,6 @@ red=(255,0,0)
 #make proper borders
 #make enemy only move in one direction at a time
 #make a better path finding 
-#add in stamina
 #make attack zone a circle
 #add in colliosn with enemy
 #make player classes(assasin, knight, maybe more)
