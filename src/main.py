@@ -51,6 +51,14 @@ from enemy_class import *
 #add in final boss 
 
 
+def menu(): 
+   
+
+   pass
+
+
+
+
 
 def floor_type_one():
   global floor_one
@@ -177,6 +185,10 @@ while running:
     if event.type == pygame.KEYDOWN:
       if event.key == pygame.K_SPACE:
         player.attack(screen, enemy_1)
+
+    if event.type == pygame.KEYDOWN:
+       if event.key == pygame.K_ESCAPE:
+          menu()
 
 
   
