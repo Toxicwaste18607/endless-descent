@@ -121,7 +121,7 @@ class Enemy():
       if self.distance_y >0:#up
          next_move=self.hitbox.copy()
          next_move.y+=self.speed
-         if not self.collision(next_move,other):
+         if not self.collision(screen,next_move,other):
             self.hitbox.y+=self.speed
          else:
             blocked=2
@@ -141,7 +141,7 @@ class Enemy():
       if self.distance_y<0:#down
          next_move=self.hitbox.copy()
          next_move.y-=self.speed
-         if not self.collision(next_move,other):
+         if not self.collision(screen,next_move,other):
             self.hitbox.y-=self.speed
          else:
             blocked=4
