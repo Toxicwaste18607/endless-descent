@@ -30,6 +30,7 @@ from enemy_class import *
 #put movement into player class
 #add in menus
 #add ai attack
+#fix players health to fall from the top not the bottem
 #add in lighting and player fog of war
 #add block
 #add in player death
