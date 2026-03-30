@@ -118,7 +118,7 @@ black=(0, 0, 0)
 top= Walls(0, 0, 1000, 50)        
 bottom= Walls(0, 780, 1000, 40) 
 left= Walls(0, 0, 80, 800)    
-right=Walls(1200, 0, 80, 800)
+right=Walls(1320, 0, 80, 800)
 
 
 
