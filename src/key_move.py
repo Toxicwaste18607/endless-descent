@@ -10,6 +10,7 @@ def collision(next_move):
   for wall in Walls.all_walls:
     if next_move.colliderect(wall.wall_hitbox):
       return True
+    #return False
     #if next_move.colliderect():pass
 
 
