@@ -175,8 +175,7 @@ while running:
   load_map(screen)
 
 
-  enemy_1.enemy_logic(screen , player)
-  player.player_logic(screen,enemy_1)
+  
 
 
 
