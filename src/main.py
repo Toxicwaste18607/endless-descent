@@ -31,7 +31,6 @@ red=(255,0,0)
 
 
 # to do list 
-#make screen bigger and fix all the issues with that
 #put movement into player class
 #add in menus
 #add ai attack
