@@ -67,7 +67,7 @@ class Player():
       if self.stamina > 0:
        self.stamina-=2
       
-       return 
+       return True
         
       else:
        pass
