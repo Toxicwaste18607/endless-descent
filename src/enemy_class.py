@@ -99,10 +99,10 @@ class Enemy():
        self.distance_y= (other.hitbox.y - self.hitbox.y)
 
     
-   def search (self,other):
+   def search (self,screen,other):
        self.check_dist(other)
        if abs(self.distance_x)<self.agro_range and abs(self.distance_y)<self.agro_range: 
-         self.agro(other)
+         self.agro(screen,other)
        else:
           self.wander()
 
