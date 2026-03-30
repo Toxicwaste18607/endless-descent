@@ -100,7 +100,7 @@ running = True   # event loop
 #Classes in use
 player=Player(300,300)
 
-enemy_1=Enemy(400,400)
+enemy_1=Enemy(320,400)
 
 #===================
 # Colors
