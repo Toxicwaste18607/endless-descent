@@ -164,7 +164,7 @@ while running:
   
 
   
-
+  load_map(screen)
   for event in pygame.event.get():
     if event.type == pygame.QUIT:
       running = False
@@ -172,7 +172,7 @@ while running:
     if event.type == pygame.KEYDOWN:
       if event.key == pygame.K_SPACE:
         player.attack(screen, enemy_1)
-  load_map(screen)
+  
 
 
   
