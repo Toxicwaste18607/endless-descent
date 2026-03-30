@@ -71,9 +71,11 @@ class Player():
       pygame.draw.rect( screen, (blue), (self.hitbox ))
 
 
-    def take_damage(self,other):
+    def take_damage(self,screen,other):
       if self.hitbox.colliderect(other.hitbox):
          self.health-=0.1
+      if self.health<=0:
+        pygame.draw.rect( screen, (blue), (self.hitbox ))
       
       
     def  sprint(self):
