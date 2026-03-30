@@ -65,7 +65,7 @@ def movement(player):
     if not collision(next_move):
       player.hitbox.x+=speed
   
-  if keys[pygame.KMOD_NONE]:
+  if not keys[pygame.K_LSHIFT]:
     player.stamina+=player.stamia_regain
 
   
