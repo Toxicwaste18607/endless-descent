@@ -54,7 +54,7 @@ class Enemy():
                other.take_damage(screen,other)
             return True
 
-   def path_finding(self,blocked,other):
+   def path_finding(self,screen,blocked,other):
        #key 1 means right, 2 means up, 3 means left, 4 means down 
        ## x+ = right, x- = left, y+ = down, y- = up
 
@@ -70,7 +70,7 @@ class Enemy():
        if blocked == 2:
          next_move=self.hitbox.copy()
          next_move.y-=self.speed
-         if not self.collision(next_move,other):
+         if not self.collision(screen,next_move,other):
             self.hitbox.y-=self.speed
          else:
             blocked=4
@@ -79,7 +79,7 @@ class Enemy():
        if blocked == 3:
          next_move=self.hitbox.copy()
          next_move.x+=self.speed
-         if not self.collision(next_move,other):
+         if not self.collision(screen,next_move,other):
             self.hitbox.x+=self.speed
          else:
             blocked=1
@@ -87,7 +87,7 @@ class Enemy():
        if blocked == 4:
          next_move=self.hitbox.copy()
          next_move.y+=self.speed
-         if not self.collision(next_move,other):
+         if not self.collision(screen,next_move,other):
             self.hitbox.y+=self.speed
          else:
             blocked=2
