@@ -24,11 +24,11 @@ def movement(player):
   speed = walking
   if keys[pygame.K_LSHIFT]:
     player.sprint()
-    x= False
+    x = False
     if x == True:
       speed = sprinting 
     else:
-      pass
+      speed = walking
 
 
 
