@@ -57,7 +57,8 @@ class Player():
       stamina_bar_hight=(self.stamina/self.max_stamina) *200
       stamina_bar_hight=abs(stamina_bar_hight)
       
-      pygame.draw.rect(screen,)
+      stamina_bar=(screen,blue, )
+      pygame.draw.rect(stamina_bar )
 
          
   
