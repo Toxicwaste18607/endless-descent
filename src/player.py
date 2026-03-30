@@ -63,6 +63,7 @@ class Player():
       
       
     def  sprint(self):
+      if self.stamina > 0:
        
 
        pass
