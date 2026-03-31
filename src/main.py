@@ -31,9 +31,8 @@ red=(255,0,0)
 
 
 # to do list 
-#add in menus
 #add ai attack
-#fix players health to fall from the top not the bottem
+#fix players health and stamina to fall from the top not the bottem
 #add in lighting and player fog of war
 #add block
 #add in player death
@@ -52,6 +51,8 @@ red=(255,0,0)
 #make rooms and ai gen them together
 #add in final boss 
 #put movement into player class
+#add in menus
+
 
 
 
