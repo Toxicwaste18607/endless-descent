@@ -52,7 +52,7 @@ class Enemy():
                return True
             if next_move.colliderect(other.hitbox):
                other.take_damage(screen,other)
-            return True
+            return False
 
    def path_finding(self,screen,blocked,other):
        #key 1 means right, 2 means up, 3 means left, 4 means down 
