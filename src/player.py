@@ -79,8 +79,15 @@ class Player():
       if self.hitbox.colliderect(other.hitbox):
          self.health-=0.1
       if self.health<=0:
-        self.hitbox.height -=1
-        pygame.draw.rect( screen, (blue), (self.hitbox))
+        self.player_death()
+  
+
+
+    def player_death(self,screen):  
+      self.hitbox.height -=1 #will be replaced with a death sceen
+      pygame.draw.rect( screen, (blue), (self.hitbox))
+      ghost=Ghost(Player)
+
       
       
     def  sprint(self):
