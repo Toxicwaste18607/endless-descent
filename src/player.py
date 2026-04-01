@@ -32,7 +32,7 @@ class Player():
       self.x = x
       self.y = y
       self.hitbox=pygame.Rect(x, y, self.width, self.height)
-      self.load_character_images(self)
+      self.load_character_images()
   
     def player_logic(self,screen,other):
        self.all_draws(screen)
