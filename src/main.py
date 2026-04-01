@@ -185,9 +185,7 @@ while running:
       if event.key == pygame.K_SPACE:
         player.attack(screen, enemy_1)
 
-    if event.type == pygame.KEYDOWN:
-       if event.key == pygame.K_ESCAPE:
-          menu()
+
 
 
   
