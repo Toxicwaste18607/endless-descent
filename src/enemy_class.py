@@ -23,8 +23,6 @@ class Enemy():
    agro_range=300
    health=100
    def __init__ (self ,x,y):
-        self.x = x
-        self.y = y
         self.hitbox=pygame.Rect(x, y, self.width, self.height)
         Enemy.all_enemies.append(self)
         

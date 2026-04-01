@@ -29,9 +29,6 @@ class Player():
     stamina_regain = .02
 
     def __init__ (self ,x,y):
-      self.x = x
-      self.y = y
-      self.location=(x,y)
       self.hitbox=pygame.Rect(x, y, self.width, self.height)
       self.load_character_images()
   
