@@ -67,7 +67,7 @@ class Player():
       pygame.draw.rect(screen,blue, stamina_bar )
 
     def load_character_images(self):
-      self.standing=pygame.image.load("src/assets/Knight/standing")
+      self.standing=pygame.image.load("src/assets/Knight/standing.jpg")
       self.standing=pygame.transform.scale(self.standing,(self.width,self.health))
       
   
