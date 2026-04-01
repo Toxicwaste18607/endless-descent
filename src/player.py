@@ -73,7 +73,7 @@ class Player():
       
   
     def draw_character(self,screen):
-      screen.blit(self.standing, (self.location))
+      screen.blit(self.standing,(self.x, self.y))
 
       
 
