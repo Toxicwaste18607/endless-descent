@@ -70,6 +70,8 @@ class Player():
     def draw_character(self,screen):
       pygame.draw.rect( screen, (blue), (self.hitbox ))
 
+      standing=pygame.image.load("scr/assets/Kight/")
+
 
     def take_damage(self,screen,other):
       if self.hitbox.colliderect(other.hitbox):
