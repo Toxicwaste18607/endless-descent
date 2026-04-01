@@ -31,6 +31,7 @@ class Player():
     def __init__ (self ,x,y):
       self.x = x
       self.y = y
+      self.location=(x,y)
       self.hitbox=pygame.Rect(x, y, self.width, self.height)
       self.load_character_images()
   
@@ -72,7 +73,7 @@ class Player():
       
   
     def draw_character(self,screen):
-      pygame.blit(self.standing, self.x, self.y)
+      screen.blit(self.standing, (self.location))
 
       
 
