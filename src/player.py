@@ -16,7 +16,7 @@ red=(255,0,0)
 
 
 class Player():
-    width= 25
+    width= 40
     height= 50
     max_health=100
     health=100
