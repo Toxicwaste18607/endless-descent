@@ -72,7 +72,7 @@ class Player():
       
   
     def draw_character(self,screen):
-      pygame.blit
+      pygame.blit()
 
       
 
