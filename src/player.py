@@ -79,7 +79,7 @@ class Player():
       if self.hitbox.colliderect(other.hitbox):
          self.health-=0.1
       if self.health<=0:
-        self.player_death()
+        self.player_death(screen)
   
 
 
