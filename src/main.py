@@ -56,13 +56,6 @@ red=(255,0,0)
 
 
 
-def menu(): 
-   pygame.draw.rect(screen,red,(600,800,40,40))
-   print("menu was used")
-
-   pass
-
-
 
 
 
