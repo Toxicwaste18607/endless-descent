@@ -32,6 +32,7 @@ class Player():
       self.x = x
       self.y = y
       self.hitbox=pygame.Rect(x, y, self.width, self.height)
+      self.load_character_images(self)
   
     def player_logic(self,screen,other):
        self.all_draws(screen)
@@ -65,13 +66,15 @@ class Player():
       stamina_bar=(x,y,width,stamina_bar_hight )
       pygame.draw.rect(screen,blue, stamina_bar )
 
-         
+    def load_character_images(self):
+      self.standing=pygame.image.load("scr/assets/Kight/standing")
+      self.standing=pygame.transform.scale(self.standing,(self.width,self.health))
+      
   
     def draw_character(self,screen):
-      pygame.draw.rect( screen, (blue), (self.hitbox ))
+      pygame.blit
 
-      standing=pygame.image.load("scr/assets/Kight/standing")
-      standing=pygame.transform.scale()
+      
 
 
     def take_damage(self,screen,other):
