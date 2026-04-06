@@ -1,6 +1,6 @@
 import pygame
 import time
-from ghost import *
+#from ghost import *
 
 green =(0, 255, 0)
 blue=(0, 0, 255) 
@@ -109,14 +109,14 @@ class Player():
       if self.hitbox.colliderect(other.hitbox):
          self.health-=0.1
       elif self.health<=0:
-        #self.player_death(screen)
+        self.player_death(screen)
         pass
   
     
     def player_death(self,screen):  
       self.hitbox.height -=1 #will be replaced with a death sceen
       pygame.draw.rect( screen, (blue), (self.hitbox))
-      ghost=Ghost(Player)
+      ghost=Player_Ghost(Player)
 
       
       
