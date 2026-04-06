@@ -18,6 +18,7 @@ red=(255,0,0)
 class Player():
     width= 50
     height= 70
+    w_d=(width,height)
     max_health=100
     health=100
     health_regen=1
@@ -66,7 +67,7 @@ class Player():
 
     def load_character_images(self):
       self.standing=pygame.image.load("src/assets/Knight/standing.png")
-      self.standing=pygame.transform.scale(self.standing,(self.width,self.height))
+      self.standing=pygame.transform.scale(self.standing,(self.w_d))
 
       #self.walking_1=pygame.image.load()
       #self.walking_1=pygame.transform.scale(self.walking_1, (self.width,self.height))
