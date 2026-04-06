@@ -118,8 +118,6 @@ class Player():
         pass
     
     def player_death(self,screen):  
-      self.hitbox.height -=1 #will be replaced with a death sceen
-      pygame.draw.rect( screen, (blue), (self.hitbox))
       ghost=Player_Ghost(Player)
 
       
