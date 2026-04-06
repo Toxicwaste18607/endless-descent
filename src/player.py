@@ -53,7 +53,6 @@ class Player():
         pygame.draw.rect(screen,(red),(health_bar) )
       
       else:
-        health_bar_hight==0
         pass
 
     
