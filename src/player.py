@@ -119,7 +119,7 @@ class Player():
         pass
     
     def player_death(self,screen):  
-      ghost=Player_Ghost(self.hitbox)
+      ghost=Player_Ghost(player.hitbox)
 
       
       
