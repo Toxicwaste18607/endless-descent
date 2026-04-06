@@ -1,5 +1,6 @@
 import pygame
 import time
+from ghost import *
 
 green =(0, 255, 0)
 blue=(0, 0, 255) 
