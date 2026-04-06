@@ -38,8 +38,15 @@ class Player():
 
 
     def all_draws(self, screen):
-       self.draw_stamina(screen)
-       self.draw_health(screen)
+      self.draw_stamina(screen)
+      self.draw_health(screen)
+
+      if self.health > 0:
+        self.draw_character(screen)
+      else:
+        pass
+
+
 
     def draw_health(self,screen):
       
@@ -92,9 +99,6 @@ class Player():
 
       #self.
       #self.
-
-  
-
 
 
     def draw_character(self,screen):
