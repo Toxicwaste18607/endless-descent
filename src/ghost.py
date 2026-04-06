@@ -14,6 +14,8 @@ class Player_Ghost():
         self.y=y
         self.width=width
         self.hight=hight
-        pygame.draw.rect( screen, (blue), (self.hitbox))
 
         pass
+
+    def draw_ghost(self,screen):
+        pygame.draw.rect( screen, (blue), (self.hitbox))
