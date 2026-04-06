@@ -107,7 +107,7 @@ class Player():
 
     def take_damage(self,screen,other):
       if self.hitbox.colliderect(other.hitbox):
-         self.health-=0.1
+         self.health-=1
       elif self.health<=0:
         self.player_death(screen)
         pass
