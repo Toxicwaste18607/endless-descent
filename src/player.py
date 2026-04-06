@@ -118,7 +118,7 @@ class Player():
         pass
     
     def player_death(self,screen):  
-      ghost=Player_Ghost(Player)
+      ghost=Player_Ghost()
 
       
       
