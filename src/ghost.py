@@ -9,12 +9,12 @@ red=(255,0,0)
 
 class Player_Ghost():
 
-    def __init__(self,x,y,width,hight):
+    def __init__(self,screen,x,y,width,hight):
         self.x=x
         self.y=y
         self.width=width
         self.hight=hight
-
+        self.draw_ghost(screen)
         pass
 
     def draw_ghost(self,screen):
