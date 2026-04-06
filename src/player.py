@@ -107,13 +107,13 @@ class Player():
 
     def take_damage(self,screen,other):
       if self.hitbox.colliderect(other.hitbox):
-         self.health-=1
-         print("take damage is called")
-      elif self.health<=0:
-        print("death is called")
-        self.player_death(screen)
+        if self.health >0: 
+          self.health-=1
+        elif self.health<=0:
+          self.player_death(screen)
+          pass
+      if not self.hitbox.colliderect(other.hitbox):  
         pass
-  
     
     def player_death(self,screen):  
       self.hitbox.height -=1 #will be replaced with a death sceen
