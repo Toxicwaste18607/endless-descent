@@ -37,9 +37,10 @@ class Player():
 
 
     def all_draws(self, screen):
-       
        self.draw_character(screen)
        self.draw_stamina(screen)
+
+       self.draw_health(screen)
 
     def draw_health(self,screen):
       
