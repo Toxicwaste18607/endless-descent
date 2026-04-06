@@ -67,15 +67,29 @@ class Player():
     def load_character_images(self):
       self.standing=pygame.image.load("src/assets/Knight/standing.png")
       self.standing=pygame.transform.scale(self.standing,(self.width,self.height))
-      #
+
       #self.
-      #
-      #
-      #
-      #
-      #
-      #
-      #
+      #self.
+      #self.
+      #self.
+      #self.
+      #self.
+      #self.
+      #self.
+      #self.
+      #self.
+      #self.
+      #self.
+      #self.
+      #self.
+      #self.
+      #self.
+      #self.
+      
+  
+
+
+
     def draw_character(self,screen):
       screen.blit(self.standing,(self.hitbox.x, self.hitbox.y))
 
