@@ -70,22 +70,29 @@ class Player():
 
       #self.
       #self.
-      #self.
-      #self.
-      #self.
-      #self.
-      #self.
-      #self.
-      #self.
-      #self.
-      #self.
-      #self.
-      #self.
-      #self.
-      #self.
+
       #self.
       #self.
       
+      #self.
+      #self.
+
+      #self.
+      #self.
+      #self.
+
+      #self.
+      #self.
+
+      #self.
+      #self.
+
+      #self.
+      #self.
+      
+      #self.
+      #self.
+
   
 
 
