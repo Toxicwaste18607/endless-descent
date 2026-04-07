@@ -16,7 +16,7 @@ def collision(screen,next_move):
 
 
 
-def movement(player):
+def movement(screen,player):
   keys=pygame.key.get_pressed()
 
   walking=1
