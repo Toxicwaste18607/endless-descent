@@ -76,46 +76,45 @@ class Player():
       self.standing=pygame.image.load("src/assets/Knight/standing.png")
       self.standing=pygame.transform.scale(self.standing,(self.width,self.height))
 
-      #self.walking_1=pygame.image.load(src/assets/Knight/walking_1.png)
-      #self.walking_1=pygame.transform.scale(self.walking_1, (self.width,self.height))
+      self.walking_1=pygame.image.load("src/assets/Knight/walking_1.png")
+      self.walking_1=pygame.transform.scale(self.walking_1, (self.width,self.height))
 
-      #self.walking_2=pygame.image.load(src/assets/Knight/walking_2.png)
-      #self.walking_2=pygame.transform.scale(self.walking_2, (self.width,self.height))
+      self.walking_2=pygame.image.load("src/assets/Knight/walking_2.png")
+      self.walking_2=pygame.transform.scale(self.walking_2, (self.width,self.height))
 
       
-      #self.walking_3=pygame.image.load(src/assets/Knight/walking_3.png)
-      #self.walking_3=pygame.transform.scale(self.walking_3, (self.width,self.height))
+      self.walking_3=pygame.image.load("src/assets/Knight/walking_3.png")
+      self.walking_3=pygame.transform.scale(self.walking_3, (self.width,self.height))
 
-      #self.=pygame.image.load(src/assets/Knight/attack_1.png)
-      #self.=pygame.transform.scale(self., (self.width,self.height))
+      self.att_1=pygame.image.load("src/assets/Knight/attack_1.png")
+      self.att_1=pygame.transform.scale(self.att_1, (self.width,self.height))
 
-      #self.=pygame.image.load(src/assets/Knight/attack_2.png)
-      #self.=pygame.transform.scale(self., (self.width,self.height))
+      self.att_2=pygame.image.load("src/assets/Knight/attack_2.png")
+      self.att_2=pygame.transform.scale(self._2, (self.width,self.height))
 
-      #self.=pygame.image.load(src/assets/Knight/attack_3.png)
-      #self.=pygame.transform.scale(self., (self.width,self.height))
+      self.att_3=pygame.image.load("src/assets/Knight/attack_3.png")
+      self.att_3=pygame.transform.scale(self.att_3, (self.width,self.height))
 
-      #self.=pygame.image.load(src/assets/Knight/Blocking.png)
-      #self.=pygame.transform.scale(self., (self.width,self.height))
+      self.blc_1=pygame.image.load("src/assets/Knight/Blocking.png")
+      self.blc_1=pygame.transform.scale(self.blc_1, (self.width,self.height))
 
-      #self.=pygame.image.load(src/assets/Knight/Blocking_1.png)
-      #self.=pygame.transform.scale(self., (self.width,self.height))
+      self.blc_2=pygame.image.load("src/assets/Knight/Blocking_1.png")
+      self.blc_2=pygame.transform.scale(self.blc_2, (self.width,self.height))
 
 
-      #self.=pygame.image.load(src/assets/Knight/Death_1.png)
-      #self.=pygame.transform.scale(self., (self.width,self.height))
+      self.dth_1=pygame.image.load("src/assets/Knight/Death_1.png")
+      self.dth_1=pygame.transform.scale(self.dth_1, (self.width,self.height))
 
-      #self.=pygame.image.load(src/assets/Knight/Death_2.png)
-      #self.=pygame.transform.scale(self., (self.width,self.height))
+      self.dth_2=pygame.image.load("src/assets/Knight/Death_2.png")
+      self.dth_2=pygame.transform.scale(self.dth_2, (self.width,self.height))
 
-      #self.=pygame.image.load(src/assets/Knight/Ghost_1.png)
-      #self.=pygame.transform.scale(self., (self.width,self.height))
+      self.gh_1=pygame.image.load("src/assets/Knight/Ghost_1.png")
+      self.gh_1=pygame.transform.scale(self.gh_1, (self.width,self.height))
 
-      #self.=pygame.image.load(src/assets/Knight/Ghost_2.png)
-      #self.=pygame.transform.scale(self., (self.width,self.height))
+      self.gh_2=pygame.image.load("src/assets/Knight/Ghost_2.png")
+      self.gh_2=pygame.transform.scale(self.gh_2, (self.width,self.height))
 
-      #self.=pygame.image.load(src/assets/Knight/)
-      #self.=pygame.transform.scale(self., (self.width,self.height))
+
 
 
     def draw_character(self,screen):
