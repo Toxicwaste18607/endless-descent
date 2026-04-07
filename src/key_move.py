@@ -39,6 +39,7 @@ def movement(player):
     next_move=player.hitbox.copy()
     next_move.y-=speed
     if not collision(next_move): 
+        player.walking(screen)
         player.hitbox.y -= speed
     
    
@@ -47,6 +48,7 @@ def movement(player):
     next_move=player.hitbox.copy()
     next_move.y+=speed
     if not collision(next_move):
+        player.walking(screen)
         player.hitbox.y+=speed
   
     
