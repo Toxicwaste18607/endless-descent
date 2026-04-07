@@ -9,8 +9,8 @@ def load_images():
   floor_one=pygame.transform.scale(floor_one, (screen_width,screen_height))
 
 
-standing=pygame.image.load("src/assets/Knight/standing.png")
-standing=pygame.transform.scale(standing,(player.width,player.height))
+#standing=pygame.image.load("src/assets/Knight/standing.png")
+#standing=pygame.transform.scale(standing,(player.width,player.height))
 
 #self.walking_1=pygame.image.load()
 #self.walking_1=pygame.transform.scale(self.walking_1, (self.width,self.height))
