@@ -1,3 +1,6 @@
+#not in use
+
+
 import pygame
 from setting import *
 
