@@ -70,6 +70,9 @@ def movement(screen,player):
   if not keys[pygame.K_LSHIFT]:
     player.stamina+=player.stamina_regain
 
+  else:
+    player.draw_character(screen)
+
   
 
   if player.hitbox.x < 0: #to stop the player from going off screen 
