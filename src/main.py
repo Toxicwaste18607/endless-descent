@@ -7,7 +7,6 @@ from setting import *
 from key_move import *
 from enemy_class import *
 from ghost import *
-from load_images import *
 
 
 
@@ -61,10 +60,10 @@ red=(255,0,0)
 
 
 
-'''def floor_type_one():
+def floor_type_one():
   global floor_one
   floor_one=pygame.image.load("src/assets/walls_and_floors/floor_type_one.png").convert_alpha()#this loads the floor png 
-  floor_one=pygame.transform.scale(floor_one, (screen_width,screen_height))'''
+  floor_one=pygame.transform.scale(floor_one, (screen_width,screen_height))
   
 
 def load_map(screen):
@@ -103,7 +102,7 @@ def get_asset_path(filename: str) -> str:
 pygame.init()                                  # initialize pygame
 screen = pygame.display.set_mode( (screen_width, screen_height) ) # create a window
 pygame.display.set_caption("Endless Desent")      # set window title
-load_images()
+floor_type_one()
 running = True   # event loop
 
 
