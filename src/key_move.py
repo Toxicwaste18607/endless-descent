@@ -6,7 +6,7 @@ from enemy_class import *
 
 
 
-def collision(next_move):
+def collision(screen,next_move):
   for wall in Walls.all_walls:
     if next_move.colliderect(wall.wall_hitbox):
       return True
@@ -38,7 +38,7 @@ def movement(player):
   if keys[pygame.K_w]: #up
     next_move=player.hitbox.copy()
     next_move.y-=speed
-    if not collision(next_move): 
+    if not collision(screen,next_move): 
         player.walking(screen)
         player.hitbox.y -= speed
     
@@ -47,7 +47,7 @@ def movement(player):
   if keys[pygame.K_s]:#down
     next_move=player.hitbox.copy()
     next_move.y+=speed
-    if not collision(next_move):
+    if not collision(screen,next_move): 
         player.walking(screen)
         player.hitbox.y+=speed
   
@@ -57,14 +57,14 @@ def movement(player):
   if keys[pygame.K_a]:#left
     next_move=player.hitbox.copy()
     next_move.x-=speed
-    if not collision(next_move):
+    if not collision(screen,next_move): 
       player.hitbox.x-=speed
 
 
   if keys[pygame.K_d]:#right
     next_move=player.hitbox.copy()
     next_move.x+=speed
-    if not collision(next_move):
+    if not collision(screen,next_move): 
       player.hitbox.x+=speed
   
   if not keys[pygame.K_LSHIFT]:
