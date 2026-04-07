@@ -86,8 +86,8 @@ class Player():
       #self.walking_3=pygame.image.load(src/assets/Knight/walking_3)
       #self.walking_3=pygame.transform.scale(self.walking_3, (self.width,self.height))
 
-      #self.walking_3=pygame.image.load(src/assets/Knight/)
-      #self.walking_3=pygame.transform.scale(self., (self.width,self.height))
+      #self.=pygame.image.load(src/assets/Knight/)
+      #self.=pygame.transform.scale(self., (self.width,self.height))
 
       #self.walking_3=pygame.image.load(src/assets/Knight/)
       #self.walking_3=pygame.transform.scale(self., (self.width,self.height))
