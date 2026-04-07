@@ -90,7 +90,7 @@ class Player():
       self.att_1=pygame.transform.scale(self.att_1, (self.width,self.height))
 
       self.att_2=pygame.image.load("src/assets/Knight/attack_2.png")
-      self.att_2=pygame.transform.scale(self._2, (self.width,self.height))
+      self.att_2=pygame.transform.scale(self.att_2, (self.width,self.height))
 
       self.att_3=pygame.image.load("src/assets/Knight/attack_3.png")
       self.att_3=pygame.transform.scale(self.att_3, (self.width,self.height))
