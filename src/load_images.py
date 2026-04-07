@@ -1,5 +1,5 @@
 import pygame
-
+from setting import *
 
 def load_images():
 
@@ -8,4 +8,4 @@ def load_images():
   floor_one=pygame.transform.scale(floor_one, (screen_width,screen_height))
 
 
-  
+
