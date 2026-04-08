@@ -118,7 +118,6 @@ class Player():
     self.gh_2=pygame.transform.scale(self.gh_2, (self.width,self.height))
 
 
-
   def draw_character(self,screen):
     if pygame.KEYDOWN==True:
       self.walking(screen)
