@@ -193,7 +193,6 @@ while running:
 
 
 
-  movement(screen,player)  
 
   pygame.display.flip()
   clock.tick(60)

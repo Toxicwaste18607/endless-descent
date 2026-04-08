@@ -38,6 +38,7 @@ class Player():
 
   def player_logic(self,screen,other):
       self.all_draws(screen)
+      self.movement()
 
 
   def all_draws(self, screen):
