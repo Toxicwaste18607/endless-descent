@@ -119,8 +119,8 @@ class Player():
 
 
   def draw_character(self,screen):
-    screen.blit(self.standing,(self.hitbox.x, self.hitbox.y))
-
+    #screen.blit(self.standing,(self.hitbox.x, self.hitbox.y))
+    self.walking(screen)
     '''if pygame.KEYDOWN==True:
       self.walking(screen)
     else:
