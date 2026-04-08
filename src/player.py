@@ -1,7 +1,8 @@
 import pygame
 import time
 from ghost import *
-from wall
+from wall_class_code import *
+from setting import *
 
 green =(0, 255, 0)
 blue=(0, 0, 255) 
@@ -175,6 +176,14 @@ class Player():
 
 
 
+def collision(next_move):
+  for wall in Walls.all_walls:
+    if next_move.colliderect(wall.wall_hitbox):
+      return True
+  return None
+    #if next_move.colliderect():pass
+
+
 
 
   
@@ -195,7 +204,7 @@ def movement(self):
   if keys[pygame.K_w]: #up
     next_move=self.hitbox.copy()
     next_move.y-=speed
-    if not collision(next_move): 
+    if not self.collision(next_move): 
         self.hitbox.y -= speed
     
    
@@ -203,7 +212,7 @@ def movement(self):
   if keys[pygame.K_s]:#down
     next_move=self.hitbox.copy()
     next_move.y+=speed
-    if not collision(next_move):
+    if not self.collision(next_move):
         self.hitbox.y+=speed
   
     
@@ -211,14 +220,14 @@ def movement(self):
   if keys[pygame.K_a]:#left
     next_move=self.hitbox.copy()
     next_move.x-=speed
-    if not collision(next_move):
+    if not self.collision(next_move):
       self.hitbox.x-=speed
 
 
   if keys[pygame.K_d]:#right
     next_move=self.hitbox.copy()
     next_move.x+=speed
-    if not collision(next_move):
+    if not self.collision(next_move):
       self.hitbox.x+=speed
   
   if not keys[pygame.K_LSHIFT]:
