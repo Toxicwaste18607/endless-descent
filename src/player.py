@@ -178,7 +178,7 @@ class Player():
 
 
 
-  def collision(next_move):
+  def collision(self,next_move):
     for wall in Walls.all_walls:
       if next_move.colliderect(wall.wall_hitbox):
         return True
