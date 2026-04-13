@@ -94,7 +94,7 @@ class Player():
   
   def player_death(self,screen):  
     from ghost import Player_Ghost 
-    ghost=Player_Ghost(self.hitbox)
+    ghost=Player_Ghost(self.hitbox.copy())
 
     
     
