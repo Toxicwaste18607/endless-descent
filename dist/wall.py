@@ -1,0 +1,39 @@
+import pygame
+
+
+
+
+class Walls():
+  all_walls = []
+  def __init__(self,x,y,width,height):
+    self.x=x
+    self.y=y
+    self.height= height
+    self.width= width
+    self.x_and_y=(self.x ,self.y)
+    self.all_walls.append(self)
+    self.wall_hitbox=pygame.Rect(self.x, self.y,self.width,self.height)
+    self.render_images()
+    
+
+
+  def render_images(self):
+    self.wall_vert=pygame.image.load("src/assets/walls_and_floors/wall_type_two_v.png").convert_alpha()
+    self.wall_vert=pygame.transform.scale(self.wall_vert,(self.width,self.height))
+    
+    self.wall_horl=pygame.image.load("src/assets/walls_and_floors/wall_type_two_h.png").convert_alpha()
+    self.wall_horl=pygame.transform.scale(self.wall_horl,(self.width,self.height))
+
+
+  def draw_wall(self,screen):
+    
+    if self.height>self.width:
+      screen.blit(self.wall_vert,self.x_and_y)
+    else:
+      screen.blit(self.wall_horl,self.x_and_y)
+
+
+  
+
+class Boarder_Walls(Walls):pass
+  
