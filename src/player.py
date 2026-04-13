@@ -192,6 +192,7 @@ class Player():
 
     
   def movement(self):
+    moving
     keys=pygame.key.get_pressed()
 
     walking=1
