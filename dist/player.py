@@ -1,6 +1,5 @@
 import pygame
 import time
-from ghost import *
 from wall import *
 from setting import *
 
