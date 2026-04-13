@@ -75,15 +75,6 @@ player=Player(300,300)
 
 enemy_1=Enemy(500,300)
 
-#===================
-# Colors
-
-green =(0, 255, 0)
-blue=(0, 0, 255) 
-white=(255, 255, 255) 
-black=(0, 0, 0) 
-
-#walls 
 
 
 
@@ -136,7 +127,7 @@ while running:
   
 
 
-  load_map(screen)
+  
 
   enemy_1.enemy_logic(screen , player)
   player.player_logic(screen,enemy_1)
