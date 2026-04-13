@@ -1,5 +1,5 @@
 import pygame
-from wall_class_code import *
+from wall import *
 
 
 
