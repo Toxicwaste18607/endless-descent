@@ -125,7 +125,6 @@ clock = pygame.time.Clock()
 
 while running:
   #game code goes here
-  screen = pygame.display.set_mode( (screen_width, screen_height) ) # create a window
 
   pygame.draw.rect( screen, white,  )
 
