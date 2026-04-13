@@ -8,10 +8,12 @@ from enemy import *
 from ghost import *
 from wall import *
 
-
-
-
 ghosts = []
+
+from ghost import Player_Ghost
+ghosts.append(Player_Ghost(Player.hitbox.copy()))
+
+
 
 
 #====================
