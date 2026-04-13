@@ -64,8 +64,8 @@ player=Player(300,300)
 enemy_1=Enemy(500,300)
 
 ghosts = []
-
-ghosts.append(Player_Ghost(player.hitbox.copy()))
+if player.health<=0:
+  ghosts.append(Player_Ghost(player.hitbox.copy()))
 
 
 
