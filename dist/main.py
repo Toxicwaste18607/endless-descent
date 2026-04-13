@@ -8,10 +8,8 @@ from enemy import *
 from ghost import *
 from wall import *
 
-ghosts = []
 
 from ghost import Player_Ghost
-ghosts.append(Player_Ghost(player.hitbox.copy()))
 
 
 
@@ -64,6 +62,11 @@ running = True   # event loop
 player=Player(300,300)
 
 enemy_1=Enemy(500,300)
+
+ghosts = []
+
+ghosts.append(Player_Ghost(player.hitbox.copy()))
+
 
 
 
