@@ -53,7 +53,11 @@ def get_asset_path(filename: str) -> str:
 #==========================
     
    
-    
+def load_map(screen):
+  screen.blit(white, (0, 0))
+
+  for wall in Walls.all_walls:
+    wall.draw_wall(screen)
     
 
 
