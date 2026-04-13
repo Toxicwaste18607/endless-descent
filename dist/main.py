@@ -123,11 +123,8 @@ h7 = Walls(860, 560, 150, 50)
 clock = pygame.time.Clock()
 
 while running:
-  #game code goes here
-  
+  pygame.draw.rect( screen, (0,0,255), (400,300,100,200) )
 
-
-  
 
   enemy_1.enemy_logic(screen , player)
   player.player_logic(screen,enemy_1)
