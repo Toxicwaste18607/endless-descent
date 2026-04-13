@@ -192,7 +192,7 @@ class Player():
 
     
   def movement(self):
-    moving
+    moving=False
     keys=pygame.key.get_pressed()
 
     walking=1
@@ -211,6 +211,7 @@ class Player():
       next_move.y-=speed
       if not self.collision(next_move): 
           self.hitbox.y -= speed
+          moving=True
       
     
     
@@ -219,6 +220,7 @@ class Player():
       next_move.y+=speed
       if not self.collision(next_move):
           self.hitbox.y+=speed
+          moving= True
     
       
 
@@ -227,6 +229,7 @@ class Player():
       next_move.x-=speed
       if not self.collision(next_move):
         self.hitbox.x-=speed
+        moving=True
 
 
     if keys[pygame.K_d]:#right
@@ -234,6 +237,7 @@ class Player():
       next_move.x+=speed
       if not self.collision(next_move):
         self.hitbox.x+=speed
+        moving=True
     
     if not keys[pygame.K_LSHIFT]:
       self.stamina+=self.stamina_regain
