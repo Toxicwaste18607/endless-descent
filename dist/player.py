@@ -78,7 +78,7 @@ class Player():
 
   def draw_character(self,screen):
     #screen.blit(self.standing,(self.hitbox.x, self.hitbox.y))
-    pygame.draw.rect(screen, )
+    pygame.draw.rect(screen, blue, )
   
 
 
