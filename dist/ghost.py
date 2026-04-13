@@ -11,10 +11,8 @@ red=(255,0,0)
 class Player_Ghost(Player):
 
     def __init__(self,screen,hitbox):
-        self.x=Player.hitbox
-    
-        self.draw_ghost(screen)
-        pass
+        super().__init__(x, y) 
+        
 
     def draw_ghost(self,screen):
         pygame.draw.rect( screen, (blue), (self.hitbox))
