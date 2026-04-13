@@ -1,7 +1,7 @@
 import pygame
 import time
 from ghost import *
-from wall_class_code import *
+from wall import *
 from setting import *
 
 green =(0, 255, 0)
