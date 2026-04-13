@@ -4,7 +4,7 @@ import os
 import pygame
 from player import Player
 from setting import *
-from enemy_class import *
+from enemy import *
 from ghost import *
 
 
@@ -19,41 +19,6 @@ blue=(0, 0, 255)
 white=(255, 255, 255) 
 black=(0, 0, 0) 
 red=(255,0,0)
-
-#keys for my self remove later 
-
-# pygame.draw.rect( screen, (Color), (x ,y ,width, height) )
-
-
-#git add .
-#git commit -m "progress update"
-#git push
-
-
-# to do list 
-#add ai attack
-#fix players health and stamina to fall from the top not the bottem
-#add in lighting and player fog of war
-#add block
-#add in player death
-#make proper borders
-#make enemy only move in one direction at a time
-#make a better path finding 
-#make attack zone a circle
-#add in colliosn with enemy
-#make player classes(assasin, knight, maybe more)
-#add in invintory 
-#add in loot and gear
-#add in enemy classes(goblin, bats ect)
-#player and enemy graphics
-#add in player ghoast
-#clean up all grapics
-#make rooms and ai gen them together
-#add in final boss 
-#put movement into player class
-#add in menus
-
-
 
 
 
