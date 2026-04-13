@@ -23,7 +23,7 @@ class Walls():
 
 
   def draw_wall(self,screen):
-    pygame.draw.rect(screen, white ,self.x, self.y,self.width,self.height)
+    pygame.draw.rect(screen, black ,(self.wall_hitbox))
 
 
   
