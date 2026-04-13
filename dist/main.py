@@ -79,6 +79,7 @@ enemy_1=Enemy(500,300)
 
 
 
+
 top= Walls(0, 0, 1400, 70)        
 bottom= Walls(0, 780, 1400, 40) 
 left= Walls(0, 0, 80, 800)    
@@ -123,7 +124,10 @@ h7 = Walls(860, 560, 150, 50)
 clock = pygame.time.Clock()
 
 while running:
-  pygame.draw.rect( screen, black, setting )
+  #game code goes here
+  screen = pygame.display.set_mode( (screen_width, screen_height) ) # create a window
+
+  pygame.draw.rect( screen, (0,0,255), (400,300,100,200) )
 
 
   enemy_1.enemy_logic(screen , player)
