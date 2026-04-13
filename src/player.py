@@ -136,7 +136,8 @@ class Player():
     walking_frames=[screen.blit(self.walking_1,(self.hitbox.x, self.hitbox.y)),
                     screen.blit(self.walking_2,(self.hitbox.x, self.hitbox.y)),
                     screen.blit(self.walking_3,(self.hitbox.x, self.hitbox.y))]
-    screen.blit
+    
+      
 
 
   def take_damage(self,screen,other):
