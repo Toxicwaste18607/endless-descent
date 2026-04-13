@@ -78,14 +78,7 @@ class Player():
 
   def draw_character(self,screen):
     #screen.blit(self.standing,(self.hitbox.x, self.hitbox.y))
-    pygame.draw.rect(screen, blue, self.hitbox)
-  
-
-
-  def standing(self,screen):
-    screen.blit(self.standing,(self.hitbox.x, self.hitbox.y))
-
-  
+    pygame.draw.rect(screen, blue, self.hitbox)  
     
 
 
@@ -101,7 +94,7 @@ class Player():
   
   def player_death(self,screen):  
     from ghost import Player_Ghost 
-    ghost=Player_Ghost(self.hitbox)
+    self.ghosts.append(Player_Ghost(self.hitbox.copy()))
 
     
     
