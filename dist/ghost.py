@@ -1,18 +1,11 @@
 import pygame
-from player import *
+from player import Player
 
-green =(0, 255, 0)
-blue=(0, 0, 255) 
-white=(255, 255, 255) 
-black=(0, 0, 0) 
-red=(255,0,0)
-
+blue = (0, 0, 255)
 
 class Player_Ghost(Player):
+    def __init__(self, hitbox):
+        super().__init__(hitbox.x, hitbox.y)
 
-    def __init__(self,screen,hitbox):
-        super().__init__(x, y) 
-        
-
-    def draw_ghost(self,screen):
-        pygame.draw.rect( screen, (blue), (self.hitbox))
+    def draw_character(self, screen):
+        pygame.draw.rect(screen, blue, self.hitbox)
