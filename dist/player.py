@@ -27,6 +27,7 @@ class Player():
   stamina = 100
   max_stamina=100
   stamina_regain = .02
+  range_multi= 2
 
   def __init__ (self ,x,y):
     
