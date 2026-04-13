@@ -25,7 +25,6 @@ class Player():
   health_regen=1
   attack_range = 5
   damage=20
-  range_multi=2
   stamina = 100
   max_stamina=100
   stamina_regain = .02
@@ -33,6 +32,8 @@ class Player():
   def __init__ (self ,x,y):
     
     self.hitbox=pygame.Rect(x, y, self.width, self.height)
+    self.ghosts = []
+
 
   def player_logic(self,screen,other):
       self.all_draws(screen)
