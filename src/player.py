@@ -126,10 +126,7 @@ class Player():
   def draw_character(self,screen):
     #screen.blit(self.standing,(self.hitbox.x, self.hitbox.y))
     self.walking(screen)
-    '''if pygame.KEYDOWN==True:
-      self.walking(screen)
-    else:
-      self.standing(screen)'''
+  
 
 
   def standing(self,screen):
@@ -238,7 +235,7 @@ class Player():
       next_move.y+=speed
       if not self.collision(next_move):
           self.hitbox.y+=speed
-          moving= True
+          
     
       
 
@@ -247,7 +244,7 @@ class Player():
       next_move.x-=speed
       if not self.collision(next_move):
         self.hitbox.x-=speed
-        moving=True
+        self.is_moving= True
 
 
     if keys[pygame.K_d]:#right
@@ -255,7 +252,7 @@ class Player():
       next_move.x+=speed
       if not self.collision(next_move):
         self.hitbox.x+=speed
-        moving=True
+        self.is_moving= True
     
     if not keys[pygame.K_LSHIFT]:
       self.stamina+=self.stamina_regain
