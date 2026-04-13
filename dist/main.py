@@ -31,11 +31,11 @@ red=(255,0,0)
   floor_one=pygame.transform.scale(floor_one, (screen_width,screen_height))'''
   
 
-def load_map(screen):
+'''def load_map(screen):
     screen.blit(white, (0, 0))
 
     for wall in Walls.all_walls:
-        wall.draw_wall(screen)
+        wall.draw_wall(screen)'''
 
 #===================
 
