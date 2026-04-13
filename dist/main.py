@@ -63,9 +63,6 @@ player=Player(300,300)
 
 enemy_1=Enemy(500,300)
 
-ghosts = []
-if player.health<=0:
-  ghosts.append(Player_Ghost(player.hitbox.copy()))
 
 
 
@@ -121,6 +118,9 @@ while running:
 
   load_map(screen)
 
+  ghosts = []
+  if player.health<=0:
+    ghosts.append(Player_Ghost(player.hitbox.copy()))
 
   for ghost in ghosts:
     ghost.draw_character(screen)
