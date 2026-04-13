@@ -130,8 +130,7 @@ clock = pygame.time.Clock()
 while running:
   #game code goes here
 
-  pygame.draw.rect( screen, white,  )
-
+  load_map(screen)
 
   enemy_1.enemy_logic(screen , player)
   player.player_logic(screen,enemy_1)
