@@ -1,5 +1,4 @@
 import pygame
-import time
 from wall import *
 from setting import *
 

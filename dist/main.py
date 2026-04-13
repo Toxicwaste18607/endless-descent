@@ -11,7 +11,7 @@ from wall import *
 
 
 
-
+ghosts = []
 
 
 #====================
