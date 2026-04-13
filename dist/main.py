@@ -127,7 +127,7 @@ while running:
   #game code goes here
   screen = pygame.display.set_mode( (screen_width, screen_height) ) # create a window
 
-  pygame.draw.rect( screen, (0,0,255), (400,300,100,200) )
+  pygame.draw.rect( screen, white,  )
 
 
   enemy_1.enemy_logic(screen , player)
