@@ -138,9 +138,22 @@ class Player():
 
 
   def walking(self,screen):
-    walking_frames=[screen.blit(self.walking_1,(self.hitbox.x, self.hitbox.y)),
-                    screen.blit(self.walking_2,(self.hitbox.x, self.hitbox.y)),
-                    screen.blit(self.walking_3,(self.hitbox.x, self.hitbox.y))]
+    def walking(self, screen):
+      if self.is_moving:
+          self.animation_timer += self.animation_speed
+
+          if self.animation_timer >= 1:
+              self.animation_timer = 0
+              self.current_frame += 1
+
+              if self.current_frame >= len(self.walk_frames):
+                  self.current_frame = 0
+
+          frame = self.walk_frames[self.current_frame]
+      else:
+          frame = self.standing
+
+      screen.blit(frame, (self.hitbox.x, self.hitbox.y))
     
       
 
