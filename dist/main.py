@@ -22,21 +22,6 @@ black=(0, 0, 0)
 red=(255,0,0)
 
 
-
-
-
-'''def floor_type_one():
-  global floor_one
-  floor_one=pygame.image.load("src/assets/walls_and_floors/floor_type_one.png").convert_alpha()#this loads the floor png 
-  floor_one=pygame.transform.scale(floor_one, (screen_width,screen_height))'''
-  
-
-'''def load_map(screen):
-    screen.blit(white, (0, 0))
-
-    for wall in Walls.all_walls:
-        wall.draw_wall(screen)'''
-
 #===================
 
 #For logic pathing
