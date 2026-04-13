@@ -31,7 +31,6 @@ class Player():
   def __init__ (self ,x,y):
     
     self.hitbox=pygame.Rect(x, y, self.width, self.height)
-    self.ghosts = []
 
 
   def player_logic(self,screen,other):
@@ -75,12 +74,6 @@ class Player():
 
 
 
-  def draw_character(self,screen):
-    #screen.blit(self.standing,(self.hitbox.x, self.hitbox.y))
-    pygame.draw.rect(screen, blue, self.hitbox)  
-    
-
-
   def take_damage(self,screen,other):
     if self.hitbox.colliderect(other.hitbox):
       if self.health >0: 
@@ -93,7 +86,7 @@ class Player():
   
   def player_death(self,screen):  
     from ghost import Player_Ghost 
-    self.ghosts.append(Player_Ghost(self.hitbox.copy()))
+    ghost=Player_Ghost(self.hitbox)
 
     
     
