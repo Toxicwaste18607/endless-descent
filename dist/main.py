@@ -67,7 +67,6 @@ def get_asset_path(filename: str) -> str:
 pygame.init()                                  # initialize pygame
 screen = pygame.display.set_mode( (screen_width, screen_height) ) # create a window
 pygame.display.set_caption("Endless Desent")      # set window title
-floor_type_one()
 running = True   # event loop
 
 
