@@ -11,7 +11,7 @@ from wall import *
 ghosts = []
 
 from ghost import Player_Ghost
-ghosts.append(Player_Ghost(Player.hitbox.copy()))
+ghosts.append(Player_Ghost(player.hitbox.copy()))
 
 
 
@@ -117,6 +117,10 @@ while running:
   #game code goes here
 
   load_map(screen)
+
+
+  for ghost in ghosts:
+    ghost.draw_character(screen)
 
   enemy_1.enemy_logic(screen , player)
   player.player_logic(screen,enemy_1)
