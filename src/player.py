@@ -164,7 +164,7 @@ class Player():
   
   def player_death(self,screen):  
     # random respond
-    self.new_ghost = Player_ghost(self.hitbox.copy())
+    self.new_ghost = Player_ghost(screen,self.hitbox.copy())
 
     for x in range (200):
 
