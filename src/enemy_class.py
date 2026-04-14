@@ -16,6 +16,8 @@ red=(255,0,0)
 #this will be enemy base code used in all enemy classes
 class Enemy():
    all_enemies =[]
+   agro_range=300
+   
    width= 50
    height= 70
    max_health=100
