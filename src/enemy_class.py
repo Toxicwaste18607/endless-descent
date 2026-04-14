@@ -18,10 +18,15 @@ class Enemy():
    all_enemies =[]
    width= 50
    height= 70
-   speed=1
-   agro_range=300
+   max_health=100
    health=100
-   attack_range=1
+   health_regen=1
+   attack_range = 5
+   damage=20
+   range_multi=2
+   stamina = 100
+   max_stamina=100
+   stamina_regain = .02
    def __init__ (self ,x,y):
         self.hitbox=pygame.Rect(x, y, self.width, self.height)
         Enemy.all_enemies.append(self)
