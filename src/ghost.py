@@ -8,10 +8,11 @@ class Player_ghost:
     width=50
     def __init__(self, hitbox):
         self.hitbox = hitbox.copy()
+        self.load_images()
 
     def draw(self, screen):
-        pygame.draw.rect(screen, blue, self.hitbox)
+        screen.blit()
 
     def load_images(self):
         self.ghost_1=pygame.image.load("scr/assets/Knigh/Ghost_2.png")
-        self.ghost_1=pygame.transform.scale(self.ghost_1(self.height))
+        self.ghost_1=pygame.transform.scale(self.ghost_1(self.width,self.height))
