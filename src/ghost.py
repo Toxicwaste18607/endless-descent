@@ -4,13 +4,13 @@ from player import *
 blue = (0, 0, 255)
 
 class Player_ghost:
-    height=70
-    width=50
+    
     def __init__(self, hitbox):
         self.hitbox = hitbox.copy()
-        self.load_images()
         self.height=70
         self.width=50
+        self.load_images()
+
 
     def draw(self, screen):
         screen.blit(self.ghost_1(self.hitbox.x, self.hitbox.y))
