@@ -44,7 +44,7 @@ class Enemy():
 
 
    def draw_character(self,screen):
-      self.standing
+      screen.blit(self.standing,(self.hitbox.x,self.hitbox.y))
    def  collision(self,screen,next_move,other):
          for wall in Walls.all_walls:
             if next_move.colliderect(wall.wall_hitbox):
