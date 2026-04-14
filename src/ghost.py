@@ -7,7 +7,7 @@ black=(0, 0, 0)
 red=(255,0,0)
 
 
-class Player_Ghost():
+class Player_ghost():
 
     def __init__(self,screen,x,y,width,height):
         self.x=x

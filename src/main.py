@@ -110,6 +110,8 @@ running = True   # event loop
 player=Player(300,300)
 
 enemy_1=Enemy(500,300)
+ghosts=[]
+
 
 #===================
 # Colors
@@ -169,6 +171,7 @@ clock = pygame.time.Clock()
 
 while running:
   #game code goes here
+
   
 
 
@@ -176,6 +179,11 @@ while running:
 
   enemy_1.enemy_logic(screen , player)
   player.player_logic(screen,enemy_1)
+
+  if player.health <= 0:
+     ghosts.append (Player_ghost(player.hitbox.copy()))
+
+
   
 
   for event in pygame.event.get():
