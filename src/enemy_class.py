@@ -24,6 +24,7 @@ class Enemy():
    def __init__ (self ,x,y):
         self.hitbox=pygame.Rect(x, y, self.width, self.height)
         Enemy.all_enemies.append(self)
+        self.load_image()
         
   
 
@@ -35,14 +36,15 @@ class Enemy():
       else:
          pass
 
-
+   def load_image(self):
+      self.standing=pygame.image.load("scr/assest/skelo.png")
+      self.standing=pygame.transform.sclae(self.standing,(self.width,self.health))
 
 
 
 
    def draw_character(self,screen):
-      pygame.draw.rect( screen, (red), (self.hitbox ))
-
+      self.standing
    def  collision(self,screen,next_move,other):
          for wall in Walls.all_walls:
             if next_move.colliderect(wall.wall_hitbox):
