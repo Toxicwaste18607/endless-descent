@@ -148,6 +148,8 @@ class Player():
     if self.hitbox.colliderect(other.hitbox):
       if self.health >0: 
         self.health-=1
+        if self.health <=0:
+          self.player_death(screen)
       elif self.health<=0:
         self.player_death(screen)
         pass
