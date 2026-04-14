@@ -36,10 +36,7 @@ class Player():
     self.hitbox=pygame.Rect(x, y, self.width, self.height)
     self.load_character_images()
     self.walk_frames = [self.walking_1, self.walking_2, self.walking_3]
-    self.current_frame = 0
-    self.animation_timer = 0
-    self.animation_speed = 0.15   # lower = faster animation
-    self.is_moving = False
+    
 
   def player_logic(self,screen,other):
       self.all_draws(screen)
@@ -135,19 +132,11 @@ class Player():
 
 
   def walking(self, screen):
-    if self.is_moving:
-        self.animation_timer += self.animation_speed
+    '''if self.is_moving:
 
-        if self.animation_timer >= 1:
-            self.animation_timer = 0
-            self.current_frame += 1
-
-            if self.current_frame >= len(self.walk_frames):
-                self.current_frame = 0
-
-        frame = self.walk_frames[self.current_frame]
-    else:
-        frame = self.standing
+        frame = self.walk_frames[self.current_frame]'''
+    #else:
+    frame = self.standing
 
     screen.blit(frame, (self.hitbox.x, self.hitbox.y))
   
@@ -165,7 +154,7 @@ class Player():
       pass
   
   def player_death(self,screen):  
-    ghost=Player_Ghost(self.hitbox)
+    pass
 
     
     
