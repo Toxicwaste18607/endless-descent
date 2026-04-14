@@ -183,7 +183,7 @@ while running:
   if player.health <= 0:
      ghosts.append (Player_ghost(player.hitbox.copy()))
 
-
+  print (ghosts)
   
 
   for event in pygame.event.get():
