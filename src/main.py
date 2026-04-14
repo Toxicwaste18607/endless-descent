@@ -181,13 +181,9 @@ while running:
 
   enemy_1.enemy_logic(screen , player)
 
-  print ("check death")
-  if player.health <= 0:
-     print ("dead")
-     bob= (Player_ghost(player.hitbox.copy()))
-     ghosts.append(bob)
-
-
+  if player.new_ghost is not None:
+    ghosts.append(player.new_ghost)
+    player.new_ghost = None
 
   player.player_logic(screen,enemy_1)
 
