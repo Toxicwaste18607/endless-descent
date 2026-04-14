@@ -159,7 +159,7 @@ class Player():
     for x in range (200):
 
       check_area_x= random.randint(0,screen_width-self.width)
-      check_area_y= random
+      check_area_y= random.randint(0,screen_height-self.height)
       #respon_point= 
 
     
