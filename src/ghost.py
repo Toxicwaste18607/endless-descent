@@ -11,4 +11,5 @@ class Player_ghost:
         pygame.draw.rect(screen, blue, self.hitbox)
 
     def load_images(self):
-        self.ghost_1=pygame.image.load("scr/assets/Knigh/Death")
+        self.ghost_1=pygame.image.load("scr/assets/Knigh/Ghost_2.png")
+        self.ghost_1=pygame.transform.scale()
