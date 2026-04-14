@@ -188,9 +188,8 @@ while running:
   player.player_logic(screen,enemy_1)
 
   
-
-  print (ghosts)
-  
+  for x in ghosts:
+     ghost.draw()  
 
   for event in pygame.event.get():
     if event.type == pygame.QUIT:
