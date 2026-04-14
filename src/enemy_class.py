@@ -18,7 +18,7 @@ class Enemy():
    all_enemies =[]
 
    def __init__ (self ,hitbox):
-        self.hitbox=pygame.Rect(x, y, self.width, self.height)
+        self.hitbox=pygame.Rect(hitbox.x, hitbox.y, self.width, self.height)
         Enemy.all_enemies.append(self)
 
         
