@@ -20,6 +20,7 @@ class Enemy():
    
    width= 50
    height= 70
+
    max_health=100
    health=100
    health_regen=1
@@ -29,6 +30,7 @@ class Enemy():
    stamina = 100
    max_stamina=100
    stamina_regain = .02
+   speed=1
    def __init__ (self ,x,y):
         self.hitbox=pygame.Rect(x, y, self.width, self.height)
         Enemy.all_enemies.append(self)
