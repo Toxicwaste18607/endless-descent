@@ -9,6 +9,8 @@ class Player_ghost:
     def __init__(self, hitbox):
         self.hitbox = hitbox.copy()
         self.load_images()
+        self.height=70
+        self.width=50
 
     def draw(self, screen):
         screen.blit(self.ghost_1(self.hitbox.x, self.hitbox.y))
