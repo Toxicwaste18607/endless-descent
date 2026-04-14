@@ -110,7 +110,6 @@ running = True   # event loop
 player=Player(300,300)
 
 enemy_1=Enemy(500,300)
-ghosts=[]
 
 
 #===================
@@ -179,6 +178,8 @@ while running:
 
   enemy_1.enemy_logic(screen , player)
   player.player_logic(screen,enemy_1)
+
+  ghosts=[]
 
   if player.health <= 0:
      ghosts.append (Player_ghost(player.hitbox.copy()))
