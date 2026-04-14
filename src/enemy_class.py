@@ -17,7 +17,7 @@ red=(255,0,0)
 class Enemy():
    all_enemies =[]
 
-   def __init__ (self ,x,y):
+   def __init__ (self ,hitbox):
         self.hitbox=pygame.Rect(x, y, self.width, self.height)
         Enemy.all_enemies.append(self)
 
