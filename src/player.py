@@ -158,7 +158,7 @@ class Player():
     # random respond
     for x in range (200):
 
-      check_area_x= random.randint(0,screen_width,screen_height)
+      check_area_x= random.randint(0,screen_width-self.width)
       check_area_y= random
       #respon_point= 
 
