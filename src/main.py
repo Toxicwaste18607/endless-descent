@@ -7,7 +7,7 @@ from player import Player
 from setting import *
 from enemy_class import *
 from ghost import *
-
+from skelo import *
 
 
 
@@ -109,7 +109,7 @@ running = True   # event loop
 #Classes in use
 player=Player(300,300)
 
-enemy_1=Enemy(500,300)
+enemy_1=Skelo(500,300)
 
 
 #===================
