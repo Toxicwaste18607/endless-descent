@@ -37,7 +37,7 @@ class Enemy():
          pass
 
    def load_image(self):
-      self.standing=pygame.image.load("scr/assests/skelo.png")
+      self.standing=pygame.image.load("scr/assets/skelo.png")
       self.standing=pygame.transform.sclae(self.standing,(self.width,self.health))
 
 
