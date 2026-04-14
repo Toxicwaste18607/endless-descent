@@ -176,6 +176,11 @@ while running:
 
 
   load_map(screen)
+
+
+
+  enemy_1.enemy_logic(screen , player)
+
   print ("check death")
   if player.health <= 0:
      print ("dead")
@@ -184,7 +189,6 @@ while running:
 
 
 
-  enemy_1.enemy_logic(screen , player)
   player.player_logic(screen,enemy_1)
 
   
