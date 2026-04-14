@@ -163,7 +163,7 @@ class Player():
       check_area_x= random.randint(0,screen_width-self.width)
       check_area_y= random.randint(0,screen_height-self.height)
       
-      test_rect = pygame.rect(check_area_x,check_area_y,self.width,self.height)
+      test_rect = pygame.Rect(check_area_x,check_area_y,self.width,self.height)
 
       if not self.collision(test_rect):
         self.hitbox.x= check_area_x
