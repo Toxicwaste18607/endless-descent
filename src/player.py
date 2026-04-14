@@ -154,7 +154,8 @@ class Player():
       pass
   
   def player_death(self,screen):  
-    pass
+    
+    self.hitbox.y
 
     
     
