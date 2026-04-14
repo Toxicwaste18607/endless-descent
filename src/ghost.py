@@ -17,4 +17,4 @@ class Player_ghost:
 
     def load_images(self):
         self.ghost_1=pygame.image.load("src/assets/Knight/Ghost_2.png")
-        self.ghost_1=pygame.transform.scale(self.ghost_1(self.width,self.height))
+        self.ghost_1=pygame.transform.scale(self.ghost_1,(self.width,self.height))
