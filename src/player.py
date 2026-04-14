@@ -3,6 +3,7 @@ import time
 from ghost import *
 from wall_class_code import *
 from setting import *
+import random
 
 green =(0, 255, 0)
 blue=(0, 0, 255) 
@@ -154,8 +155,10 @@ class Player():
       pass
   
   def player_death(self,screen):  
-    
-    self.hitbox.y
+    # random respond
+    check_area_x= random
+    check_area_y= random
+    #respon_point= 
 
     
     
