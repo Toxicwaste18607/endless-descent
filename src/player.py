@@ -43,7 +43,7 @@ class Player():
   def player_logic(self,screen,other):
       self.all_draws(screen)
       self.movement()
-
+  #DRAWING CODE
 
   def all_draws(self, screen):
     self.draw_stamina(screen)
@@ -99,7 +99,7 @@ class Player():
     frame = self.standing
 
     screen.blit(frame, (self.hitbox.x, self.hitbox.y))
-  
+  #LOADING IMAGE CODE
   
 
   def load_character_images(self):
@@ -144,7 +144,7 @@ class Player():
     self.gh_2=pygame.image.load("src/assets/Knight/Ghost_2.png")
     self.gh_2=pygame.transform.scale(self.gh_2, (self.width,self.height))
 
-
+  #PLAYER CODE
 
 
     
