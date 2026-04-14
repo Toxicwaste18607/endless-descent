@@ -2,6 +2,7 @@
 
 import os
 import pygame
+import random
 from player import Player
 from setting import *
 from enemy_class import *
