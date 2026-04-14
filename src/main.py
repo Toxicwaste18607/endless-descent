@@ -165,6 +165,7 @@ h7 = Walls(860, 560, 150, 50)
 
 
 
+ghosts=[]
 
 clock = pygame.time.Clock()
 
@@ -179,10 +180,9 @@ while running:
   enemy_1.enemy_logic(screen , player)
   player.player_logic(screen,enemy_1)
 
-  ghosts=[]
 
   if player.health <= 0:
-     ghosts.append (bob=(Player_ghost(player.hitbox.copy())))
+     ghosts.append (Player_ghost(player.hitbox.copy()))
 
   print (ghosts)
   
