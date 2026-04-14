@@ -36,7 +36,7 @@ class Player():
     self.hitbox=pygame.Rect(x, y, self.width, self.height)
     self.load_character_images()
     self.walk_frames = [self.walking_1, self.walking_2, self.walking_3]
-    
+  
 
   def player_logic(self,screen,other):
       self.all_draws(screen)
