@@ -20,7 +20,7 @@ class Enemy():
    def __init__ (self ,x,y):
         self.hitbox=pygame.Rect(x, y, self.width, self.height)
         Enemy.all_enemies.append(self)
-        self.load_image()
+
         
   
 
@@ -32,15 +32,10 @@ class Enemy():
       else:
          pass
 
-   def load_image(self):
-      self.standing=pygame.image.load("src/assets/skelo.png")
-      self.standing=pygame.transform.scale(self.standing,(self.width,self.height))
 
 
 
 
-   def draw_character(self,screen):
-      screen.blit(self.standing,(self.hitbox.x,self.hitbox.y))
    def  collision(self,screen,next_move,other):
          for wall in Walls.all_walls:
             if next_move.colliderect(wall.wall_hitbox):
