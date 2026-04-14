@@ -83,6 +83,23 @@ class Player():
   def draw_character(self,screen):
     #screen.blit(self.standing,(self.hitbox.x, self.hitbox.y))
     self.walking(screen)
+
+
+
+  def standing(self,screen):
+    screen.blit(self.standing,(self.hitbox.x, self.hitbox.y))
+
+
+
+  def walking(self, screen):
+    '''if self.is_moving:
+
+        frame = self.walk_frames[self.current_frame]'''
+    #else:
+    frame = self.standing
+
+    screen.blit(frame, (self.hitbox.x, self.hitbox.y))
+  
   
 
   def load_character_images(self):
@@ -130,20 +147,6 @@ class Player():
 
 
 
-  def standing(self,screen):
-    screen.blit(self.standing,(self.hitbox.x, self.hitbox.y))
-
-
-
-  def walking(self, screen):
-    '''if self.is_moving:
-
-        frame = self.walk_frames[self.current_frame]'''
-    #else:
-    frame = self.standing
-
-    screen.blit(frame, (self.hitbox.x, self.hitbox.y))
-  
     
 
 
