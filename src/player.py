@@ -79,6 +79,12 @@ class Player():
     stamina_bar=(x,y,width,stamina_bar_hight )
     pygame.draw.rect(screen,blue, stamina_bar )
 
+
+  def draw_character(self,screen):
+    #screen.blit(self.standing,(self.hitbox.x, self.hitbox.y))
+    self.walking(screen)
+  
+
   def load_character_images(self):
     self.standing=pygame.image.load("src/assets/Knight/standing.png")
     self.standing=pygame.transform.scale(self.standing,(self.width,self.height))
@@ -122,10 +128,6 @@ class Player():
     self.gh_2=pygame.transform.scale(self.gh_2, (self.width,self.height))
 
 
-  def draw_character(self,screen):
-    #screen.blit(self.standing,(self.hitbox.x, self.hitbox.y))
-    self.walking(screen)
-  
 
 
   def standing(self,screen):
