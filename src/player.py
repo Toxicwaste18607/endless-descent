@@ -162,7 +162,13 @@ class Player():
       check_area_y= random.randint(0,screen_height-self.height)
       
       test_rect = pygame.rect(check_area_x,check_area_y.self.width,self.height)
-      
+
+      if not self.collision(test_rect):
+        self.hitbox.x= check_area_x
+        self.hitbox.y=check_area_y
+        self.health = self.max_health
+        self.stamina = self.max_stamina
+        return
 
 
     
