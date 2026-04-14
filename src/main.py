@@ -182,7 +182,7 @@ while running:
   ghosts=[]
 
   if player.health <= 0:
-     ghosts.append (Player_ghost(bob(player.hitbox.copy())))
+     ghosts.append (bob=(Player_ghost(player.hitbox.copy())))
 
   print (ghosts)
   
