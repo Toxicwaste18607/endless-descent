@@ -11,7 +11,7 @@ class Player_ghost:
         self.load_images()
 
     def draw(self, screen):
-        screen.blit()
+        screen.blit(self.ghost_1(self.hitbox.x, self.hitbox.y))
 
     def load_images(self):
         self.ghost_1=pygame.image.load("scr/assets/Knigh/Ghost_2.png")
