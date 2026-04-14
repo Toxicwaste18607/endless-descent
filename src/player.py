@@ -215,9 +215,9 @@ class Player():
     sprinting=2
     speed = walking
     if keys[pygame.K_LSHIFT]:
-      self.sprint()
       
-      if self.sprint:
+      
+      if self.stamina>0:
         speed = sprinting 
       else:
         speed = walking
