@@ -178,4 +178,4 @@ class Enemy():
     attack_box=pygame.Rect(attack_box)
     pygame.draw.rect(screen,green,attack_box)
     if attack_box.colliderect(other.hitbox):
-        other.take_damage(self)
+        other.take_damage(self,other)

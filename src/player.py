@@ -190,9 +190,6 @@ class Player():
 
 
 
-
-
-
   def collision(self,next_move):
     for wall in Walls.all_walls:
       if next_move.colliderect(wall.wall_hitbox):
