@@ -15,12 +15,161 @@ red=(255,0,0)
 
 #this will be enemy base code used in all enemy classes
 class Skelo(Enemy):
+   all_enemies =[]
+   agro_range=300
    
+   width= 50
+   height= 70
+
+   max_health=100
+   health=100
+   health_regen=1
+   attack_range = 5
+   damage=20
+   range_multi=2
+   stamina = 100
+   max_stamina=100
+   stamina_regain = .02
+   speed=1
    def __init__ (self ,x,y):
         self.hitbox=pygame.Rect(x, y, self.width, self.height)
         Enemy.all_enemies.append(self)
         self.load_image()
-   
+        
+  
+
+   def skelo_logic(self,screen,other):
+      if self.health>0:
+         self.draw_character(screen)
+         self.search (screen,other)
+
+      else:
+         pass
+
+   def load_image(self):
+      self.standing=pygame.image.load("src/assets/skelo.png")
+      self.standing=pygame.transform.scale(self.standing,(self.width,self.height))
+
+
+
+
+   def draw_character(self,screen):
+      screen.blit(self.standing,(self.hitbox.x,self.hitbox.y))
+   def  collision(self,screen,next_move,other):
+         for wall in Walls.all_walls:
+            if next_move.colliderect(wall.wall_hitbox):
+               return True
+            if next_move.colliderect(other.hitbox):
+               self.attack(screen, other)
+               return True
+
+   def path_finding(self,screen,blocked,other):
+       #key 1 means right, 2 means up, 3 means left, 4 means down 
+       ## x+ = right, x- = left, y+ = down, y- = up
+
+       if blocked == 1:
+         next_move=self.hitbox.copy()
+         next_move.x-=self.speed
+         if not self.collision(screen,next_move,other):
+            self.hitbox.x-=self.speed
+         else:
+            blocked= 3
+         
+
+       if blocked == 2:
+         next_move=self.hitbox.copy()
+         next_move.y-=self.speed
+         if not self.collision(screen,next_move,other):
+            self.hitbox.y-=self.speed
+         else:
+            blocked=4
+
+
+       if blocked == 3:
+         next_move=self.hitbox.copy()
+         next_move.x+=self.speed
+         if not self.collision(screen,next_move,other):
+            self.hitbox.x+=self.speed
+         else:
+            blocked=1
+
+       if blocked == 4:
+         next_move=self.hitbox.copy()
+         next_move.y+=self.speed
+         if not self.collision(screen,next_move,other):
+            self.hitbox.y+=self.speed
+         else:
+            blocked=2
+
+
+
+   def check_dist(self,other):
+       self.distance_x= (other.hitbox.x - self.hitbox.x)
+       self.distance_y= (other.hitbox.y - self.hitbox.y)
+
+    
+   def search (self,screen,other):
+       self.check_dist(other)
+       if abs(self.distance_x)<self.agro_range and abs(self.distance_y)<self.agro_range: 
+         self.agro(screen,other)
+       else:
+          self.wander()
+
+
+   def agro(self,screen,other): #right
+      if self.distance_x > 0:
+         next_move=self.hitbox.copy()
+         next_move.x+=self.speed
+         if not self.collision(screen,next_move,other):
+            self.hitbox.x+=self.speed
+         else:
+            blocked=1
+            self.path_finding(screen,blocked,other)
+      
+      
+      if self.distance_y >0:#up
+         next_move=self.hitbox.copy()
+         next_move.y+=self.speed
+         if not self.collision(screen,next_move,other):
+            self.hitbox.y+=self.speed
+         else:
+            blocked=2
+            self.path_finding(screen,blocked,other)
+
+      if self.distance_x <0:#left
+         next_move=self.hitbox.copy()
+         next_move.x-= self.speed
+         if not self.collision(screen,next_move,other):
+            self.hitbox.x -= self.speed
+         else:
+            blocked=3
+            self.path_finding(screen,blocked,other)
+      
+
+
+      if self.distance_y<0:#down
+         next_move=self.hitbox.copy()
+         next_move.y-=self.speed
+         if not self.collision(screen,next_move,other):
+            self.hitbox.y-=self.speed
+         else:
+            blocked=4
+            self.path_finding(screen,blocked,other)
+
+
+
+   def wander(self):
+       pass
+
+       
+
+    
+   def take_damage (self,other):
+      if self.health > 0:
+         self.health -= other.damage
+      else:
+         pass
+      
       
    def attack(self,screen,other):
     attack_box=(self.hitbox.x-self.attack_range,  self.hitbox.y -self.attack_range,
