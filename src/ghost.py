@@ -9,3 +9,6 @@ class Player_ghost:
 
     def draw(self, screen):
         pygame.draw.rect(screen, blue, self.hitbox)
+
+    def load_images(self):
+        self.ghost_1=pygame.image.load("scr/assets/Knigh/Death")
