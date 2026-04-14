@@ -1,9 +1,10 @@
 import pygame
 from player import *
+from enemy_class import *
 
 blue = (0, 0, 255)
 
-class Player_ghost:
+class Player_ghost(Enemy):
     
     def __init__(self, hitbox):
         self.hitbox = hitbox.copy()
