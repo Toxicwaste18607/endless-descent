@@ -27,7 +27,7 @@ class Player_ghost(Enemy):
         
 
 
-    def draw(self, screen):
+    def draw_character(self, screen):
         screen.blit(self.ghost_1,(self.hitbox.x, self.hitbox.y))
 
     def load_images(self):
