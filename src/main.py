@@ -62,7 +62,7 @@ red=(255,0,0)
 
 def floor_type_one():
   global floor_one
-  floor_one=pygame.image.load("src/assets/walls_and_floors/floor_layout.png").convert_alpha()#this loads the floor png 
+  floor_one=pygame.image.load("src/assets/walls_and_floors/floor_type.png").convert_alpha()#this loads the floor png 
   floor_one=pygame.transform.scale(floor_one, (screen_width,screen_height))
   
 
@@ -121,64 +121,73 @@ white=(255, 255, 255)
 black=(0, 0, 0) 
 
 
-
-
-T = 64
-
 walls = [
-    # BORDER
-    Walls(0, 0, 21*T, T),
-    Walls(0, 11*T, 21*T, T),
-    Walls(0, 0, T, 12*T),
-    Walls(20*T, 0, T, 12*T),
+    # LEFT BORDER
+    Walls(0, 0, 64, 832),
 
-    # LEFT L
-    Walls(2*T, 2*T, T, 3*T),
-    Walls(2*T, 4*T, 2*T, T),
+    # RIGHT BORDER
+    Walls(1344, 0, 64, 832),
 
-    # LEFT MID HORIZONTAL
-    Walls(1*T, 7*T, 3*T, T),
+    # TOP BORDER
+    Walls(0, 0, 1408, 64),
 
-    # LEFT BOTTOM VERTICAL
-    Walls(4*T, 8*T, T, 3*T),
+    # BOTTOM BORDER
+    Walls(0, 768, 1408, 64),
 
-    # CENTER U
-    Walls(7*T, 2*T, T, 5*T),
-    Walls(7*T, 7*T, 3*T, T),
-    Walls(9*T, 2*T, T, 5*T),
+    # LEFT INNER
+    Walls(128, 256, 64, 128),
+    Walls(192, 256, 64, 192),
+    Walls(192, 576, 64, 128),
 
-    # CENTER DIVIDER
-    Walls(10*T, 0, T, 8*T),
+    # MID LEFT
+    Walls(256, 64, 64, 128),
+    Walls(256, 448, 128, 64),
 
-    # SMALL CENTER BLOCK
-    Walls(8*T, 9*T, T, T),
+    # CENTER BLOCK
+    Walls(384, 256, 64, 64),
+    Walls(384, 448, 64, 192),
+    Walls(384, 704, 64, 64),
 
-    # TOP SMALL (RIGHT SIDE)
-    Walls(12*T, 2*T, T, T),
+    # CENTER COLUMN
+    Walls(448, 256, 64, 64),
+    Walls(448, 576, 64, 64),
 
-    # RIGHT C SHAPE
-    Walls(12*T, 7*T, 3*T, T),
-    Walls(12*T, 7*T, T, 3*T),
-    Walls(12*T, 9*T, 3*T, T),
+    # CENTER MASS
+    Walls(512, 64, 64, 192),
+    Walls(512, 576, 64, 64),
 
-    # INNER RIGHT BOX
-    Walls(13*T, 7*T, 2*T, T),
-    Walls(13*T, 7*T, T, 2*T),
-    Walls(13*T, 8*T, 2*T, T),
+    # BIG CENTER STACK
+    Walls(576, 256, 64, 384),
 
-    # RIGHT TOP ROOM
-    Walls(16*T, 3*T, T, 3*T),
-    Walls(16*T, 5*T, 2*T, T),
+    # RIGHT CENTER COLUMN
+    Walls(768, 320, 64, 320),
+    Walls(768, 704, 64, 64),
+
+    # RIGHT INNER
+    Walls(832, 64, 64, 128),
+    Walls(832, 320, 64, 64),
+    Walls(832, 576, 64, 64),
 
     # RIGHT MID
-    Walls(15*T, 6*T, T, 2*T),
+    Walls(896, 192, 64, 64),
+    Walls(896, 320, 64, 64),
+    Walls(896, 576, 64, 64),
 
-    # RIGHT LOWER
-    Walls(17*T, 7*T, 3*T, T),
-    Walls(19*T, 7*T, T, 3*T),
+    Walls(960, 192, 64, 64),
+    Walls(960, 576, 64, 64),
 
-    # BOTTOM RIGHT POST
-    Walls(18*T, 9*T, T, 2*T),
+    Walls(1024, 192, 64, 64),
+
+    # RIGHT STACK
+    Walls(1088, 320, 64, 384),
+    Walls(1088, 704, 64, 64),
+
+    # RIGHT TOP CLUSTER
+    Walls(1152, 64, 64, 128),
+    Walls(1152, 192, 64, 64),
+    Walls(1152, 448, 64, 64),
+
+    Walls(1216, 448, 64, 64),
 ]
 
 
