@@ -133,37 +133,43 @@ right=Walls(1320, 0, 80, 800)
 
 
 
+# outer walls
+top = Walls(0, 0, 1400, 70)
+bottom = Walls(0, 780, 1400, 40)
+left = Walls(0, 0, 80, 800)
+right = Walls(1320, 0, 80, 800)
 
-# top-left section
-w1  = Walls(231, 83, 25, 220)
-w2  = Walls(105, 301, 425, 20)
+# ===== INTERIOR WALLS =====
 
-# center divider + upper middle
-w3  = Walls(543, 43, 25, 343)
-w4  = Walls(555, 143, 304, 19)
+# upper-left
+w1  = Walls(232, 86, 24, 216)
+w2  = Walls(109, 303, 422, 20)
 
-# upper-right section
-w5  = Walls(973, 43, 24, 128)
-w6  = Walls(1186, 104, 127, 21)
-w7  = Walls(1285, 115, 24, 92)
-w8  = Walls(1163, 203, 25, 24)
+# center divider + upper middle shelf
+w3  = Walls(544, 45, 24, 330)
+w4  = Walls(555, 145, 315, 19)
 
-# long middle-right platform + small block
-w9  = Walls(791, 302, 537, 21)
-w10 = Walls(1001, 419, 25, 22)
+# upper-right
+w5  = Walls(975, 44, 24, 125)
+w6  = Walls(1188, 106, 124, 20)
+w7  = Walls(1288, 106, 24, 96)
+w8  = Walls(1166, 205, 24, 22)
 
-# lower-left section
-w11 = Walls(80, 546, 267, 20)
-w12 = Walls(311, 547, 25, 148)
+# mid-right long shelf + middle small block
+w9  = Walls(792, 304, 536, 20)
+w10 = Walls(1003, 420, 24, 22)
 
-# long lower platform
-w13 = Walls(494, 523, 736, 21)
+# lower-left
+w11 = Walls(82, 547, 268, 20)
+w12 = Walls(312, 548, 24, 149)
+
+# long lower shelf
+w13 = Walls(494, 525, 720, 20)
 
 # lower supports
-w14 = Walls(1126, 547, 25, 189)
-w15 = Walls(499, 593, 24, 146)
-w16 = Walls(843, 616, 24, 122)
-w17 = Walls(1074, 615, 26, 124)
+w14 = Walls(1118, 548, 24, 188)
+w15 = Walls(500, 594, 24, 145)
+w16 = Walls(844, 617, 24, 121)
 
 
 
