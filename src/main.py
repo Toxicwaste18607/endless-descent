@@ -128,11 +128,10 @@ black=(0, 0, 0)
 wall_thickness = 50
 
 # borders
-top_border = Walls(40, 40, 1520, wall_thickness)
-bottom_border = Walls(40, 930, 1520, wall_thickness)
-left_border = Walls(40, 40, wall_thickness, 890)
-right_border = Walls(1560, 40, wall_thickness, 890)
-
+top= Walls(0, 0, 1400, 70)        
+bottom= Walls(0, 780, 1400, 40) 
+left= Walls(0, 0, 80, 800)    
+right=Walls(1320, 0, 80, 80
 # upper left room
 h1 = Walls(130, 360, 300, wall_thickness)
 v1 = Walls(430, 80, wall_thickness, 280)
