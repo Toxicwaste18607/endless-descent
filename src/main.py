@@ -125,10 +125,6 @@ black=(0, 0, 0)
 
 
 
-top= Walls(0, 0, 1400, 70)        
-bottom= Walls(0, 780, 1400, 40) 
-left= Walls(0, 0, 80, 800)    
-right=Walls(1320, 0, 80, 800)
 
 
 
