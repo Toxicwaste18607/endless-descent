@@ -4,7 +4,7 @@ import os
 import pygame
 from player import Player
 from setting import *
-from enemy import *
+from dist.enemy_class import *
 from ghost import *
 from wall import *
 
