@@ -183,7 +183,9 @@ while running:
   if player.new_ghost is not None:
     ghosts.append(player.new_ghost)
     player.new_ghost = None
-  attacking = False
+
+
+    attacking = False
 
   load_map(screen)
   player.player_logic(screen, None)
@@ -197,11 +199,18 @@ while running:
       if attacking:
           player.attack(screen, enemy)
 
+  player.player_logic(screen,enemy_1)
+
+  for enemy in Enemy.all_enemies:
+    enemy.enemy_logic(screen, player)
+
   for event in pygame.event.get():
     if event.type == pygame.QUIT:
       running = False
 
-   
+    if event.type == pygame.KEYDOWN:
+      if event.key == pygame.K_SPACE:
+        player.attack(screen, enemy_1)
 
 
 
