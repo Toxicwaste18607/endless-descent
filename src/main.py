@@ -179,7 +179,6 @@ while running:
 
 
 
-  enemy_1.enemy_logic(screen , player)
 
   if player.new_ghost is not None:
     ghosts.append(player.new_ghost)
@@ -187,10 +186,8 @@ while running:
 
   player.player_logic(screen,enemy_1)
 
-  
-  for x in ghosts:
-     x.draw_character(screen)  
-     x.enemy_logic(screen, player)
+  for enemy in Enemy.all_enemies:
+    enemy.enemy_logic(screen, player)
 
   for event in pygame.event.get():
     if event.type == pygame.QUIT:
