@@ -41,7 +41,7 @@ class Skelo(Enemy):
 
 
    def load_image(self):
-      self.standing=pygame.image.load("assets/skelo.png")
+      self.standing=pygame.image.load("src/assets/skelo.png")
       self.standing=pygame.transform.scale(self.standing,(self.width,self.height))
 
 

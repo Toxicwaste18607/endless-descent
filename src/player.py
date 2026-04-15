@@ -103,7 +103,7 @@ class Player():
   
 
   def load_character_images(self):
-    self.standing=pygame.image.load("assets/Knight/standing.png")
+    self.standing=pygame.image.load("src/assets/Knight/standing.png")
     self.standing=pygame.transform.scale(self.standing,(self.width,self.height))
 
     '''self.walking_1=pygame.image.load("src/assets/Knight/walking_1.png")
