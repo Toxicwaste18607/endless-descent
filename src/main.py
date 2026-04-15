@@ -132,36 +132,33 @@ right=Walls(1320, 0, 80, 800)
 
 
 
-#Top left
-h1 = Walls(100, 100, 320, 50)
-v1 = Walls(100, 100, 50, 220)
+# ===== INNER WALLS =====
 
-# UPPER MIDDLE ROOM
-h2 = Walls(250, 220, 320, 50)
-v2 = Walls(570, 220, 50, 220)
-h3 = Walls(250, 440, 320, 50)
-v3 = Walls(250, 440, 50, 170)
+# Left room
+l1 = Walls(80, 150, 300, 40)
+l2 = Walls(80, 150, 40, 200)
+l3 = Walls(340, 150, 40, 200)
+l4 = Walls(80, 310, 300, 40)
 
-# CENTER LOWER CONNECTION
-h4 = Walls(350, 610, 260, 50)
-v4 = Walls(560, 490, 50, 120)
+# Middle hallway connectors
+m1 = Walls(380, 230, 200, 40)
+m2 = Walls(580, 230, 40, 200)
 
-# BOTTOM LEFT
-#h5 
+# Center room
+c1 = Walls(620, 150, 300, 40)
+c2 = Walls(620, 150, 40, 200)
+c3 = Walls(880, 150, 40, 200)
+c4 = Walls(620, 310, 300, 40)
 
-# RIGHT MAIN STRUCTURE
-v5 = Walls(700, 100, 50, 300)
-h6 = Walls(700, 400, 280, 50)
-v6 = Walls(930, 180, 50, 270)
-v7 = Walls(830, 220, 50, 180)
+# Right room
+r1 = Walls(920, 400, 300, 40)
+r2 = Walls(920, 400, 40, 200)
+r3 = Walls(1180, 400, 40, 200)
+r4 = Walls(920, 560, 300, 40)
 
-# RIGHT SIDE EXTRA PATHS
-h7 = Walls(860, 560, 150, 50)
-#h8 
-
-# CENTER SMALL LINK
-#v8 
-
+# Bottom connector hallway
+b1 = Walls(380, 500, 200, 40)
+b2 = Walls(580, 500, 40, 100)
 
 
 
