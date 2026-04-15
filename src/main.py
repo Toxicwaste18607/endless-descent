@@ -128,10 +128,9 @@ black=(0, 0, 0)
 wall_thickness = 50
 
 # borders
-top= Walls(0, 0, 1400, 70)        
-bottom= Walls(0, 780, 1400, 40) 
+'''top= Walls(0, 0, 1400, 70)        
 left= Walls(0, 0, 80, 800)    
-right=Walls(1320, 0, 80, 80)
+right=Walls(1320, 0, 80, 80)'''
 
 
 
