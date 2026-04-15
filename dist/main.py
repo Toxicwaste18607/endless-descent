@@ -70,8 +70,6 @@ enemy_1=Enemy(500,300)
 
 
 
-0)
-
 
 
 #Top left
