@@ -190,8 +190,11 @@ while running:
   load_map(screen)
   player.player_logic(screen, None)
 
+  for event in pygame.event.get():
+    if event.type == pygame.QUIT:
+      running = False
 
-  if event.type == pygame.KEYDOWN:
+    if event.type == pygame.KEYDOWN:
       if event.key == pygame.K_SPACE:
         player.attack(screen, enemy_1)
         attacking= True
@@ -209,9 +212,6 @@ while running:
 
 
 
-  for event in pygame.event.get():
-    if event.type == pygame.QUIT:
-      running = False
 
     
 
