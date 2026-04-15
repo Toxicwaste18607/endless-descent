@@ -1,3 +1,10 @@
 {
-    "gitdoc.enabled": true
+    "gitdoc.enabled": true,
+    "python-envs.pythonProjects": [
+        {
+            "path": "src/Rooms",
+            "envManager": "ms-python.python:venv",
+            "packageManager": "ms-python.python:pip"
+        }
+    ]
 }
