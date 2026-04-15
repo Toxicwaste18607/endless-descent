@@ -14,12 +14,12 @@ class Player_ghost(Enemy):
     health=100
     health_regen=1
     attack_range = 5
-    damage=20
+    damage=10
     range_multi=2
     stamina = 100
     max_stamina=100
     stamina_regain = .02
-    speed=1
+    speed=.5
     def __init__(self,hitbox):
        
         self.load_images()
