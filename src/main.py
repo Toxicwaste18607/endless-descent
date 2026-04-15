@@ -123,7 +123,31 @@ black=(0, 0, 0)
 #walls 
 
 
+w1  = Walls(1, 5, 4, 1)   # left middle horizontal
+w2  = Walls(4, 5, 1, 7)   # left middle vertical down
 
+w3  = Walls(3, 1, 1, 3)   # upper-left vertical
+w4  = Walls(1, 3, 1, 1)   # small upper-left horizontal
+
+w5  = Walls(8, 2, 4, 1)   # upper-middle horizontal
+w6  = Walls(8, 1, 1, 3)   # upper-middle left vertical
+w7  = Walls(12, 1, 1, 3)  # upper-middle right vertical
+
+w8  = Walls(15, 1, 1, 6)  # upper-right tall vertical
+w9  = Walls(11, 6, 5, 1)  # middle-right horizontal
+w10 = Walls(11, 6, 1, 3)  # middle-right vertical down
+
+w11 = Walls(18, 1, 1, 4)  # far-right upper vertical
+w12 = Walls(18, 5, 2, 1)  # far-right small horizontal
+
+w13 = Walls(17, 6, 2, 1)  # right-center small horizontal
+w14 = Walls(18, 6, 1, 6)  # right-center vertical down
+
+w15 = Walls(14, 11, 4, 1) # bottom-right horizontal
+w16 = Walls(14, 11, 1, 1) # bottom-right little left nub
+
+w17 = Walls(8, 5, 1, 2)   # small center pillar
+w18 = Walls(11, 11, 1, 2) # bottom-center small pillar
 
 
 
