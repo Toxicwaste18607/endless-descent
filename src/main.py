@@ -108,11 +108,8 @@ running = True   # event loop
 
 #Classes in use
 player=Player(300,300)
-import random
-  
-enemy = Enemy(random.randint(0, 800), random.randint(0, 800))
 
-
+enemy_1=Skelo(450,380)
 
 
 #===================

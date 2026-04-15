@@ -150,7 +150,7 @@ class Enemy():
          self.health -= other.damage
          if self.health<= 0:
             self.all_enemies.remove()
-      else:
+      if self.health<= 0:
          self.all_enemies.remove()
 
    def attack(self,screen,other):
