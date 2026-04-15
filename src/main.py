@@ -190,7 +190,7 @@ while running:
   
   for x in ghosts:
      x.draw(screen)  
-     ghost.enemy_logic(screen, player)
+     ghosts.enemy_logic(screen, player)
 
   for event in pygame.event.get():
     if event.type == pygame.QUIT:
