@@ -155,14 +155,6 @@ while running:
   
   load_map(screen)
 
-  tile_w = 64
-  tile_h = 64
-
-  for x in range(0, 1400, tile_w):
-      pygame.draw.line(screen, (50, 50, 50), (x, 0), (x, 800))
-
-  for y in range(0, 800, tile_h):
-      pygame.draw.line(screen, (50, 50, 50), (0, y), (1400, y))
   
 
 
