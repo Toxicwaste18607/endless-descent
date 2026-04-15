@@ -11,6 +11,13 @@ from skelo import *
 
 
 
+import os
+
+for root, dirs, files in os.walk("src"):
+    for f in files:
+        if "floor" in f.lower():
+            print(os.path.join(root, f))
+
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(PROJECT_ROOT)
 print("CWD FIXED TO:", os.getcwd())
