@@ -22,4 +22,4 @@ Close Window → Exit game
 
 
 AI use 
-Ai was used as both a teacher and a debugger. However it would make several mistakes or over complacte things.
+Ai was used as both a teacher and a debugger. However it would make several mistakes or over complicate things.
