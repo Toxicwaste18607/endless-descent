@@ -9,7 +9,7 @@ class Player_ghost(Enemy):
 
     width= 50
     height= 70
-
+    agro_range=300
     max_health=100
     health=100
     health_regen=1
