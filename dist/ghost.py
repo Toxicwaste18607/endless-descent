@@ -9,7 +9,7 @@ class Player_ghost(Enemy):
 
     width= 35
     height= 50
-    agro_range=700
+    agro_range=300
     max_health=100
     health=100
     health_regen=1
@@ -19,7 +19,7 @@ class Player_ghost(Enemy):
     stamina = 100
     max_stamina=100
     stamina_regain = .02
-    speed=0.5
+    speed=1
     def __init__(self,hitbox):
        
         self.load_images()
