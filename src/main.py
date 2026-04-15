@@ -123,31 +123,39 @@ black=(0, 0, 0)
 #walls 
 
 
-w1  = Walls(1, 5, 4, 1)   # left middle horizontal
-w2  = Walls(4, 5, 1, 7)   # left middle vertical down
+def W(col, row, w, h):
+    return Walls(col * 70, row * 50, w * 70, h * 50)
 
-w3  = Walls(3, 1, 1, 3)   # upper-left vertical
-w4  = Walls(1, 3, 1, 1)   # small upper-left horizontal
+top = Walls(0, 0, 1400, 70)
+bottom = Walls(0, 780, 1400, 40)
+left = Walls(0, 0, 80, 800)
+right = Walls(1320, 0, 80, 800)
 
-w5  = Walls(8, 2, 4, 1)   # upper-middle horizontal
-w6  = Walls(8, 1, 1, 3)   # upper-middle left vertical
-w7  = Walls(12, 1, 1, 3)  # upper-middle right vertical
+w1  = W(1, 5, 4, 1)
+w2  = W(4, 5, 1, 7)
 
-w8  = Walls(15, 1, 1, 6)  # upper-right tall vertical
-w9  = Walls(11, 6, 5, 1)  # middle-right horizontal
-w10 = Walls(11, 6, 1, 3)  # middle-right vertical down
+w3  = W(3, 1, 1, 3)
+w4  = W(1, 3, 1, 1)
 
-w11 = Walls(18, 1, 1, 4)  # far-right upper vertical
-w12 = Walls(18, 5, 2, 1)  # far-right small horizontal
+w5  = W(8, 2, 4, 1)
+w6  = W(8, 1, 1, 3)
+w7  = W(12, 1, 1, 3)
 
-w13 = Walls(17, 6, 2, 1)  # right-center small horizontal
-w14 = Walls(18, 6, 1, 6)  # right-center vertical down
+w8  = W(15, 1, 1, 6)
+w9  = W(11, 6, 5, 1)
+w10 = W(11, 6, 1, 3)
 
-w15 = Walls(14, 11, 4, 1) # bottom-right horizontal
-w16 = Walls(14, 11, 1, 1) # bottom-right little left nub
+w11 = W(18, 1, 1, 4)
+w12 = W(18, 5, 2, 1)
 
-w17 = Walls(8, 5, 1, 2)   # small center pillar
-w18 = Walls(11, 11, 1, 2) # bottom-center small pillar
+w13 = W(17, 6, 2, 1)
+w14 = W(18, 6, 1, 6)
+
+w15 = W(14, 11, 4, 1)
+w16 = W(14, 11, 1, 1)
+
+w17 = W(8, 5, 1, 2)
+w18 = W(11, 11, 1, 2)
 
 
 
