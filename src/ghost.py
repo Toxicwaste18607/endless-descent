@@ -6,9 +6,22 @@ blue = (0, 0, 255)
 
 class Player_ghost(Enemy):
     
+
+    width= 50
+    height= 70
+
+    max_health=100
+    health=100
+    health_regen=1
+    attack_range = 5
+    damage=20
+    range_multi=2
+    stamina = 100
+    max_stamina=100
+    stamina_regain = .02
+    speed=1
     def __init__(self,screen,hitbox):
-        self.width = 50
-        self.height = 70
+       
         self.load_images()
         super().__init__(hitbox)   
         
