@@ -185,7 +185,7 @@ while running:
     player.new_ghost = None
 
 
-    attacking = False
+  attacking = False
 
   load_map(screen)
   player.player_logic(screen, None)
