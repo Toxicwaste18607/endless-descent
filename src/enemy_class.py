@@ -149,7 +149,7 @@ class Enemy():
       if self.health > 0:
          self.health -= other.damage
       else:
-         pass
+         self.hitbox=(0,0,0,0)
 
    def attack(self,screen,other):
       attack_box=(self.hitbox.x-self.attack_range,  self.hitbox.y -self.attack_range,
