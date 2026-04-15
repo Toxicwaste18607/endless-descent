@@ -218,9 +218,6 @@ while running:
 
 
 
-  
-
-
 
 
   pygame.display.flip()
