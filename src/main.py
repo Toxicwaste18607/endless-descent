@@ -190,6 +190,14 @@ while running:
   load_map(screen)
   player.player_logic(screen, None)
 
+
+  if event.type == pygame.KEYDOWN:
+      if event.key == pygame.K_SPACE:
+        player.attack(screen, enemy_1)
+        attacking= True
+
+  
+
   for enemy in Enemy.all_enemies:
       enemy.enemy_logic(screen, player)
 
@@ -199,18 +207,13 @@ while running:
       if attacking:
           player.attack(screen, enemy)
 
-  player.player_logic(screen,enemy_1)
 
-  for enemy in Enemy.all_enemies:
-    enemy.enemy_logic(screen, player)
 
   for event in pygame.event.get():
     if event.type == pygame.QUIT:
       running = False
 
-    if event.type == pygame.KEYDOWN:
-      if event.key == pygame.K_SPACE:
-        player.attack(screen, enemy_1)
+    
 
 
 
