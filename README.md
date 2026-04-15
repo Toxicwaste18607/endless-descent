@@ -19,3 +19,5 @@ W / A / S / D → Move player
 Left Shift → Sprint (uses stamina)
 Space → Attack
 Close Window → Exit game
+
+
