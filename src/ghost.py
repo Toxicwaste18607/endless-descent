@@ -7,8 +7,8 @@ blue = (0, 0, 255)
 class Player_ghost(Enemy):
     
 
-    width= 50
-    height= 70
+    width= 35
+    height= 50
     agro_range=300
     max_health=100
     health=100
