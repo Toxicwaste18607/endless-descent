@@ -9,7 +9,7 @@ class Player_ghost(Enemy):
     def __init__(self,screen,hitbox):
         self.width = 50
         self.height = 70
-        self.load_images(screen)
+        self.load_images()
         super().__init__(hitbox)   
         
 
