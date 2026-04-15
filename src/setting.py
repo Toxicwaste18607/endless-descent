@@ -1,3 +1,4 @@
 #setting
-screen_width = 1344
-screen_height = 768
+screen_width= 1400
+screen_height= 800
+
