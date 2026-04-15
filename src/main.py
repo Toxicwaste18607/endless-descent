@@ -123,54 +123,78 @@ black=(0, 0, 0)
 
 
 
-
+TILE = 64
 
 walls = [
+    # =========================
     # OUTER BORDER
-    Walls(0, 0, 1400, 20),
-    Walls(0, 780, 1400, 20),
-    Walls(0, 0, 20, 800),
-    Walls(1380, 0, 20, 800),
+    # =========================
+    Walls(0, 0, 21*TILE, TILE),
+    Walls(0, 11*TILE, 21*TILE, TILE),
+    Walls(0, 0, TILE, 12*TILE),
+    Walls(20*TILE, 0, TILE, 12*TILE),
 
-    # LEFT ROOM (L shape)
-    Walls(100, 100, 20, 200),
-    Walls(100, 280, 120, 20),
+    # =========================
+    # LEFT TOP (L)
+    # =========================
+    Walls(2*TILE, 2*TILE, TILE, 3*TILE),
+    Walls(2*TILE, 4*TILE, 2*TILE, TILE),
 
-    # LEFT MID
-    Walls(80, 500, 200, 20),
-    Walls(250, 520, 20, 250),
+    # LEFT MID HALL
+    Walls(1*TILE, 7*TILE, 3*TILE, TILE),
 
-    # CENTER LEFT (U shape)
-    Walls(450, 100, 20, 300),
-    Walls(450, 380, 200, 20),
-    Walls(650, 100, 20, 300),
+    # LEFT BOTTOM VERTICAL
+    Walls(4*TILE, 8*TILE, TILE, 3*TILE),
 
-    # CENTER SMALL BLOCK
-    Walls(600, 600, 80, 20),
+    # =========================
+    # CENTER LEFT (U SHAPE)
+    # =========================
+    Walls(7*TILE, 2*TILE, TILE, 5*TILE),
+    Walls(7*TILE, 7*TILE, 3*TILE, TILE),
+    Walls(9*TILE, 2*TILE, TILE, 5*TILE),
 
     # CENTER DIVIDER
-    Walls(720, 0, 20, 500),
+    Walls(10*TILE, 0, TILE, 8*TILE),
 
-    # RIGHT TOP SMALL
-    Walls(850, 100, 60, 20),
+    # SMALL CENTER BLOCK
+    Walls(8*TILE, 9*TILE, TILE, TILE),
 
-    # RIGHT MID (C shape)
-    Walls(820, 400, 200, 20),
-    Walls(820, 400, 20, 200),
-    Walls(820, 580, 200, 20),
+    # =========================
+    # TOP MID SMALL
+    # =========================
+    Walls(12*TILE, 2*TILE, TILE, TILE),
+    Walls(12*TILE, 1*TILE, TILE, TILE),
 
+    # =========================
+    # RIGHT CENTER (C SHAPE)
+    # =========================
+    Walls(12*TILE, 7*TILE, 3*TILE, TILE),
+    Walls(12*TILE, 7*TILE, TILE, 3*TILE),
+    Walls(12*TILE, 9*TILE, 3*TILE, TILE),
+
+    # INNER BOX RIGHT
+    Walls(13*TILE, 7*TILE, 2*TILE, TILE),
+    Walls(13*TILE, 7*TILE, TILE, 2*TILE),
+    Walls(13*TILE, 8*TILE, 2*TILE, TILE),
+
+    # =========================
     # RIGHT TOP ROOM
-    Walls(1050, 200, 20, 200),
-    Walls(1050, 380, 120, 20),
+    # =========================
+    Walls(16*TILE, 3*TILE, TILE, 3*TILE),
+    Walls(16*TILE, 5*TILE, 2*TILE, TILE),
 
-    # RIGHT LOWER
-    Walls(1100, 550, 200, 20),
-    Walls(1300, 550, 20, 150),
+    # RIGHT MID WALL
+    Walls(15*TILE, 6*TILE, 1*TILE, 2*TILE),
 
-    # EXIT GAPS (like your red/blue)
-    # leave space manually — no walls here
+    # =========================
+    # RIGHT LOWER PATH
+    # =========================
+    Walls(17*TILE, 7*TILE, 3*TILE, TILE),
+    Walls(19*TILE, 7*TILE, TILE, 3*TILE),
+
+    # BOTTOM RIGHT POST
+    Walls(18*TILE, 9*TILE, TILE, 2*TILE),
 ]
-
 
 
 
