@@ -120,54 +120,6 @@ blue=(0, 0, 255)
 white=(255, 255, 255) 
 black=(0, 0, 0) 
 
-#walls 
-
-# outer border
-Walls(64, 64, 1216, 20)     # top
-Walls(64, 64, 20, 640)      # left
-Walls(64, 684, 1216, 20)    # bottom
-Walls(1260, 64, 20, 640)    # right
-
-# top-left L
-Walls(160, 160, 20, 160)
-Walls(160, 300, 160, 20)
-
-# left-middle horizontal
-Walls(64, 460, 192, 20)
-
-# lower-left vertical
-Walls(288, 460, 20, 244)
-
-# center-left tall U
-Walls(480, 160, 20, 320)
-Walls(480, 480, 224, 20)
-Walls(684, 64, 20, 436)
-
-# top-center divider
-Walls(896, 64, 20, 224)
-
-# small top block
-Walls(960, 140, 20, 80)
-
-# top-right U
-Walls(1088, 64, 20, 308)
-Walls(1088, 372, 160, 20)
-Walls(1228, 200, 20, 192)
-
-# center-right box shape
-Walls(896, 460, 20, 224)
-Walls(896, 664, 96, 20)
-Walls(928, 460, 160, 20)
-Walls(1068, 460, 20, 160)
-
-# right-middle hall
-Walls(1088, 460, 172, 20)
-
-# bottom-center small block
-Walls(512, 620, 64, 20)
-
-# bottom-right small vertical
-Walls(1120, 620, 20, 84)
 
 
 
