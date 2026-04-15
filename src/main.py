@@ -284,7 +284,6 @@ while running:
 
     if event.type == pygame.KEYDOWN:
       if event.key == pygame.K_SPACE:
-        player.attack(screen, enemy_1)
         attacking= True
 
   
