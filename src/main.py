@@ -126,57 +126,67 @@ black=(0, 0, 0)
 
 
 # Outer border
-top_border = Walls(0, 0, 1600, 50)
-bottom_border = Walls(0, 850, 1600, 50)
-left_border = Walls(0, 0, 50, 900)
-right_border = Walls(1550, 0, 50, 900)
+# OUTER WALLS
+top_wall = Walls(0, 0, 1600, 40)
+bottom_wall = Walls(0, 860, 1600, 40)
+left_wall = Walls(0, 0, 40, 900)
+right_wall = Walls(1560, 0, 40, 900)
 
-# Top-left room "L"
-wall_1 = Walls(140, 170, 40, 190)   # vertical
-wall_2 = Walls(140, 320, 160, 40)   # horizontal
+# LEFT TOP L
+l1_vertical = Walls(150, 190, 40, 170)
+l1_horizontal = Walls(150, 330, 150, 40)
 
-# Far-left middle wall
-wall_3 = Walls(0, 540, 280, 40)     # horizontal from left side inward
+# LEFT MID HALL
+left_mid_horizontal = Walls(0, 570, 280, 40)
 
-# Bottom-left vertical
-wall_4 = Walls(310, 540, 40, 320)   # vertical
+# LEFT LOWER VERTICAL
+left_lower_vertical = Walls(340, 570, 40, 330)
 
-# Center large U shape
-wall_5 = Walls(520, 190, 40, 390)   # vertical
-wall_6 = Walls(520, 540, 250, 40)   # bottom horizontal
-wall_7 = Walls(730, 50, 40, 530)    # right vertical
+# CENTER LEFT U
+center_u_left = Walls(540, 190, 40, 390)
+center_u_bottom = Walls(540, 550, 240, 40)
+center_u_right = Walls(740, 190, 40, 390)
 
-# Divider between left and middle-top sections
-wall_8 = Walls(780, 50, 40, 530)    # vertical divider
+# CENTER TALL SINGLE WALL
+center_single = Walls(600, 220, 40, 430)
 
-# Small top-middle block
-wall_9 = Walls(960, 160, 50, 110)
+# CENTER DIVIDER WALLS
+divider_left = Walls(840, 120, 40, 580)
+divider_right = Walls(890, 120, 40, 580)
 
-# Right-top upside-down U / corner shape
-wall_10 = Walls(1120, 360, 180, 40) # bottom horizontal
-wall_11 = Walls(1260, 230, 40, 170) # right vertical
+# SMALL TOP MIDDLE BLOCK
+small_top_block = Walls(950, 150, 50, 80)
 
-# Divider between middle and right sections
-wall_12 = Walls(1120, 50, 40, 350)  # vertical divider
+# RIGHT TOP U
+right_u_left = Walls(1110, 220, 40, 170)
+right_u_bottom = Walls(1110, 360, 180, 40)
+right_u_right = Walls(1250, 260, 40, 220)
 
-# Middle-bottom maze shape
-wall_13 = Walls(880, 510, 250, 40)  # top horizontal
-wall_14 = Walls(880, 510, 40, 270)  # left vertical
-wall_15 = Walls(880, 740, 120, 40)  # bottom horizontal
-wall_16 = Walls(1080, 550, 40, 160) # right vertical inner
+# SMALL CENTER RIGHT BLOCK
+small_mid_block = Walls(1090, 220, 50, 120)
 
-# Bottom-center small block
-wall_17 = Walls(560, 740, 90, 40)
+# RIGHT SIDE LOWER LAYOUT
+right_mid_horizontal = Walls(1310, 560, 240, 40)
+right_mid_left = Walls(1310, 560, 40, 150)
+right_mid_inner = Walls(1310, 680, 40, 150)
 
-# Right-middle shape
-wall_18 = Walls(1310, 540, 240, 40) # horizontal
-wall_19 = Walls(1310, 540, 40, 150) # left vertical
+# LOWER CENTER MAZE
+lower_center_left = Walls(900, 530, 40, 250)
+lower_center_top = Walls(900, 530, 210, 40)
+lower_center_right = Walls(1070, 530, 40, 180)
+lower_center_bottom = Walls(900, 740, 110, 40)
 
-# Bottom-right small vertical
-wall_20 = Walls(1360, 740, 40, 120)
+# LOWER RIGHT LONG HORIZONTAL
+lower_right_horizontal = Walls(1020, 620, 260, 40)
 
+# LOWER RIGHT VERTICAL
+lower_right_vertical = Walls(1230, 620, 40, 220)
 
+# SMALL BOTTOM CENTER BLOCK
+small_bottom_block = Walls(580, 760, 80, 40)
 
+# FAR RIGHT LOWER SMALL VERTICAL
+far_right_small = Walls(1360, 760, 40, 120)
 
 
 
