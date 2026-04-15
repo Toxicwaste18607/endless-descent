@@ -20,7 +20,7 @@ class Player_ghost(Enemy):
     max_stamina=100
     stamina_regain = .02
     speed=1
-    def __init__(self,screen,hitbox):
+    def __init__(self,hitbox):
        
         self.load_images()
         super().__init__(hitbox)   
@@ -33,4 +33,3 @@ class Player_ghost(Enemy):
     def load_images(self):
         self.ghost_1=pygame.image.load("src/assets/Knight/Ghost_2.png")
         self.ghost_1=pygame.transform.scale(self.ghost_1,(self.width,self.height))
-        
