@@ -166,7 +166,6 @@ clock = pygame.time.Clock()
 while running:
   #game code goes here
 
-  load_map(screen)
 
 
     
@@ -178,6 +177,10 @@ while running:
 
   for y in range(0, 800, tile_h):
       pygame.draw.line(screen, (50, 50, 50), (0, y), (1400, y))
+  
+
+
+  load_map(screen)
 
 
 
