@@ -123,79 +123,63 @@ black=(0, 0, 0)
 
 
 
-TILE = 64
+T = 64
 
 walls = [
-    # =========================
-    # OUTER BORDER
-    # =========================
-    Walls(0, 0, 21*TILE, TILE),
-    Walls(0, 11*TILE, 21*TILE, TILE),
-    Walls(0, 0, TILE, 12*TILE),
-    Walls(20*TILE, 0, TILE, 12*TILE),
+    # BORDER
+    Walls(0, 0, 21*T, T),
+    Walls(0, 11*T, 21*T, T),
+    Walls(0, 0, T, 12*T),
+    Walls(20*T, 0, T, 12*T),
 
-    # =========================
-    # LEFT TOP (L)
-    # =========================
-    Walls(2*TILE, 2*TILE, TILE, 3*TILE),
-    Walls(2*TILE, 4*TILE, 2*TILE, TILE),
+    # LEFT L
+    Walls(2*T, 2*T, T, 3*T),
+    Walls(2*T, 4*T, 2*T, T),
 
-    # LEFT MID HALL
-    Walls(1*TILE, 7*TILE, 3*TILE, TILE),
+    # LEFT MID HORIZONTAL
+    Walls(1*T, 7*T, 3*T, T),
 
     # LEFT BOTTOM VERTICAL
-    Walls(4*TILE, 8*TILE, TILE, 3*TILE),
+    Walls(4*T, 8*T, T, 3*T),
 
-    # =========================
-    # CENTER LEFT (U SHAPE)
-    # =========================
-    Walls(7*TILE, 2*TILE, TILE, 5*TILE),
-    Walls(7*TILE, 7*TILE, 3*TILE, TILE),
-    Walls(9*TILE, 2*TILE, TILE, 5*TILE),
+    # CENTER U
+    Walls(7*T, 2*T, T, 5*T),
+    Walls(7*T, 7*T, 3*T, T),
+    Walls(9*T, 2*T, T, 5*T),
 
     # CENTER DIVIDER
-    Walls(10*TILE, 0, TILE, 8*TILE),
+    Walls(10*T, 0, T, 8*T),
 
     # SMALL CENTER BLOCK
-    Walls(8*TILE, 9*TILE, TILE, TILE),
+    Walls(8*T, 9*T, T, T),
 
-    # =========================
-    # TOP MID SMALL
-    # =========================
-    Walls(12*TILE, 2*TILE, TILE, TILE),
-    Walls(12*TILE, 1*TILE, TILE, TILE),
+    # TOP SMALL (RIGHT SIDE)
+    Walls(12*T, 2*T, T, T),
 
-    # =========================
-    # RIGHT CENTER (C SHAPE)
-    # =========================
-    Walls(12*TILE, 7*TILE, 3*TILE, TILE),
-    Walls(12*TILE, 7*TILE, TILE, 3*TILE),
-    Walls(12*TILE, 9*TILE, 3*TILE, TILE),
+    # RIGHT C SHAPE
+    Walls(12*T, 7*T, 3*T, T),
+    Walls(12*T, 7*T, T, 3*T),
+    Walls(12*T, 9*T, 3*T, T),
 
-    # INNER BOX RIGHT
-    Walls(13*TILE, 7*TILE, 2*TILE, TILE),
-    Walls(13*TILE, 7*TILE, TILE, 2*TILE),
-    Walls(13*TILE, 8*TILE, 2*TILE, TILE),
+    # INNER RIGHT BOX
+    Walls(13*T, 7*T, 2*T, T),
+    Walls(13*T, 7*T, T, 2*T),
+    Walls(13*T, 8*T, 2*T, T),
 
-    # =========================
     # RIGHT TOP ROOM
-    # =========================
-    Walls(16*TILE, 3*TILE, TILE, 3*TILE),
-    Walls(16*TILE, 5*TILE, 2*TILE, TILE),
+    Walls(16*T, 3*T, T, 3*T),
+    Walls(16*T, 5*T, 2*T, T),
 
-    # RIGHT MID WALL
-    Walls(15*TILE, 6*TILE, 1*TILE, 2*TILE),
+    # RIGHT MID
+    Walls(15*T, 6*T, T, 2*T),
 
-    # =========================
-    # RIGHT LOWER PATH
-    # =========================
-    Walls(17*TILE, 7*TILE, 3*TILE, TILE),
-    Walls(19*TILE, 7*TILE, TILE, 3*TILE),
+    # RIGHT LOWER
+    Walls(17*T, 7*T, 3*T, T),
+    Walls(19*T, 7*T, T, 3*T),
 
     # BOTTOM RIGHT POST
-    Walls(18*TILE, 9*TILE, TILE, 2*TILE),
+    Walls(18*T, 9*T, T, 2*T),
 ]
-
 
 
 
