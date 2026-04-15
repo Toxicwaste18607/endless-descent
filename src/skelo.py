@@ -35,16 +35,10 @@ class Skelo(Enemy):
         hitbox=pygame.Rect(x, y, self.width, self.height)
         super().__init__(hitbox)
         self.load_image()
+        self.hitbox=hitbox
         
   
 
-   def skelo_logic(self,screen,other):
-      if self.health>0:
-         self.draw_character(screen)
-         self.search (screen,other)
-
-      else:
-         pass
 
    def load_image(self):
       self.standing=pygame.image.load("src/assets/skelo.png")
