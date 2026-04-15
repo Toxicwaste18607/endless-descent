@@ -19,7 +19,7 @@ class Player_ghost(Enemy):
     stamina = 100
     max_stamina=100
     stamina_regain = .02
-    speed=.5
+    speed=1
     def __init__(self,hitbox):
        
         self.load_images()
