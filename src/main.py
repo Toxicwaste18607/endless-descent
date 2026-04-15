@@ -170,7 +170,6 @@ while running:
 
   attacking = False
 
-  load_map(screen)
   player.player_logic(screen, None)
 
   for event in pygame.event.get():
