@@ -11,16 +11,7 @@ from skelo import *
 
 
 
-import os
 
-for root, dirs, files in os.walk("src"):
-    for f in files:
-        if "floor" in f.lower():
-            print(os.path.join(root, f))
-
-PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-os.chdir(PROJECT_ROOT)
-print("CWD FIXED TO:", os.getcwd())
 
 
 #====================
@@ -66,6 +57,13 @@ red=(255,0,0)
 
 
 
+#For logic pathing
+
+GAME_PATH = os.path.dirname(os.path.abspath(__file__))
+
+def get_asset_path(filename: str) -> str:
+    '''Returns the path to an asset file, given its filename.'''
+    return os.path.join(GAME_PATH, "assets", filename)
 
 
 
