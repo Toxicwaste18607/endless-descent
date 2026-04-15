@@ -134,13 +134,51 @@ right=Walls(1320, 0, 80, 800)
 
 
 
+# ===== INTERIOR WALLS =====
+
+# top-left room shape
+w1  = Walls(200, 30, 34, 239)
+w2  = Walls(68, 266, 444, 26)
+
+# big center divider
+w3  = Walls(508, 0, 27, 350)
+
+# upper middle platform
+w4  = Walls(532, 90, 282, 21)
+
+# upper right hanging wall
+w5  = Walls(949, 0, 33, 141)
+
+# upper right L-shape
+w6  = Walls(1120, 59, 152, 24)
+w7  = Walls(1253, 83, 32, 99)
+
+# small top-right block
+w8  = Walls(1161, 168, 33, 32)
+
+# long middle platform
+w9  = Walls(776, 265, 573, 21)
+
+# small middle block
+w10 = Walls(993, 392, 31, 28)
+
+# bottom-left L-shape
+w11 = Walls(36, 515, 276, 21)
+w12 = Walls(275, 534, 33, 137)
+
+# long bottom platform
+w13 = Walls(465, 503, 794, 24)
+
+# bottom-right support
+w14 = Walls(1101, 527, 33, 201)
+
+# bottom center supports
+w15 = Walls(466, 566, 33, 162)
+w16 = Walls(827, 583, 31, 145)
 
 
 
 
-# interior walls from that grid
-# each tile = 40x40
-# map offset = (80, 80)
 
 
 
