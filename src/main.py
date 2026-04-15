@@ -134,50 +134,36 @@ right=Walls(1320, 0, 80, 800)
 
 
 
-# ===== INTERIOR WALLS =====
+# top-left section
+w1  = Walls(231, 83, 25, 220)
+w2  = Walls(105, 301, 425, 20)
 
-# top-left room shape
-w1  = Walls(200, 30, 34, 239)
-w2  = Walls(68, 266, 444, 26)
+# center divider + upper middle
+w3  = Walls(543, 43, 25, 343)
+w4  = Walls(555, 143, 304, 19)
 
-# big center divider
-w3  = Walls(508, 0, 27, 350)
+# upper-right section
+w5  = Walls(973, 43, 24, 128)
+w6  = Walls(1186, 104, 127, 21)
+w7  = Walls(1285, 115, 24, 92)
+w8  = Walls(1163, 203, 25, 24)
 
-# upper middle platform
-w4  = Walls(532, 90, 282, 21)
+# long middle-right platform + small block
+w9  = Walls(791, 302, 537, 21)
+w10 = Walls(1001, 419, 25, 22)
 
-# upper right hanging wall
-w5  = Walls(949, 0, 33, 141)
+# lower-left section
+w11 = Walls(80, 546, 267, 20)
+w12 = Walls(311, 547, 25, 148)
 
-# upper right L-shape
-w6  = Walls(1120, 59, 152, 24)
-w7  = Walls(1253, 83, 32, 99)
+# long lower platform
+w13 = Walls(494, 523, 736, 21)
 
-# small top-right block
-w8  = Walls(1161, 168, 33, 32)
-
-# long middle platform
-w9  = Walls(776, 265, 573, 21)
-
-# small middle block
-w10 = Walls(993, 392, 31, 28)
-
-# bottom-left L-shape
-w11 = Walls(36, 515, 276, 21)
-w12 = Walls(275, 534, 33, 137)
-
-# long bottom platform
-w13 = Walls(465, 503, 794, 24)
-
-# bottom-right support
-w14 = Walls(1101, 527, 33, 201)
-
-# bottom center supports
-w15 = Walls(466, 566, 33, 162)
-w16 = Walls(827, 583, 31, 145)
-
-
-
+# lower supports
+w14 = Walls(1126, 547, 25, 189)
+w15 = Walls(499, 593, 24, 146)
+w16 = Walls(843, 616, 24, 122)
+w17 = Walls(1074, 615, 26, 124)
 
 
 
