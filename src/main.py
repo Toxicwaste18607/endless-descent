@@ -109,7 +109,7 @@ running = True   # event loop
 #Classes in use
 player=Player(300,300)
 
-enemy_1=Skelo(450,380)
+
 
 
 #===================
