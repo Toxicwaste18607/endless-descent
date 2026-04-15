@@ -125,69 +125,51 @@ black=(0, 0, 0)
 
 
 
-# Outer border
-# OUTER WALLS
-top_wall = Walls(0, 0, 1600, 40)
-bottom_wall = Walls(0, 860, 1600, 40)
-left_wall = Walls(0, 0, 40, 900)
-right_wall = Walls(1560, 0, 40, 900)
+walls = [
+    # OUTER BORDER
+    Walls(0, 0, 1400, 20),
+    Walls(0, 780, 1400, 20),
+    Walls(0, 0, 20, 800),
+    Walls(1380, 0, 20, 800),
 
-# LEFT TOP L
-l1_vertical = Walls(150, 190, 40, 170)
-l1_horizontal = Walls(150, 330, 150, 40)
+    # LEFT ROOM (L shape)
+    Walls(100, 100, 20, 200),
+    Walls(100, 280, 120, 20),
 
-# LEFT MID HALL
-left_mid_horizontal = Walls(0, 570, 280, 40)
+    # LEFT MID
+    Walls(80, 500, 200, 20),
+    Walls(250, 520, 20, 250),
 
-# LEFT LOWER VERTICAL
-left_lower_vertical = Walls(340, 570, 40, 330)
+    # CENTER LEFT (U shape)
+    Walls(450, 100, 20, 300),
+    Walls(450, 380, 200, 20),
+    Walls(650, 100, 20, 300),
 
-# CENTER LEFT U
-center_u_left = Walls(540, 190, 40, 390)
-center_u_bottom = Walls(540, 550, 240, 40)
-center_u_right = Walls(740, 190, 40, 390)
+    # CENTER SMALL BLOCK
+    Walls(600, 600, 80, 20),
 
-# CENTER TALL SINGLE WALL
-center_single = Walls(600, 220, 40, 430)
+    # CENTER DIVIDER
+    Walls(720, 0, 20, 500),
 
-# CENTER DIVIDER WALLS
-divider_left = Walls(840, 120, 40, 580)
-divider_right = Walls(890, 120, 40, 580)
+    # RIGHT TOP SMALL
+    Walls(850, 100, 60, 20),
 
-# SMALL TOP MIDDLE BLOCK
-small_top_block = Walls(950, 150, 50, 80)
+    # RIGHT MID (C shape)
+    Walls(820, 400, 200, 20),
+    Walls(820, 400, 20, 200),
+    Walls(820, 580, 200, 20),
 
-# RIGHT TOP U
-right_u_left = Walls(1110, 220, 40, 170)
-right_u_bottom = Walls(1110, 360, 180, 40)
-right_u_right = Walls(1250, 260, 40, 220)
+    # RIGHT TOP ROOM
+    Walls(1050, 200, 20, 200),
+    Walls(1050, 380, 120, 20),
 
-# SMALL CENTER RIGHT BLOCK
-small_mid_block = Walls(1090, 220, 50, 120)
+    # RIGHT LOWER
+    Walls(1100, 550, 200, 20),
+    Walls(1300, 550, 20, 150),
 
-# RIGHT SIDE LOWER LAYOUT
-right_mid_horizontal = Walls(1310, 560, 240, 40)
-right_mid_left = Walls(1310, 560, 40, 150)
-right_mid_inner = Walls(1310, 680, 40, 150)
-
-# LOWER CENTER MAZE
-lower_center_left = Walls(900, 530, 40, 250)
-lower_center_top = Walls(900, 530, 210, 40)
-lower_center_right = Walls(1070, 530, 40, 180)
-lower_center_bottom = Walls(900, 740, 110, 40)
-
-# LOWER RIGHT LONG HORIZONTAL
-lower_right_horizontal = Walls(1020, 620, 260, 40)
-
-# LOWER RIGHT VERTICAL
-lower_right_vertical = Walls(1230, 620, 40, 220)
-
-# SMALL BOTTOM CENTER BLOCK
-small_bottom_block = Walls(580, 760, 80, 40)
-
-# FAR RIGHT LOWER SMALL VERTICAL
-far_right_small = Walls(1360, 760, 40, 120)
-
+    # EXIT GAPS (like your red/blue)
+    # leave space manually — no walls here
+]
 
 
 
