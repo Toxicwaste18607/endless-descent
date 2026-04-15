@@ -135,6 +135,44 @@ right=Walls(1320, 0, 80, 800)
 
 
 
+
+
+
+# interior walls from that grid
+# each tile = 40x40
+# map offset = (80, 80)
+
+w1  = Walls(320, 120, 40, 40)
+w2  = Walls(640, 120, 40, 40)
+w3  = Walls(800, 120, 40, 40)
+
+w4  = Walls(320, 160, 40, 40)
+w5  = Walls(640, 160, 40, 40)
+
+w6  = Walls(320, 200, 200, 40)
+w7  = Walls(560, 200, 120, 40)
+
+w8  = Walls(120, 280, 80, 40)
+
+w9  = Walls(360, 320, 240, 40)
+
+w10 = Walls(360, 360, 40, 40)
+w11 = Walls(560, 360, 40, 40)
+
+w12 = Walls(360, 400, 40, 40)
+w13 = Walls(560, 400, 40, 40)
+
+w14 = Walls(360, 440, 240, 40)
+
+w15 = Walls(280, 520, 160, 40)
+
+
+
+
+
+
+
+
 ghosts=[]
 
 clock = pygame.time.Clock()
