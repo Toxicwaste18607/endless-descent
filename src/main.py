@@ -135,7 +135,7 @@ right=Walls(1320, 0, 80, 80)
 
 # upper left room
 h1 = Walls(130, 360, 300, wall_thickness)
-v1 = Walls(430, 80, wall_thickness, 280)
+v1 = Walls(450, 80, wall_thickness, 280)
 
 # upper middle room
 h2 = Walls(680, 430, 360, wall_thickness)
