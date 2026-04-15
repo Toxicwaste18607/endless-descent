@@ -103,10 +103,10 @@ class Player():
   
 
   def load_character_images(self):
-    self.standing=pygame.image.load("src/assets/Knight/standing.png")
+    self.standing=pygame.image.load("assets/Knight/standing.png")
     self.standing=pygame.transform.scale(self.standing,(self.width,self.height))
 
-    self.walking_1=pygame.image.load("src/assets/Knight/walking_1.png")
+    '''self.walking_1=pygame.image.load("src/assets/Knight/walking_1.png")
     self.walking_1=pygame.transform.scale(self.walking_1, (self.width,self.height))
 
     self.walking_2=pygame.image.load("src/assets/Knight/walking_2.png")
@@ -142,7 +142,7 @@ class Player():
     self.gh_1=pygame.transform.scale(self.gh_1, (self.width,self.height))
 
     self.gh_2=pygame.image.load("src/assets/Knight/Ghost_2.png")
-    self.gh_2=pygame.transform.scale(self.gh_2, (self.width,self.height))
+    self.gh_2=pygame.transform.scale(self.gh_2, (self.width,self.height))'''
 
   #PLAYER CODE
 
