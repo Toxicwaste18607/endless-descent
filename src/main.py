@@ -133,27 +133,7 @@ bottom= Walls(0, 780, 1400, 40)
 left= Walls(0, 0, 80, 800)    
 right=Walls(1320, 0, 80, 80)
 
-# top left shape
-# top left
-h1 = Walls(140, 340, 320, wall_thickness)
-v1 = Walls(448, 100, wall_thickness, 240)
 
-# top middle
-v2 = Walls(760, 220, wall_thickness, 270)
-h2 = Walls(760, 490, 380, wall_thickness)
-v3 = Walls(1128, 220, wall_thickness, 270)
-
-# right side, moved inward
-v4 = Walls(1330, 210, wall_thickness, 520)
-
-# bottom left, raised up a bit
-h3 = Walls(150, 760, 420, wall_thickness)
-v5 = Walls(558, 760, wall_thickness, 180)
-
-# bottom right, less cramped
-h4 = Walls(1080, 760, 320, wall_thickness)
-v6 = Walls(1080, 760, wall_thickness, 170)
-v7 = Walls(1388, 760, wall_thickness, 170)
 
 
 
