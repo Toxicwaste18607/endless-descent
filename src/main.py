@@ -189,7 +189,7 @@ while running:
 
   
   for x in ghosts:
-     x.draw(screen)  
+     x.draw_character(screen)  
      x.enemy_logic(screen, player)
 
   for event in pygame.event.get():
