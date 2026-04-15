@@ -6,7 +6,7 @@ blue = (0, 0, 255)
 
 class Player_ghost(Enemy):
     
-    def __init__(self,screen,  hitbox):
+    def __init__(self,screen,hitbox):
         self.width = 50
         self.height = 70
         self.load_images(screen)
