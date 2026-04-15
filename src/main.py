@@ -122,56 +122,34 @@ black=(0, 0, 0)
 
 #walls 
 
-def W(col, row, w, h):
-    return Walls(col * 70, row * 50, w * 70, h * 50)
 
-# outer walls
-top = Walls(0, 0, 1400, 70)
-bottom = Walls(0, 780, 1400, 40)
-left = Walls(0, 0, 80, 800)
-right = Walls(1320, 0, 80, 800)
 
-# ===== INNER WALLS =====
 
-# small top-left block
-w1  = W(1, 3, 1, 1)
+# border
+top_border    = Walls(40, 30, 1500, 10)
+bottom_border = Walls(40, 920, 1500, 10)
+left_border   = Walls(40, 30, 10, 900)
+right_border  = Walls(1530, 30, 10, 900)
 
-# left big L
-w2  = W(1, 5, 4, 1)
-w3  = W(4, 5, 1, 7)
+# interior horizontal walls
+h1 = Walls(120, 280, 260, 20)
+h2 = Walls(590, 340, 320, 20)
+h3 = Walls(165, 560, 270, 20)
+h4 = Walls(840, 515, 250, 20)
+h5 = Walls(1030, 805, 280, 20)
+h6 = Walls(1325, 405, 140, 20)
 
-# top pillars
-w4  = W(3, 1, 1, 3)
-w5  = W(9, 1, 1, 3)
-w6  = W(14, 1, 1, 3)
-
-# top-center U
-w7  = W(10, 2, 4, 1)
-
-# top-right tall wall
-w8  = W(17, 1, 1, 5)
-
-# far-right top shape
-w9  = W(19, 1, 1, 4)
-w10 = W(18, 5, 2, 1)
-
-# small center pillar
-w11 = W(9, 5, 1, 2)
-
-# middle-right L
-w12 = W(12, 6, 5, 1)
-w13 = W(12, 6, 1, 3)
-
-# small right-middle block
-w14 = W(18, 6, 2, 1)
-
-# lower center small pillar
-w15 = W(12, 11, 1, 2)
-
-# bottom-right big L
-w16 = W(15, 11, 5, 1)
-w17 = W(19, 6, 1, 6)
-
+# interior vertical walls
+v1 = Walls(370, 65, 20, 225)
+v2 = Walls(590, 140, 20, 200)
+v3 = Walls(900, 140, 20, 210)
+v4 = Walls(1090, 130, 20, 390)
+v5 = Walls(1325, 70, 20, 320)
+v6 = Walls(430, 560, 20, 320)
+v7 = Walls(280, 685, 20, 120)
+v8 = Walls(835, 515, 20, 145)
+v9 = Walls(1310, 520, 20, 285)
+v10 = Walls(840, 790, 20, 80)
 
 
 
