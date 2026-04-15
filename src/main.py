@@ -62,7 +62,7 @@ red=(255,0,0)
 
 def floor_type_one():
   global floor_one
-  floor_one=pygame.image.load("assets/walls_and_floors/floor_type.png").convert_alpha()#this loads the floor png 
+  floor_one=pygame.image.load("walls_and_floors/floor_type.png").convert_alpha()#this loads the floor png 
   floor_one=pygame.transform.scale(floor_one, (screen_width,screen_height))
   
 
