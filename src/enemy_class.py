@@ -149,9 +149,8 @@ class Enemy():
       if self.health > 0:
          self.health -= other.damage
          if self.health<= 0:
-            self.all_enemies.remove()
-      if self.health<= 0:
-         self.all_enemies.remove(self)
+            self.all_enemies.remove(self)
+    
 
    def attack(self,screen,other):
       attack_box=(self.hitbox.x-self.attack_range,  self.hitbox.y -self.attack_range,
