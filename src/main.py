@@ -123,6 +123,67 @@ black=(0, 0, 0)
 
 
 
+
+
+# Outer border
+top_border = Walls(0, 0, 1600, 50)
+bottom_border = Walls(0, 850, 1600, 50)
+left_border = Walls(0, 0, 50, 900)
+right_border = Walls(1550, 0, 50, 900)
+
+# Top-left room "L"
+wall_1 = Walls(140, 170, 40, 190)   # vertical
+wall_2 = Walls(140, 320, 160, 40)   # horizontal
+
+# Far-left middle wall
+wall_3 = Walls(0, 540, 280, 40)     # horizontal from left side inward
+
+# Bottom-left vertical
+wall_4 = Walls(310, 540, 40, 320)   # vertical
+
+# Center large U shape
+wall_5 = Walls(520, 190, 40, 390)   # vertical
+wall_6 = Walls(520, 540, 250, 40)   # bottom horizontal
+wall_7 = Walls(730, 50, 40, 530)    # right vertical
+
+# Divider between left and middle-top sections
+wall_8 = Walls(780, 50, 40, 530)    # vertical divider
+
+# Small top-middle block
+wall_9 = Walls(960, 160, 50, 110)
+
+# Right-top upside-down U / corner shape
+wall_10 = Walls(1120, 360, 180, 40) # bottom horizontal
+wall_11 = Walls(1260, 230, 40, 170) # right vertical
+
+# Divider between middle and right sections
+wall_12 = Walls(1120, 50, 40, 350)  # vertical divider
+
+# Middle-bottom maze shape
+wall_13 = Walls(880, 510, 250, 40)  # top horizontal
+wall_14 = Walls(880, 510, 40, 270)  # left vertical
+wall_15 = Walls(880, 740, 120, 40)  # bottom horizontal
+wall_16 = Walls(1080, 550, 40, 160) # right vertical inner
+
+# Bottom-center small block
+wall_17 = Walls(560, 740, 90, 40)
+
+# Right-middle shape
+wall_18 = Walls(1310, 540, 240, 40) # horizontal
+wall_19 = Walls(1310, 540, 40, 150) # left vertical
+
+# Bottom-right small vertical
+wall_20 = Walls(1360, 740, 40, 120)
+
+
+
+
+
+
+
+
+
+
 ghosts=[]
 
 clock = pygame.time.Clock()
