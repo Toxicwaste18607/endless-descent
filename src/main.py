@@ -133,47 +133,6 @@ right=Walls(1320, 0, 80, 800)
 
 
 
-# outer walls
-top = Walls(0, 0, 1400, 70)
-bottom = Walls(0, 780, 1400, 40)
-left = Walls(0, 0, 80, 800)
-right = Walls(1320, 0, 80, 800)
-
-# ===== INTERIOR WALLS =====
-
-# upper-left
-w1  = Walls(232, 86, 24, 216)
-w2  = Walls(109, 303, 422, 20)
-
-# center divider + upper middle shelf
-w3  = Walls(544, 45, 24, 330)
-w4  = Walls(555, 145, 315, 19)
-
-# upper-right
-w5  = Walls(975, 44, 24, 125)
-w6  = Walls(1188, 106, 124, 20)
-w7  = Walls(1288, 106, 24, 96)
-w8  = Walls(1166, 205, 24, 22)
-
-# mid-right long shelf + middle small block
-w9  = Walls(792, 304, 536, 20)
-w10 = Walls(1003, 420, 24, 22)
-
-# lower-left
-w11 = Walls(82, 547, 268, 20)
-w12 = Walls(312, 548, 24, 149)
-
-# long lower shelf
-w13 = Walls(494, 525, 720, 20)
-
-# lower supports
-w14 = Walls(1118, 548, 24, 188)
-w15 = Walls(500, 594, 24, 145)
-w16 = Walls(844, 617, 24, 121)
-
-
-
-
 
 
 
@@ -187,8 +146,15 @@ clock = pygame.time.Clock()
 while running:
   #game code goes here
 
-  
+    
+  tile_w = 70
+  tile_h = 50
 
+  for x in range(0, 1400, tile_w):
+      pygame.draw.line(screen, (50, 50, 50), (x, 0), (x, 800))
+
+  for y in range(0, 800, tile_h):
+      pygame.draw.line(screen, (50, 50, 50), (0, y), (1400, y))
 
   load_map(screen)
 
