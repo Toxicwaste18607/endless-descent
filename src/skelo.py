@@ -32,8 +32,8 @@ class Skelo(Enemy):
    stamina_regain = .02
    speed=1
    def __init__ (self ,x,y):
-        self.hitbox=pygame.Rect(x, y, self.width, self.height)
-        Enemy.all_enemies.append(self)
+        hitbox=pygame.Rect(x, y, self.width, self.height)
+        super().__init__(hitbox)
         self.load_image()
         
   
