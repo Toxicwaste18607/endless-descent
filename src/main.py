@@ -163,7 +163,7 @@ while running:
   
 
 
-  load_map(screen)
+  #load_map(screen)
 
 
 
