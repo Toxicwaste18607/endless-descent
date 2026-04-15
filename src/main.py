@@ -125,31 +125,41 @@ black=(0, 0, 0)
 
 
 
-# border
-top_border    = Walls(40, 30, 1500, 10)
-bottom_border = Walls(40, 920, 1500, 10)
-left_border   = Walls(40, 30, 10, 900)
-right_border  = Walls(1530, 30, 10, 900)
+wall_thickness = 50
 
-# interior horizontal walls
-h1 = Walls(120, 280, 260, 20)
-h2 = Walls(590, 340, 320, 20)
-h3 = Walls(165, 560, 270, 20)
-h4 = Walls(840, 515, 250, 20)
-h5 = Walls(1030, 805, 280, 20)
-h6 = Walls(1325, 405, 140, 20)
+# borders
+top_border = Walls(40, 40, 1520, wall_thickness)
+bottom_border = Walls(40, 930, 1520, wall_thickness)
+left_border = Walls(40, 40, wall_thickness, 890)
+right_border = Walls(1560, 40, wall_thickness, 890)
 
-# interior vertical walls
-v1 = Walls(370, 65, 20, 225)
-v2 = Walls(590, 140, 20, 200)
-v3 = Walls(900, 140, 20, 210)
-v4 = Walls(1090, 130, 20, 390)
-v5 = Walls(1325, 70, 20, 320)
-v6 = Walls(430, 560, 20, 320)
-v7 = Walls(280, 685, 20, 120)
-v8 = Walls(835, 515, 20, 145)
-v9 = Walls(1310, 520, 20, 285)
-v10 = Walls(840, 790, 20, 80)
+# upper left room
+h1 = Walls(130, 360, 300, wall_thickness)
+v1 = Walls(430, 80, wall_thickness, 280)
+
+# upper middle room
+h2 = Walls(680, 430, 360, wall_thickness)
+v2 = Walls(680, 180, wall_thickness, 250)
+v3 = Walls(1030, 180, wall_thickness, 250)
+
+# upper right
+v4 = Walls(1210, 170, wall_thickness, 470)
+v5 = Walls(1470, 160, wall_thickness, 330)
+h3 = Walls(1470, 520, 130, wall_thickness)
+
+# lower left
+h4 = Walls(180, 700, 320, wall_thickness)
+v6 = Walls(500, 700, wall_thickness, 250)
+v7 = Walls(310, 850, wall_thickness, 120)
+
+# middle lower
+v8 = Walls(950, 640, wall_thickness, 170)
+h5 = Walls(950, 640, 300, wall_thickness)
+
+# lower right
+h6 = Walls(1010, 820, 260, wall_thickness)
+v9 = Walls(1270, 520, wall_thickness, 300)
+v10 = Walls(1450, 650, wall_thickness, 280)
 
 
 
