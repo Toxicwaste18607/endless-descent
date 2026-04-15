@@ -133,33 +133,33 @@ bottom= Walls(0, 780, 1400, 40)
 left= Walls(0, 0, 80, 800)    
 right=Walls(1320, 0, 80, 80)
 
-# upper left room
-h1 = Walls(130, 370, 340, wall_thickness)
-v1 = Walls(390, 80, wall_thickness, 280)
+# top left shape
+h1 = Walls(140, 340, 300, wall_thickness)
+v1 = Walls(428, 80, wall_thickness, 260)
 
-# upper middle room
-h2 = Walls(680, 430, 360, wall_thickness)
-v2 = Walls(680, 180, wall_thickness, 250)
-v3 = Walls(1030, 180, wall_thickness, 250)
+# top middle room
+v2 = Walls(680, 170, wall_thickness, 250)
+h2 = Walls(680, 420, 360, wall_thickness)
+v3 = Walls(1028, 170, wall_thickness, 250)
 
-# upper right
-v4 = Walls(1210, 170, wall_thickness, 470)
-v5 = Walls(1470, 160, wall_thickness, 330)
-h3 = Walls(1470, 520, 130, wall_thickness)
+# right side tall hall
+v4 = Walls(1210, 170, wall_thickness, 430)
+v5 = Walls(1468, 160, wall_thickness, 310)
+h3 = Walls(1468, 468, 120, wall_thickness)
 
-# lower left
-h4 = Walls(180, 700, 320, wall_thickness)
-v6 = Walls(500, 700, wall_thickness, 250)
-v7 = Walls(310, 850, wall_thickness, 120)
+# bottom left room
+h4 = Walls(160, 680, 340, wall_thickness)
+v6 = Walls(488, 680, wall_thickness, 240)
+v7 = Walls(300, 820, wall_thickness, 140)
 
-# middle lower
-v8 = Walls(950, 640, wall_thickness, 170)
-h5 = Walls(950, 640, 300, wall_thickness)
+# middle connector
+v8 = Walls(940, 620, wall_thickness, 160)
+h5 = Walls(940, 620, 320, wall_thickness)
 
-# lower right
-h6 = Walls(1010, 820, 260, wall_thickness)
-v9 = Walls(1270, 520, wall_thickness, 300)
-v10 = Walls(1450, 650, wall_thickness, 280)
+# bottom right room
+h6 = Walls(1000, 800, 280, wall_thickness)
+v9 = Walls(1268, 620, wall_thickness, 180)
+v10 = Walls(1450, 660, wall_thickness, 260)
 
 
 
