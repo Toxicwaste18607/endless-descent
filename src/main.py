@@ -132,33 +132,6 @@ right=Walls(1320, 0, 80, 800)
 
 
 
-# ===== INNER WALLS =====
-
-# Left room
-l1 = Walls(80, 150, 300, 40)
-l2 = Walls(80, 150, 40, 200)
-l3 = Walls(340, 150, 40, 200)
-l4 = Walls(80, 310, 300, 40)
-
-# Middle hallway connectors
-m1 = Walls(380, 230, 200, 40)
-m2 = Walls(580, 230, 40, 200)
-
-# Center room
-c1 = Walls(620, 150, 300, 40)
-c2 = Walls(620, 150, 40, 200)
-c3 = Walls(880, 150, 40, 200)
-c4 = Walls(620, 310, 300, 40)
-
-# Right room
-r1 = Walls(920, 400, 300, 40)
-r2 = Walls(920, 400, 40, 200)
-r3 = Walls(1180, 400, 40, 200)
-r4 = Walls(920, 560, 300, 40)
-
-# Bottom connector hallway
-b1 = Walls(380, 500, 200, 40)
-b2 = Walls(580, 500, 40, 100)
 
 
 
