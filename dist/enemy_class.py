@@ -1,3 +1,7 @@
+import pygame
+from wall_class_code import *
+
+
 class Enemy():
    # List that stores ALL enemy instances in the game
    all_enemies = []
