@@ -124,15 +124,52 @@ black=(0, 0, 0)
 
 
 
+# OUTER BORDER
+Walls(0, 0, 1344, 64)          # top
+Walls(0, 0, 64, 768)           # left
+Walls(0, 704, 1344, 64)        # bottom
+Walls(1280, 0, 64, 768)        # right
 
 
-# borders
-'''top= Walls(0, 0, 1400, 70)        
-left= Walls(0, 0, 80, 800)    
-right=Walls(1320, 0, 80, 80)'''
+# LEFT ROOM (L shape)
+Walls(128, 128, 64, 192)
+Walls(128, 320, 192, 64)
 
+# LEFT MID HALL
+Walls(0, 448, 256, 64)
 
-tile = 64
+# CENTER LEFT WALL
+Walls(320, 512, 64, 256)
+
+# CENTER BIG U SHAPE
+Walls(512, 128, 64, 384)
+Walls(512, 512, 256, 64)
+Walls(768, 128, 64, 384)
+
+# TOP CENTER DIVIDER
+Walls(768, 0, 64, 256)
+
+# SMALL TOP BLOCK
+Walls(896, 128, 64, 64)
+
+# RIGHT TOP U SHAPE
+Walls(1024, 128, 64, 256)
+Walls(1024, 384, 192, 64)
+Walls(1216, 128, 64, 256)
+
+# CENTER RIGHT BOX
+Walls(896, 448, 192, 64)
+Walls(896, 448, 64, 192)
+Walls(1024, 512, 64, 128)
+
+# RIGHT MID HALL
+Walls(1152, 512, 192, 64)
+
+# SMALL BOTTOM BLOCK
+Walls(512, 640, 128, 64)
+
+# BOTTOM RIGHT SMALL WALL
+Walls(1152, 640, 64, 128)
 
 # outer wall
 
