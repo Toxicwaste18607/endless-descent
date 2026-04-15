@@ -135,39 +135,7 @@ right=Walls(1320, 0, 80, 80)'''
 tile = 64
 
 # outer wall
-wall_1 = Walls(0, 0, tile, 768)
 
-# top-left section
-wall_2 = Walls(64, 256, 448, tile)
-wall_3 = Walls(192, 64, tile, 192)
-
-# center-left section
-wall_4 = Walls(512, 0, tile, 384)
-wall_5 = Walls(512, 64, 320, tile)
-
-# upper-right section
-wall_6 = Walls(960, 0, tile, 128)
-wall_7 = Walls(1152, 64, 128, tile)
-wall_8 = Walls(1280, 64, tile, 128)
-
-# middle-right long wall
-wall_9 = Walls(768, 256, 640, tile)
-
-# small blocks
-wall_10 = Walls(1088, 192, tile, tile)
-wall_11 = Walls(960, 384, tile, tile)
-
-# bottom-left section
-wall_12 = Walls(0, 576, 320, tile)
-wall_13 = Walls(256, 576, tile, 192)
-
-# bottom-middle / bottom-right section
-wall_14 = Walls(448, 576, 832, tile)
-wall_15 = Walls(1088, 576, tile, 192)
-
-# lower small verticals
-wall_16 = Walls(448, 640, tile, 128)
-wall_17 = Walls(832, 640, tile, 128)
 
 
 
