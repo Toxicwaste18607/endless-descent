@@ -131,7 +131,8 @@ wall_thickness = 50
 top= Walls(0, 0, 1400, 70)        
 bottom= Walls(0, 780, 1400, 40) 
 left= Walls(0, 0, 80, 800)    
-right=Walls(1320, 0, 80, 80
+right=Walls(1320, 0, 80, 80)
+
 # upper left room
 h1 = Walls(130, 360, 300, wall_thickness)
 v1 = Walls(430, 80, wall_thickness, 280)
